@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/obdtripcompare.dir/tripcompare.c.o CMakeFiles/obdtripcompare.dir/examinetrips.c.o CMakeFiles/obdtripcompare.dir/analysistables.c.o  -o ../../../bin/obdtripcompare -rdynamic -L/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/libs/sqlite3 ../../libs/sqlite3/libcksqlite.a -lpthread -ldl -lm 

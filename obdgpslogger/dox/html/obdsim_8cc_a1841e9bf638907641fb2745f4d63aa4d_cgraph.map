@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$obdsim_8cc.html#a312e77640a7dced86271f8afd3919342" title="Do an elm reset [ATZ or similar]." alt="" coords="249,5,369,35"/>
+<area shape="rect" id="node5" href="$obdsim_8cc.html#a1fe4a2896c7cb031178c170c3645ecb8" title="Default sim generator for windows users is the gui." alt="" coords="240,58,379,89"/>
+<area shape="rect" id="node7" href="$obdsim_8cc.html#ad44d5c5f3cd4edd3fa2428b2b1989817" title="Given a protocol [A]{0&#45;9}, set the protocol in the struct." alt="" coords="252,111,367,142"/>
+<area shape="rect" id="node9" href="$obdsim_8cc.html#ae06d636c0fff4bc4d72b642fb832011a" title="Given the single char, find the protocol for it." alt="" coords="428,111,543,142"/>
+</map>

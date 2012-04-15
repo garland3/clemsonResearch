@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$obdserial_8c.html#a99c1914bae8cd8325c660226570a496f" title="Get the raw bits returned from an OBD command." alt="" coords="176,30,269,61"/>
+<area shape="rect" id="node5" href="$obdserial_8c.html#ac87307a45da5e1a53610b22d5fe74e6b" title="Write to the log." alt="" coords="469,5,581,35"/>
+<area shape="rect" id="node7" href="$obdserial_8c.html#ab8c30a7b9e8b34022f9ad00296fd6353" title="Parse a line from obd." alt="" coords="323,30,416,61"/>
+<area shape="rect" id="node9" href="$obdserial_8c.html#ab97a7e5a016da1f208142d1a1d4ce287" title="Collect data up to the next prompt." alt="" coords="319,83,420,114"/>
+<area shape="rect" id="node12" href="$windowssimport_8cc.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title="gettimeofday" alt="" coords="477,83,573,114"/>
+</map>

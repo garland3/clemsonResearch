@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$obdserial_8c.html#a7555092783859dd567cd99a2c879ade7" title="attempt_upgradebaudrate" alt="" coords="175,95,343,126"/>
+<area shape="rect" id="node5" href="$obdserial_8c.html#a25f6e0a9ffcca7a61f6a95dedce8bd52" title="blindcmd" alt="" coords="400,43,475,74"/>
+<area shape="rect" id="node14" href="$windowssimport_8cc.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title="gettimeofday" alt="" coords="861,70,957,101"/>
+<area shape="rect" id="node17" href="$obdserial_8c.html#a8fdc92907dfacad9d330cd046fe95af6" title="Modify the baudrate of the passed serial port." alt="" coords="393,147,481,178"/>
+<area shape="rect" id="node7" href="$obdserial_8c.html#ac87307a45da5e1a53610b22d5fe74e6b" title="Write to the log." alt="" coords="853,5,965,35"/>
+<area shape="rect" id="node9" href="$obdserial_8c.html#ae5a5a009a7448dfa5326607a0acb494e" title="Throw away all data until the next prompt." alt="" coords="531,43,653,74"/>
+<area shape="rect" id="node11" href="$obdserial_8c.html#ab97a7e5a016da1f208142d1a1d4ce287" title="Collect data up to the next prompt." alt="" coords="703,43,804,74"/>
+<area shape="rect" id="node19" href="$obdserial_8c.html#ac9406c6be567615bcf0a2c9c844830b6" title="Guess the baudrate." alt="" coords="539,147,645,178"/>
+</map>

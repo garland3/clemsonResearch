@@ -176,6 +176,12 @@ int openserial(const char *portfilename, long baudrate, long baudrate_target) {
 		// Reset the device. Some software changes settings and then leaves it
 		blindcmd(fd,"ATZ",1);
 
+		// Anthony change
+		printf("Figure out the correct protocal \n");
+		blindcmd(fd,"AT SP 0",1);
+		sleep(3);
+
+
 		// printf("Baudrate upgrader disabled\n");
 		if(0 > upgradebaudrate(fd, baudrate_target, current_baud)) {
 			fprintf(stderr, "Error upgrading baudrate. Continuing, but may suffer issues\n");

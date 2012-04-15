@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$obdserial_8c.html#ac87307a45da5e1a53610b22d5fe74e6b" title="Write to the log." alt="" coords="299,5,411,35"/>
+<area shape="rect" id="node5" href="$obdserial_8c.html#ab8c30a7b9e8b34022f9ad00296fd6353" title="Parse a line from obd." alt="" coords="152,30,245,61"/>
+<area shape="rect" id="node7" href="$obdserial_8c.html#ab97a7e5a016da1f208142d1a1d4ce287" title="Collect data up to the next prompt." alt="" coords="148,83,249,114"/>
+<area shape="rect" id="node10" href="$windowssimport_8cc.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title="gettimeofday" alt="" coords="307,83,403,114"/>
+</map>

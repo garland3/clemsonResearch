@@ -1,0 +1,9 @@
+#! /bin/sh
+# run as sudo. 
+
+# get the list of PID codes that are easily available. 
+#obdgpslogger -s /dev/ttyUSB0 -p
+
+
+# log data. 
+obdgpslogger -s /dev/ttyUSB0 -b 9600

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$analysistables_8c.html#ad731eecbb083060fbbdccdb8d79552e9" title="Insert [or update] these parameters for this trip." alt="" coords="176,5,301,35"/>
+<area shape="rect" id="node5" href="$examinetrips_8c.html#a23c826b8c23f2adac80b2012c22368cf" title="Total length of this trip." alt="" coords="208,58,269,89"/>
+<area shape="rect" id="node9" href="$examinetrips_8c.html#ae106b7c8eac6390ad917d24540100781" title="Weighted median,mean of lat and lon for this trip." alt="" coords="181,111,296,142"/>
+<area shape="rect" id="node7" href="$examinetrips_8c.html#a248e6a8d66c5522221c3633b7fbaf0cb" title="Get the distance between these co&#45;ordinates, in km." alt="" coords="349,85,456,115"/>
+</map>

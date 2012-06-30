@@ -6,4 +6,4 @@
 
 
 # log data. 
-obdgpslogger -s /dev/ttyUSB1 -b 9600 -i temp,map,rpm,vss,throttlepos,sparkadv
+./obdgpslogger -s /dev/ttyUSB2 -b 9600 -i temp,map,rpm,vss,throttlepos,sparkadv

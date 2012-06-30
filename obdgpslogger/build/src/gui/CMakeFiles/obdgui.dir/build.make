@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
@@ -72,32 +69,9 @@ src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o.provides: src/gui/CMakeFiles/o
 
 src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o.provides.build: src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o
 
-src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o: src/gui/CMakeFiles/obdgui.dir/flags.make
-src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o: ../src/gui/obdgui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdgui.dir/obdgui.cpp.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/obdgui.cpp
-
-src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdgui.dir/obdgui.cpp.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/obdgui.cpp > CMakeFiles/obdgui.dir/obdgui.cpp.i
-
-src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdgui.dir/obdgui.cpp.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/obdgui.cpp -o CMakeFiles/obdgui.dir/obdgui.cpp.s
-
-src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires:
-.PHONY : src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires
-
-src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires
-	$(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides.build
-.PHONY : src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides
-
-src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides.build: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o
-
 src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o: src/gui/CMakeFiles/obdgui.dir/flags.make
 src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o: ../src/gui/guessdevs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o"
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdgui.dir/guessdevs.cpp.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/guessdevs.cpp
 
@@ -118,22 +92,47 @@ src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o.provides: src/gui/CMakeFiles/obdgu
 
 src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o.provides.build: src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o
 
+src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o: src/gui/CMakeFiles/obdgui.dir/flags.make
+src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o: ../src/gui/obdgui.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdgui.dir/obdgui.cpp.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/obdgui.cpp
+
+src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdgui.dir/obdgui.cpp.i"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/obdgui.cpp > CMakeFiles/obdgui.dir/obdgui.cpp.i
+
+src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdgui.dir/obdgui.cpp.s"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/obdgui.cpp -o CMakeFiles/obdgui.dir/obdgui.cpp.s
+
+src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires:
+.PHONY : src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires
+
+src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires
+	$(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides.build
+.PHONY : src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides
+
+src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.provides.build: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o
+
 # Object files for target obdgui
 obdgui_OBJECTS = \
 "CMakeFiles/obdgui.dir/loggerhandler.cpp.o" \
-"CMakeFiles/obdgui.dir/obdgui.cpp.o" \
-"CMakeFiles/obdgui.dir/guessdevs.cpp.o"
+"CMakeFiles/obdgui.dir/guessdevs.cpp.o" \
+"CMakeFiles/obdgui.dir/obdgui.cpp.o"
 
 # External object files for target obdgui
 obdgui_EXTERNAL_OBJECTS =
 
 ../bin/obdgui: src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o
-../bin/obdgui: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o
 ../bin/obdgui: src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o
+../bin/obdgui: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o
 ../bin/obdgui: src/gui/libckobdfl.a
 ../bin/obdgui: src/obdinfo/libckobdinfo.a
 ../bin/obdgui: src/conf/libckobdconfigfile.a
 ../bin/obdgui: /usr/lib/i386-linux-gnu/libfltk.a
+../bin/obdgui: /usr/lib/i386-linux-gnu/libSM.so
+../bin/obdgui: /usr/lib/i386-linux-gnu/libICE.so
 ../bin/obdgui: /usr/lib/i386-linux-gnu/libX11.so
 ../bin/obdgui: /usr/lib/i386-linux-gnu/libXext.so
 ../bin/obdgui: /usr/lib/i386-linux-gnu/libm.so
@@ -147,8 +146,8 @@ src/gui/CMakeFiles/obdgui.dir/build: ../bin/obdgui
 .PHONY : src/gui/CMakeFiles/obdgui.dir/build
 
 src/gui/CMakeFiles/obdgui.dir/requires: src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o.requires
-src/gui/CMakeFiles/obdgui.dir/requires: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires
 src/gui/CMakeFiles/obdgui.dir/requires: src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o.requires
+src/gui/CMakeFiles/obdgui.dir/requires: src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o.requires
 .PHONY : src/gui/CMakeFiles/obdgui.dir/requires
 
 src/gui/CMakeFiles/obdgui.dir/clean:

@@ -10,8 +10,8 @@ Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:25: error: ‘getaddrinfo’ undeclared (first use in this function)
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:25: note: each undeclared identifier is reported only once for each function it appears in
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o] Error 1
 make: *** [cmTryCompileExec/fast] Error 2
 
 File /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:

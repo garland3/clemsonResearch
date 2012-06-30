@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -30,9 +30,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
@@ -84,6 +81,8 @@ obdfft_EXTERNAL_OBJECTS =
 ../bin/obdfft: libs/sqlite3/libcksqlite.a
 ../bin/obdfft: src/obdinfo/libckobdinfo.a
 ../bin/obdfft: /usr/lib/i386-linux-gnu/libfltk.a
+../bin/obdfft: /usr/lib/i386-linux-gnu/libSM.so
+../bin/obdfft: /usr/lib/i386-linux-gnu/libICE.so
 ../bin/obdfft: /usr/lib/i386-linux-gnu/libX11.so
 ../bin/obdfft: /usr/lib/i386-linux-gnu/libXext.so
 ../bin/obdfft: /usr/lib/i386-linux-gnu/libm.so

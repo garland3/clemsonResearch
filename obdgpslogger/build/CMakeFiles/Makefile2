@@ -16,7 +16,7 @@ preinstall:
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -42,9 +42,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
-
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
@@ -171,10 +168,10 @@ src/logger/preinstall:
 # Target rules for target src/logger/CMakeFiles/obdgpslogger.dir
 
 # All Build rule for target.
-src/logger/CMakeFiles/obdgpslogger.dir/all: src/obdcomm/CMakeFiles/ckobdcomm.dir/all
 src/logger/CMakeFiles/obdgpslogger.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
-src/logger/CMakeFiles/obdgpslogger.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
+src/logger/CMakeFiles/obdgpslogger.dir/all: src/obdcomm/CMakeFiles/ckobdcomm.dir/all
 src/logger/CMakeFiles/obdgpslogger.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
+src/logger/CMakeFiles/obdgpslogger.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
 	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/depend
 	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  43 44 45 46 47 48 49 50
@@ -261,9 +258,9 @@ clean: src/gui/CMakeFiles/ckobdfl.dir/clean
 # Target rules for target src/gui/CMakeFiles/obdgui.dir
 
 # All Build rule for target.
+src/gui/CMakeFiles/obdgui.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 src/gui/CMakeFiles/obdgui.dir/all: src/gui/CMakeFiles/ckobdfl.dir/all
 src/gui/CMakeFiles/obdgui.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
-src/gui/CMakeFiles/obdgui.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 	$(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/depend
 	$(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  51 52 53
@@ -490,9 +487,9 @@ clean: src/analysis/CMakeFiles/obdboxwhisker.dir/clean
 # Target rules for target src/analysis/CMakeFiles/obdfft.dir
 
 # All Build rule for target.
-src/analysis/CMakeFiles/obdfft.dir/all: src/analysis/CMakeFiles/ckobdfft.dir/all
 src/analysis/CMakeFiles/obdfft.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
 src/analysis/CMakeFiles/obdfft.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
+src/analysis/CMakeFiles/obdfft.dir/all: src/analysis/CMakeFiles/ckobdfft.dir/all
 	$(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/depend
 	$(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  41
@@ -989,15 +986,15 @@ clean: src/sim/CMakeFiles/ckobdsim_socket.dir/clean
 
 # All Build rule for target.
 src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_dlopen.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_error.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_logger.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_socket.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_error.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_logger.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_cycle.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_random.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/all
 	$(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  55 56 57 58 59 60
@@ -1170,8 +1167,8 @@ src/ftdipty/preinstall:
 # Target rules for target src/ftdipty/CMakeFiles/obdftdipty.dir
 
 # All Build rule for target.
-src/ftdipty/CMakeFiles/obdftdipty.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
 src/ftdipty/CMakeFiles/obdftdipty.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
+src/ftdipty/CMakeFiles/obdftdipty.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
 	$(MAKE) -f src/ftdipty/CMakeFiles/obdftdipty.dir/build.make src/ftdipty/CMakeFiles/obdftdipty.dir/depend
 	$(MAKE) -f src/ftdipty/CMakeFiles/obdftdipty.dir/build.make src/ftdipty/CMakeFiles/obdftdipty.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  42

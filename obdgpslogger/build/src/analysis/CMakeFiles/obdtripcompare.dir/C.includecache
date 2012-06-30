@@ -147,6 +147,8 @@ bits/mathcalls.h
 -
 bits/mathinline.h
 -
+bits/math-finite.h
+-
 
 /usr/include/./stdio.h
 features.h

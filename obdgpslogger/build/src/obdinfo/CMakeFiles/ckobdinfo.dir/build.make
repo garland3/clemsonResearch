@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -31,9 +31,6 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
 
@@ -49,32 +46,9 @@ include src/obdinfo/CMakeFiles/ckobdinfo.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/obdinfo/CMakeFiles/ckobdinfo.dir/flags.make
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o: src/obdinfo/CMakeFiles/ckobdinfo.dir/flags.make
-src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o: ../src/obdinfo/dtccodes.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/ckobdinfo.dir/dtccodes.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.c
-
-src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ckobdinfo.dir/dtccodes.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.c > CMakeFiles/ckobdinfo.dir/dtccodes.c.i
-
-src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ckobdinfo.dir/dtccodes.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.c -o CMakeFiles/ckobdinfo.dir/dtccodes.c.s
-
-src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires:
-.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires
-
-src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires
-	$(MAKE) -f src/obdinfo/CMakeFiles/ckobdinfo.dir/build.make src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides.build
-.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides
-
-src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides.build: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o
-
 src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o: src/obdinfo/CMakeFiles/ckobdinfo.dir/flags.make
 src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o: ../src/obdinfo/obdservicecommands.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o"
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdservicecommands.c
 
@@ -94,6 +68,29 @@ src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o.provides: src/obdinf
 .PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o.provides
 
 src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o.provides.build: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o
+
+src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o: src/obdinfo/CMakeFiles/ckobdinfo.dir/flags.make
+src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o: ../src/obdinfo/obdconvertfunctions.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c
+
+src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.i"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c > CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.i
+
+src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.s"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c -o CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.s
+
+src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.requires:
+.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.requires
+
+src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.requires
+	$(MAKE) -f src/obdinfo/CMakeFiles/ckobdinfo.dir/build.make src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides.build
+.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides
+
+src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides.build: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o
 
 src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o: src/obdinfo/CMakeFiles/ckobdinfo.dir/flags.make
 src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o: ../src/obdinfo/obdrevconvertfunctions.c
@@ -118,43 +115,43 @@ src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o.provides: src/ob
 
 src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o.provides.build: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o: src/obdinfo/CMakeFiles/ckobdinfo.dir/flags.make
-src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o: ../src/obdinfo/obdconvertfunctions.c
+src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o: src/obdinfo/CMakeFiles/ckobdinfo.dir/flags.make
+src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o: ../src/obdinfo/dtccodes.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/ckobdinfo.dir/dtccodes.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.c
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c > CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.i
+src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ckobdinfo.dir/dtccodes.c.i"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.c > CMakeFiles/ckobdinfo.dir/dtccodes.c.i
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c -o CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.s
+src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ckobdinfo.dir/dtccodes.c.s"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.c -o CMakeFiles/ckobdinfo.dir/dtccodes.c.s
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.requires:
-.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.requires
+src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires:
+.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.requires
-	$(MAKE) -f src/obdinfo/CMakeFiles/ckobdinfo.dir/build.make src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides.build
-.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides
+src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires
+	$(MAKE) -f src/obdinfo/CMakeFiles/ckobdinfo.dir/build.make src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides.build
+.PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.provides.build: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o
+src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.provides.build: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o
 
 # Object files for target ckobdinfo
 ckobdinfo_OBJECTS = \
-"CMakeFiles/ckobdinfo.dir/dtccodes.c.o" \
 "CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o" \
+"CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o" \
 "CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o" \
-"CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o"
+"CMakeFiles/ckobdinfo.dir/dtccodes.c.o"
 
 # External object files for target ckobdinfo
 ckobdinfo_EXTERNAL_OBJECTS =
 
-src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o
 src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o
-src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o
 src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o
+src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o
+src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o
 src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/build.make
 src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library libckobdinfo.a"
@@ -165,10 +162,10 @@ src/obdinfo/libckobdinfo.a: src/obdinfo/CMakeFiles/ckobdinfo.dir/link.txt
 src/obdinfo/CMakeFiles/ckobdinfo.dir/build: src/obdinfo/libckobdinfo.a
 .PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/build
 
-src/obdinfo/CMakeFiles/ckobdinfo.dir/requires: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires
 src/obdinfo/CMakeFiles/ckobdinfo.dir/requires: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o.requires
-src/obdinfo/CMakeFiles/ckobdinfo.dir/requires: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o.requires
 src/obdinfo/CMakeFiles/ckobdinfo.dir/requires: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o.requires
+src/obdinfo/CMakeFiles/ckobdinfo.dir/requires: src/obdinfo/CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o.requires
+src/obdinfo/CMakeFiles/ckobdinfo.dir/requires: src/obdinfo/CMakeFiles/ckobdinfo.dir/dtccodes.c.o.requires
 .PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/requires
 
 src/obdinfo/CMakeFiles/ckobdinfo.dir/clean:

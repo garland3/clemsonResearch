@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/obdgui.dir/loggerhandler.cpp.o"
-  "CMakeFiles/obdgui.dir/obdgui.cpp.o"
   "CMakeFiles/obdgui.dir/guessdevs.cpp.o"
+  "CMakeFiles/obdgui.dir/obdgui.cpp.o"
   "../../../bin/obdgui.pdb"
   "../../../bin/obdgui"
 )

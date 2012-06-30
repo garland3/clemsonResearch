@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/ckobdcomm.dir/obdserial.c.o"
   "CMakeFiles/ckobdcomm.dir/supportedcommands.c.o"
+  "CMakeFiles/ckobdcomm.dir/obdserial.c.o"
   "libckobdcomm.pdb"
   "libckobdcomm.a"
 )

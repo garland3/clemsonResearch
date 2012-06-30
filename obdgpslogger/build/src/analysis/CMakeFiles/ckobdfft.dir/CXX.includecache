@@ -581,6 +581,8 @@ bits/mathcalls.h
 -
 bits/mathinline.h
 -
+bits/math-finite.h
+-
 
 /usr/include/./stdint.h
 features.h

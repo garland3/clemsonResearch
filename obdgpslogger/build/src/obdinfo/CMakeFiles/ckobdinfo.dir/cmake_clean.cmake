@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/ckobdinfo.dir/dtccodes.c.o"
   "CMakeFiles/ckobdinfo.dir/obdservicecommands.c.o"
-  "CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o"
   "CMakeFiles/ckobdinfo.dir/obdconvertfunctions.c.o"
+  "CMakeFiles/ckobdinfo.dir/obdrevconvertfunctions.c.o"
+  "CMakeFiles/ckobdinfo.dir/dtccodes.c.o"
   "libckobdinfo.pdb"
   "libckobdinfo.a"
 )

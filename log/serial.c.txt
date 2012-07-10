@@ -1,0 +1,127 @@
+
+int openserial(const char *portfilename, long baudrate, long baudrate_target) {
+	struct termios options;
+	int fd;
+
+	fprintf(stderr,"Opening serial port %s, this can take a while\n", portfilename);
+	fd = open(portfilename, O_RDWR | O_NOCTTY | O_NDELAY);
+	// fd = open(portfilename, O_RDWR | O_NOCTTY);
+
+	if(fd == -1) {
+		perror(portfilename);
+	} else {
+		fcntl(fd, F_SETFL, 0);
+
+		// Get the current options for the port
+		tcgetattr(fd, &options);
+
+		options.c_cflag |= (CLOCAL | CREAD);
+		options.c_lflag &= !(ICANON | ECHO | ECHOE | ISIG);
+		options.c_oflag &= !(OPOST);
+		options.c_cc[VMIN] = 0;
+		options.c_cc[VTIME] = 100;
+
+		tcsetattr(fd, TCSANOW, &options);
+
+		long current_baud = 9600;
+		if(0 != modifybaud(fd, baudrate)) {
+			fprintf(stderr, "Error modifying baudrate. Continuing, but may suffer issues\n");
+		} else {
+			if(baudrate != 0)
+				current_baud = baudrate;
+		}
+
+		// Reset the device. Some software changes settings and then leaves it
+		blindcmd(fd,"ATZ",1);
+
+		// printf("Baudrate upgrader disabled\n");
+		if(0 > upgradebaudrate(fd, baudrate_target, current_baud)) {
+			fprintf(stderr, "Error upgrading baudrate. Continuing, but may suffer issues\n");
+		}
+
+		// Now some churn to get everything up and running.
+		// Do a general cmd that all obd-devices support
+		// Do this once in case we have a partially-written command somehow
+		blindcmd(fd,"0100",1);
+		// Disable command echo [elm327]
+		blindcmd(fd,"ATE0",1);
+		// Disable linefeeds [an extra byte of speed can't hurt]
+		blindcmd(fd,"ATL0",1);
+		// Don't insert spaces [readability is for ugly bags of mostly water]
+		blindcmd(fd,"ATS0",1);
+		// Then do it again to make sure the command really worked
+		blindcmd(fd,"0100",1);
+
+	}
+	return fd;
+}
+
+
+
+// Blindly send a command and throw away all data to next prompt
+/**
+ \param cmd command to send
+ \param no_response if we don't read to next prompt [ie, on exit]
+ \param fd file descriptor
+ */
+void blindcmd(int fd, const char *cmd, int no_response) {
+	char outstr[1024];
+	snprintf(outstr, sizeof(outstr), "%s%s\0", cmd, OBDCMD_NEWLINE);
+	appendseriallog(outstr, SERIAL_OUT);
+	write(fd,outstr, strlen(outstr));
+	if(0 != no_response) {
+		sleep(1);
+		readtonextprompt(fd);
+	}
+}
+
+
+
+/// Throw away all data until the next prompt
+void readtonextprompt(int fd) {
+	char retbuf[4096]; // Buffer to store returned stuff
+	readserialdata(fd, retbuf, sizeof(retbuf));
+}
+
+
+/// Collect data up to the next prompt
+/** Reads up to the next '>'
+   \param buf buffer to fill
+   \param n size of buf
+   \return number of bytes put in buf, or -1 on error
+*/
+int readserialdata(int fd, char *buf, int n) {
+	char *bufptr = buf; // current position in buf
+
+	struct timeval start,curr; // For timing out
+	if(0 != gettimeofday(&start, NULL)) {
+		perror("Couldn't gettimeofday");
+		return -1;
+	}
+	memset((void *)buf, '\0', n);
+	int retval = 0; // Value to return
+	int nbytes; // Number of bytes read
+	do {
+		nbytes = read(fd, bufptr, buf+n-bufptr-1);
+		if(-1 == nbytes && EAGAIN != errno) {
+			perror("Error in readserialdata");
+		}
+		if(-1 != nbytes) {
+			// printf("Read bytes '%s'\n", bufptr);
+			retval += nbytes; // Increment bytecount
+			bufptr += nbytes; // Move pointer forward
+		}
+		if(0 != gettimeofday(&curr, NULL)) {
+			perror("Couldn't gettimeofday");
+			return -1;
+		}
+		if(OBDCOMM_TIMEOUT < 1000000l*(curr.tv_sec - start.tv_sec) +
+			(curr.tv_usec - start.tv_usec)) {
+			printf("Timeout!\n");
+			return -1;
+		}
+	} while (retval == 0 || bufptr[-1] != '>');
+
+	appendseriallog(buf, SERIAL_IN);
+	return retval;
+}

@@ -1,0 +1,10 @@
+anthony@anthony-Lenovo-V570:~/obdgpslogger/bin$ sh anthonyRun.sh 
+Opening serial port /dev/ttyUSB1, this can take a while
+
+Successfully connected to serial port. Will log obd data
+Successfully connected to gpsd. Will log gps data
+Creating a new trip
+GPS acquisition complete
+^[[B^[[B^[[6~
+>BD reported NO DATA for 01 0C: NO DATA
+Ending current trip

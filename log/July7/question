@@ -1,0 +1,58 @@
+serial port open fails and takes 100% cpu
+
+I've downloaded the source code for obdgpslogger and compiled it on my 12.04 machine. 
+http://icculus.org/obdgpslogger/
+http://icculus.org/obdgpslogger/downloads/obdgpslogger-0.16.tar.gz
+
+Everything compiles fine, but when I run the obdgpslogger I have two problems when I run the program with this command
+
+./obdgpslogger -s /dev/ttyUSB0 -b 9600 -a 5 -i temp,map,rpm,vss,throttlepos,sparkadv
+
+1. The program/computer doesn't communicate correctly witht the ELM chip. I keep on getting 'timeout' for all the calls to write to the serial and wait for a response. Looking at the source code shows that the program is not getting a response back from the chip when it sends a command to it. 
+
+Opening serial port /dev/ttyUSB0, this can take a while
+Timeout!
+Timeout!
+Timeout!
+Timeout!
+Timeout!
+Timeout!
+Successfully connected to serial port. Will log obd data
+Successfully connected to gpsd. Will log gps data
+Timeout!
+Couldn't get obd bytes for cmd 00
+GPS acquisition complete
+
+But it isn't successfully connected to the serial port.
+
+If I open putty and set it up with the correct settings than I can communicate with the chip manually.
+
+Any ideas on why this isn't working?
+
+2. While my computer is trying to communicate with the ELM chip, the obdgpslogger takes 100% of the cpu. 
+
+Not sure where to start with this one to debug the problem. Any ideas??
+Attached is the output of this command. 
+$ cpufreq-info
+
+
+--------------------------------------------------------
+mp2car
+
+Can't open serial;max out cpu
+
+Hi all, 
+
+I'm having problems running the obdgpslogger that I compiled from source. When it gets to the openserial() function, it doesn't open the serial and maxes out the cpu. I suspect that this is a ubuntu 12.04 or hardware problem, so I posted on the ubuntu forums first.
+http://ubuntuforums.org/showthread.php?t=2019098
+All the details of my problem are there.
+The problem sound sort of similar to this one.
+http://www.mp3car.com/obdii-gps-logger/137153-obdgpslogger-takes-forever-to-open-serial-port.html
+Why won't it open the serial port correctly, and why does it max out my cpu??
+
+Thanks in advance!
+
+All the best,
+
+Anthony G. 
+

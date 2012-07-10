@@ -1,0 +1,11 @@
+[  230.299869] usb 1-1.1: new full-speed USB device number 4 using ehci_hcd
+[  230.734027] USB Serial support registered for FTDI USB Serial Device
+[  230.734181] ftdi_sio 1-1.1:1.0: FTDI USB Serial Device converter detected
+[  230.734240] usb 1-1.1: Detected FT232RL
+[  230.734244] usb 1-1.1: Number of endpoints 2
+[  230.734248] usb 1-1.1: Endpoint 1 MaxPacketSize 64
+[  230.734252] usb 1-1.1: Endpoint 2 MaxPacketSize 64
+[  230.734255] usb 1-1.1: Setting MaxPacketSize 64
+[  230.734924] usb 1-1.1: FTDI USB Serial Device converter now attached to ttyUSB1
+[  230.734969] usbcore: registered new interface driver ftdi_sio
+[  230.734973] ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver

@@ -1,0 +1,19 @@
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+ 2391 root      20   0  4576 1000  828 R   67  0.0   0:20.35 obdgpslogger       
+   97 root      20   0     0    0    0 S    1  0.0   0:03.63 kworker/0:2        
+ 1047 root      20   0 58860  13m 5772 S    1  0.2   0:08.83 Xorg               
+  685 root      20   0     0    0    0 S    0  0.0   0:02.58 rts5139-polling    
+ 1634 anthony   20   0  303m  68m  28m S    0  1.1   0:07.41 compiz             
+ 1984 anthony   20   0 96572  16m  10m S    0  0.3   0:01.79 gnome-terminal     
+ 2250 nobody    10 -10  4916 1892 1416 S    0  0.0   0:12.20 gpsd               
+ 2459 anthony   20   0  2836 1200  884 R    0  0.0   0:00.02 top                
+    1 root      20   0  3516 1912 1284 S    0  0.0   0:01.27 init               
+    2 root      20   0     0    0    0 S    0  0.0   0:00.00 kthreadd           
+    3 root      20   0     0    0    0 S    0  0.0   0:00.02 ksoftirqd/0        
+    6 root      RT   0     0    0    0 S    0  0.0   0:00.00 migration/0        
+    7 root      RT   0     0    0    0 S    0  0.0   0:00.00 watchdog/0         
+    8 root      RT   0     0    0    0 S    0  0.0   0:00.00 migration/1        
+    9 root      20   0     0    0    0 S    0  0.0   0:00.00 kworker/1:0        
+   10 root      20   0     0    0    0 S    0  0.0   0:00.00 ksoftirqd/1        
+   11 root      20   0     0    0    0 S    0  0.0   0:02.79 kworker/0:1        
+anthony@anthony-Lenovo-V570:~$ 

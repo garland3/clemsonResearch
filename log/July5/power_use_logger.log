@@ -1,0 +1,21 @@
+[  230.734252] usb 1-1.1: Endpoint 2 MaxPacketSize 64
+[  230.734255] usb 1-1.1: Setting MaxPacketSize 64
+[  230.734924] usb 1-1.1: FTDI USB Serial Device converter now attached to ttyUSB1
+[  230.734969] usbcore: registered new interface driver ftdi_sio
+[  230.734973] ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
+[  396.462789] CPU3: Package power limit notification (total events = 94)
+[  396.462793] CPU2: Package power limit notification (total events = 94)
+[  396.462798] CPU6: Package power limit notification (total events = 94)
+[  396.462803] CPU0: Package power limit notification (total events = 94)
+[  396.462808] CPU1: Package power limit notification (total events = 94)
+[  396.462812] CPU4: Package power limit notification (total events = 94)
+[  396.462817] CPU7: Package power limit notification (total events = 94)
+[  396.462821] CPU5: Package power limit notification (total events = 94)
+[  396.463941] CPU4: Package power limit normal
+[  396.463944] CPU0: Package power limit normal
+[  396.463948] CPU1: Package power limit normal
+[  396.463951] CPU5: Package power limit normal
+[  396.463954] CPU7: Package power limit normal
+[  396.463957] CPU6: Package power limit normal
+[  396.463960] CPU3: Package power limit normal
+[  396.463963] CPU2: Package power limit normal

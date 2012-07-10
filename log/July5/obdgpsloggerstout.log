@@ -1,0 +1,12 @@
+Opening serial port /dev/ttyUSB0, this can take a while
+Timeout!
+Timeout!
+Timeout!
+Timeout!
+Timeout!
+Timeout!
+Successfully connected to serial port. Will log obd data
+Successfully connected to gpsd. Will log gps data
+Timeout!
+Couldn't get obd bytes for cmd 00
+GPS acquisition complete

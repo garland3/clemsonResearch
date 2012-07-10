@@ -1,0 +1,6 @@
+sudo setserial /dev/ttyUSB0 -a
+/dev/ttyUSB0, Line 0, UART: 16654, Port: 0x0000, IRQ: 0
+	Baud_base: 460800, close_delay: 0, divisor: 0
+	closing_wait: infinite
+	Flags: spd_normal
+

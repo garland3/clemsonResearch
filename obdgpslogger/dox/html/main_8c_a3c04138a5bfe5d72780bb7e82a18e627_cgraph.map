@@ -1,51 +1,51 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$database_8c.html#af2407010e36535b2994fc3f7d7a4d77b" title="Close the sqlite database." alt="" coords="147,5,213,35"/>
-<area shape="rect" id="node5" href="$obdserial_8c.html#ae245161816d1d1c625135f11e5354f21" title="Close the serialport." alt="" coords="561,214,644,245"/>
-<area shape="rect" id="node16" href="$windowssimport_8cc.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title="gettimeofday" alt="" coords="1208,370,1304,401"/>
-<area shape="rect" id="node18" href="$obdserial_8c.html#afd3acc106188d5c0a705c647db7dfe2c" title="Close the log." alt="" coords="129,418,231,449"/>
-<area shape="rect" id="node20" href="$ecudb_8c.html#a3717611cc824fb76642e7a836785ee81" title="Create the ecu table in the database." alt="" coords="127,471,233,502"/>
-<area shape="rect" id="node22" href="$gpsdb_8c.html#a3588ac8cb0cd851a76a78a1c3c891e84" title="Prepare the sqlite3 insert statement for the gps table." alt="" coords="112,525,248,555"/>
-<area shape="rect" id="node24" href="$gpsdb_8c.html#ac21749748dc5087bccb01641138ec18c" title="Create the gps table in the database." alt="" coords="127,578,233,609"/>
-<area shape="rect" id="node26" href="$obddb_8c.html#ad2e9a2ec23eb48884c12772168a6d325" title="Prepare the sqlite3 insert statement for the obd table." alt="" coords="112,682,248,713"/>
-<area shape="rect" id="node28" href="$supportedcommands_8c.html#a83dc10259a0441ba215bdc11c651d3cf" title="Find out if a pid is supported." alt="" coords="304,682,469,713"/>
-<area shape="rect" id="node30" href="$obddb_8c.html#aa02a96529b71f18d5ba806718c839fc3" title="Create the obd table in the database." alt="" coords="127,735,233,766"/>
-<area shape="rect" id="node33" href="$tripdb_8c.html#a90082a2e0a71cf95ff40ed7e467aa15f" title="Create the trip table in the database." alt="" coords="128,789,232,819"/>
-<area shape="rect" id="node35" href="$supportedcommands_8c.html#ae26c4fd50088e359c33f3aac9d32c7cc" title="Free the values returned from getcapabilities." alt="" coords="321,162,452,193"/>
-<area shape="rect" id="node37" href="$gpscomm_8c.html#a136dfdb5093be980a55e6e30215c69ce" title="Get the current position." alt="" coords="127,842,233,873"/>
-<area shape="rect" id="node39" href="$supportedcommands_8c.html#a6e69ace3dfdd03dd3b404e3d2b5dc382" title="Get the capabilities this device claims." alt="" coords="324,109,449,139"/>
-<area shape="rect" id="node50" href="$obdserial_8c.html#a4abbaa73768b111db220fe822fedce0b" title="Get an OBD value." alt="" coords="557,57,648,87"/>
-<area shape="rect" id="node54" href="$main_8c.html#ab07ad1790a6757fa9efa8a8b23d7fed3" title="Set up signal handling." alt="" coords="107,895,253,926"/>
-<area shape="rect" id="node61" href="$obdconfigfile_8c.html#acf6bac2867b9839c4e4a9650973f76ea" title="Get a list of obdservicecommands." alt="" coords="121,949,239,979"/>
-<area shape="rect" id="node67" href="$obdconfigfile_8c.html#ac06e7dc0f19089b98533161b99ee2d69" title="Free a config created by loadOBDGPSConfig." alt="" coords="127,1002,233,1033"/>
-<area shape="rect" id="node69" href="$obdconfigfile_8c.html#ae46e57b296907419b80a2dbb769d7bdd" title="Free a list of service commands allocated by obd_configCmds." alt="" coords="109,1055,251,1086"/>
-<area shape="rect" id="node71" href="$obdconfigfile_8c.html#ade1f6da24581432217e1107b10f4bf6d" title="Load a config, return a struct. Must be free&#39;d using freeOBDGPSConfig." alt="" coords="125,1109,235,1139"/>
-<area shape="rect" id="node77" href="$obddb_8c.html#a84e142c70ebf97b11690be7ae8029d65" title="Begin a transaction." alt="" coords="111,1162,249,1193"/>
-<area shape="rect" id="node79" href="$obddb_8c.html#a1bf3d31a6b5092a8c4b4b2a1214edc6a" title="Commit a transaction." alt="" coords="105,1215,255,1246"/>
-<area shape="rect" id="node81" href="$ftdipty_8c.html#a39a5b0bd3eca62d945d4f5de3dfc6c33" title="obddaemonise" alt="" coords="127,1269,233,1299"/>
-<area shape="rect" id="node83" href="$database_8c.html#aef7719619eab27b66ae02133325ef050" title="Open the sqlite database." alt="" coords="148,1322,212,1353"/>
-<area shape="rect" id="node85" href="$gpscomm_8c.html#a5d4cf5798ef803b51d6d1c94a71f564d" title="Open the gps." alt="" coords="145,1375,215,1406"/>
-<area shape="rect" id="node87" href="$obdserial_8c.html#aff428b3d147e3631281387d087821e29" title="Open the serial port and set appropriate options." alt="" coords="140,314,220,345"/>
-<area shape="rect" id="node102" href="$boxwhisker_8c.html#aad6f83147b5881b56d147e6ee8803e47" title="Print help." alt="" coords="145,1429,215,1459"/>
-<area shape="rect" id="node104" href="$supportedcommands_8c.html#a5901b38e2082e5f50bd60f25797f3c1d" title="Print the capabilities this device claims." alt="" coords="113,159,247,190"/>
-<area shape="rect" id="node108" href="$ftdipty_8c.html#a246ce0006add3670842eac6712fb40b1" title="Print the version string." alt="" coords="136,1482,224,1513"/>
-<area shape="rect" id="node110" href="$obdserial_8c.html#a177a0f76291f533d5b0aaf92b69173eb" title="Write to this log." alt="" coords="132,1535,228,1566"/>
-<area shape="rect" id="node112" href="$tripdb_8c.html#a225dea85942dcdc618d0c7409f3e1647" title="Create a new trip." alt="" coords="147,1589,213,1619"/>
-<area shape="rect" id="node114" href="$tripdb_8c.html#ab1162742357c5e31951f710b1562c209" title="End a trip." alt="" coords="141,1642,219,1673"/>
-<area shape="rect" id="node7" href="$obdserial_8c.html#a25f6e0a9ffcca7a61f6a95dedce8bd52" title="blindcmd" alt="" coords="745,265,820,295"/>
-<area shape="rect" id="node9" href="$obdserial_8c.html#ac87307a45da5e1a53610b22d5fe74e6b" title="Write to the log." alt="" coords="1200,213,1312,243"/>
-<area shape="rect" id="node11" href="$obdserial_8c.html#ae5a5a009a7448dfa5326607a0acb494e" title="Throw away all data until the next prompt." alt="" coords="877,265,1000,295"/>
-<area shape="rect" id="node13" href="$obdserial_8c.html#ab97a7e5a016da1f208142d1a1d4ce287" title="Collect data up to the next prompt." alt="" coords="1049,265,1151,295"/>
-<area shape="rect" id="node41" href="$obdserial_8c.html#a99c1914bae8cd8325c660226570a496f" title="Get the raw bits returned from an OBD command." alt="" coords="736,110,829,141"/>
-<area shape="rect" id="node47" href="$supportedcommands_8c.html#a53375478ad3badcfeab829f6a6067ae7" title="Internal only." alt="" coords="519,161,687,191"/>
-<area shape="rect" id="node44" href="$obdserial_8c.html#ab8c30a7b9e8b34022f9ad00296fd6353" title="Parse a line from obd." alt="" coords="892,110,985,141"/>
-<area shape="rect" id="node56" href="$main_8c.html#a446cff2ba75a94b55d511d8b93562383" title="catch_quitsignal" alt="" coords="329,895,444,926"/>
-<area shape="rect" id="node58" href="$main_8c.html#a270475cb83584d661f3af2f68e4da8db" title="catch_tripstartsignal" alt="" coords="317,842,456,873"/>
-<area shape="rect" id="node63" href="$obdservicecommands_8c.html#a6874da84eec4bd3f893272e4ba301c8c" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="309,1002,464,1033"/>
-<area shape="rect" id="node65" href="$obdservicecommands_8c.html#a05b8663c29e16cee47f4f3e26440a6bf" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="321,949,452,979"/>
-<area shape="rect" id="node73" href="$obdconfigfile_8c.html#ac4cc9aa16bd98b637143e8ec79474be3" title="Get &quot;a&quot; valid home dir in which to store a dotfile." alt="" coords="317,1135,456,1166"/>
-<area shape="rect" id="node75" href="$obdconfigfile_8c.html#a0fce09b8d5c0d6eb6362ff9231a6cfac" title="obd_parseConfig" alt="" coords="328,1082,445,1113"/>
-<area shape="rect" id="node90" href="$obdserial_8c.html#a8fdc92907dfacad9d330cd046fe95af6" title="Modify the baudrate of the passed serial port." alt="" coords="739,318,827,349"/>
-<area shape="rect" id="node95" href="$obdserial_8c.html#adffc4720dc74ed7e5060e23c248e4254" title="Upgrade the baudrate." alt="" coords="328,369,445,399"/>
-<area shape="rect" id="node92" href="$obdserial_8c.html#ac9406c6be567615bcf0a2c9c844830b6" title="Guess the baudrate." alt="" coords="885,318,992,349"/>
-<area shape="rect" id="node97" href="$obdserial_8c.html#a7555092783859dd567cd99a2c879ade7" title="attempt_upgradebaudrate" alt="" coords="519,369,687,399"/>
+<area shape="rect" id="node3" href="$obdconfigfile_8c.html#ade1f6da24581432217e1107b10f4bf6d" title="Load a config, return a struct. Must be free&#39;d using freeOBDGPSConfig." alt="" coords="123,31,240,62"/>
+<area shape="rect" id="node9" href="$boxwhisker_8c.html#aad6f83147b5881b56d147e6ee8803e47" title="Print help." alt="" coords="147,85,216,115"/>
+<area shape="rect" id="node11" href="$ftdipty_8c.html#a246ce0006add3670842eac6712fb40b1" title="Print the version string." alt="" coords="136,138,227,169"/>
+<area shape="rect" id="node13" href="$obdserial_8c.html#a177a0f76291f533d5b0aaf92b69173eb" title="Write to this log." alt="" coords="132,191,231,222"/>
+<area shape="rect" id="node15" href="$obdserial_8c.html#aff428b3d147e3631281387d087821e29" title="Open the serial port and set appropriate options." alt="" coords="139,501,224,531"/>
+<area shape="rect" id="node30" href="$windowssimport_8cc.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title="gettimeofday" alt="" coords="1240,603,1339,634"/>
+<area shape="rect" id="node40" href="$supportedcommands_8c.html#a5901b38e2082e5f50bd60f25797f3c1d" title="Print the capabilities this device claims." alt="" coords="113,295,249,326"/>
+<area shape="rect" id="node42" href="$supportedcommands_8c.html#a6e69ace3dfdd03dd3b404e3d2b5dc382" title="Get the capabilities this device claims." alt="" coords="327,290,457,321"/>
+<area shape="rect" id="node53" href="$supportedcommands_8c.html#ae26c4fd50088e359c33f3aac9d32c7cc" title="Free the values returned from getcapabilities." alt="" coords="325,345,459,375"/>
+<area shape="rect" id="node55" href="$obdserial_8c.html#ae245161816d1d1c625135f11e5354f21" title="Close the serialport." alt="" coords="569,447,657,478"/>
+<area shape="rect" id="node58" href="$gpscomm_8c.html#a5d4cf5798ef803b51d6d1c94a71f564d" title="Open the gps." alt="" coords="144,605,219,635"/>
+<area shape="rect" id="node60" href="$database_8c.html#aef7719619eab27b66ae02133325ef050" title="Open the sqlite database." alt="" coords="148,658,215,689"/>
+<area shape="rect" id="node62" href="$obdconfigfile_8c.html#acf6bac2867b9839c4e4a9650973f76ea" title="Get a list of obdservicecommands." alt="" coords="120,711,243,742"/>
+<area shape="rect" id="node69" href="$obdconfigfile_8c.html#ae46e57b296907419b80a2dbb769d7bdd" title="Free a list of service commands allocated by obd_configCmds." alt="" coords="107,765,256,795"/>
+<area shape="rect" id="node71" href="$obddb_8c.html#aa02a96529b71f18d5ba806718c839fc3" title="Create the obd table in the database." alt="" coords="125,869,237,899"/>
+<area shape="rect" id="node73" href="$supportedcommands_8c.html#a83dc10259a0441ba215bdc11c651d3cf" title="Find out if a pid is supported." alt="" coords="307,869,477,899"/>
+<area shape="rect" id="node75" href="$obddb_8c.html#ad2e9a2ec23eb48884c12772168a6d325" title="Prepare the sqlite3 insert statement for the obd table." alt="" coords="112,922,251,953"/>
+<area shape="rect" id="node78" href="$database_8c.html#af2407010e36535b2994fc3f7d7a4d77b" title="Close the sqlite database." alt="" coords="147,975,216,1006"/>
+<area shape="rect" id="node80" href="$tripdb_8c.html#a90082a2e0a71cf95ff40ed7e467aa15f" title="Create the trip table in the database." alt="" coords="128,1029,235,1059"/>
+<area shape="rect" id="node82" href="$ecudb_8c.html#a3717611cc824fb76642e7a836785ee81" title="Create the ecu table in the database." alt="" coords="127,1082,236,1113"/>
+<area shape="rect" id="node86" href="$gpsdb_8c.html#ac21749748dc5087bccb01641138ec18c" title="Create the gps table in the database." alt="" coords="127,1135,236,1166"/>
+<area shape="rect" id="node88" href="$gpsdb_8c.html#a3588ac8cb0cd851a76a78a1c3c891e84" title="Prepare the sqlite3 insert statement for the gps table." alt="" coords="112,1189,251,1219"/>
+<area shape="rect" id="node90" href="$ftdipty_8c.html#a39a5b0bd3eca62d945d4f5de3dfc6c33" title="obddaemonise" alt="" coords="125,1242,237,1273"/>
+<area shape="rect" id="node92" href="$main_8c.html#ab07ad1790a6757fa9efa8a8b23d7fed3" title="Set up signal handling." alt="" coords="107,1295,256,1326"/>
+<area shape="rect" id="node98" href="$obddb_8c.html#a84e142c70ebf97b11690be7ae8029d65" title="Begin a transaction." alt="" coords="111,1349,252,1379"/>
+<area shape="rect" id="node101" href="$tripdb_8c.html#a225dea85942dcdc618d0c7409f3e1647" title="Create a new trip." alt="" coords="149,1402,213,1433"/>
+<area shape="rect" id="node103" href="$tripdb_8c.html#ab1162742357c5e31951f710b1562c209" title="End a trip." alt="" coords="141,1455,221,1486"/>
+<area shape="rect" id="node105" href="$obdserial_8c.html#a4abbaa73768b111db220fe822fedce0b" title="Get an OBD value." alt="" coords="565,394,661,425"/>
+<area shape="rect" id="node108" href="$gpscomm_8c.html#a136dfdb5093be980a55e6e30215c69ce" title="Get the current position." alt="" coords="127,1509,236,1539"/>
+<area shape="rect" id="node110" href="$obddb_8c.html#a1bf3d31a6b5092a8c4b4b2a1214edc6a" title="Commit a transaction." alt="" coords="105,1562,257,1593"/>
+<area shape="rect" id="node112" href="$obdserial_8c.html#afd3acc106188d5c0a705c647db7dfe2c" title="Close the log." alt="" coords="128,1615,235,1646"/>
+<area shape="rect" id="node114" href="$obdconfigfile_8c.html#ac06e7dc0f19089b98533161b99ee2d69" title="Free a config created by loadOBDGPSConfig." alt="" coords="124,1669,239,1699"/>
+<area shape="rect" id="node5" href="$obdconfigfile_8c.html#a0fce09b8d5c0d6eb6362ff9231a6cfac" title="obd_parseConfig" alt="" coords="329,5,455,35"/>
+<area shape="rect" id="node7" href="$obdconfigfile_8c.html#ac4cc9aa16bd98b637143e8ec79474be3" title="Get &quot;a&quot; valid home dir in which to store a dotfile." alt="" coords="321,58,463,89"/>
+<area shape="rect" id="node17" href="$obdserial_8c.html#a8fdc92907dfacad9d330cd046fe95af6" title="Modify the baudrate of the passed serial port." alt="" coords="752,551,843,582"/>
+<area shape="rect" id="node22" href="$obdserial_8c.html#a25f6e0a9ffcca7a61f6a95dedce8bd52" title="blindcmd" alt="" coords="760,498,835,529"/>
+<area shape="rect" id="node33" href="$obdserial_8c.html#adffc4720dc74ed7e5060e23c248e4254" title="Upgrade the baudrate." alt="" coords="329,602,455,633"/>
+<area shape="rect" id="node19" href="$obdserial_8c.html#ac9406c6be567615bcf0a2c9c844830b6" title="Guess the baudrate." alt="" coords="901,551,1013,582"/>
+<area shape="rect" id="node24" href="$obdserial_8c.html#ac87307a45da5e1a53610b22d5fe74e6b" title="Write to the log." alt="" coords="1231,446,1348,477"/>
+<area shape="rect" id="node26" href="$obdserial_8c.html#ae5a5a009a7448dfa5326607a0acb494e" title="Throw away all data until the next prompt." alt="" coords="895,498,1020,529"/>
+<area shape="rect" id="node28" href="$obdserial_8c.html#ab97a7e5a016da1f208142d1a1d4ce287" title="Collect data up to the next prompt." alt="" coords="1071,498,1180,529"/>
+<area shape="rect" id="node35" href="$obdserial_8c.html#a7555092783859dd567cd99a2c879ade7" title="attempt_upgradebaudrate" alt="" coords="527,602,700,633"/>
+<area shape="rect" id="node44" href="$obdserial_8c.html#a99c1914bae8cd8325c660226570a496f" title="Get the raw bits returned from an OBD command." alt="" coords="749,343,845,374"/>
+<area shape="rect" id="node50" href="$supportedcommands_8c.html#a53375478ad3badcfeab829f6a6067ae7" title="Internal only." alt="" coords="527,290,700,321"/>
+<area shape="rect" id="node48" href="$obdserial_8c.html#ab8c30a7b9e8b34022f9ad00296fd6353" title="Parse a line from obd." alt="" coords="908,343,1007,374"/>
+<area shape="rect" id="node64" href="$obdservicecommands_8c.html#a6874da84eec4bd3f893272e4ba301c8c" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="311,709,473,739"/>
+<area shape="rect" id="node66" href="$obdservicecommands_8c.html#a05b8663c29e16cee47f4f3e26440a6bf" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="324,762,460,793"/>
+<area shape="rect" id="node94" href="$main_8c.html#a446cff2ba75a94b55d511d8b93562383" title="catch_quitsignal" alt="" coords="333,1269,451,1299"/>
+<area shape="rect" id="node96" href="$main_8c.html#a270475cb83584d661f3af2f68e4da8db" title="catch_tripstartsignal" alt="" coords="323,1322,461,1353"/>
 </map>

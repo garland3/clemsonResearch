@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node13" href="$obdgpskml_8h.html" title="OBD GPS KML main entrypoint." alt="" coords="491,86,587,117"/>
+<area shape="rect" id="node13" href="$obdgpskml_8h.html" title="OBD GPS KML main entrypoint." alt="" coords="496,86,595,117"/>
 <area shape="rect" id="node19" href="$justgps_8h.html" title="Dump heigh&#45;as&#45;speed and position." alt="" coords="24,86,99,117"/>
-<area shape="rect" id="node24" href="$singleheight_8h.html" title="Dump a single value in a db as height in a KML document." alt="" coords="123,86,224,117"/>
-<area shape="rect" id="node29" href="$heightandcolor_8h.html" title="Dump a single value in a db as height in a KML document." alt="" coords="248,86,366,117"/>
+<area shape="rect" id="node24" href="$singleheight_8h.html" title="Dump a single value in a db as height in a KML document." alt="" coords="123,86,227,117"/>
+<area shape="rect" id="node29" href="$heightandcolor_8h.html" title="Dump a single value in a db as height in a KML document." alt="" coords="251,86,371,117"/>
 </map>

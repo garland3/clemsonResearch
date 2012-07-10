@@ -14,11 +14,6 @@ SET(CMAKE_C_INCLUDE_PATH
   "../src/obdinfo"
   "../src/conf"
   "../libs/sqlite3"
-  "../src/analysis/."
-  "../src/analysis/../obdinfo"
-  "/usr/lib/fltk"
-  "/usr/include/."
-  "src/analysis"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

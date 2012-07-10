@@ -1,9 +1,6 @@
 #! /bin/sh
 # run as sudo. 
+# get the list of PID codes 
+#obdgpslogger -s /dev/ttyUSB1 -p
+./obdgpslogger -s /dev/pts/7 -b 9600 -a 5 -i temp,map,rpm,vss,throttlepos,sparkadv -l serial.log.txt
 
-# get the list of PID codes that are easily available. 
-#obdgpslogger -s /dev/ttyUSB0 -p
-
-
-# log data. 
-./obdgpslogger -s /dev/ttyUSB2 -b 9600 -i temp,map,rpm,vss,throttlepos,sparkadv

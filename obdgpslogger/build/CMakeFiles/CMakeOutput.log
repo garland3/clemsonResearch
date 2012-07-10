@@ -1,4 +1,4 @@
-The system is: Linux - 3.2.0-24-generic-pae - i686
+The system is: Linux - 3.2.0-26-generic-pae - i686
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/gcc 
 Build flags: 
@@ -336,6 +336,21 @@ Linking C executable cmTryCompileExec
 make[1]: Leaving directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
 
 
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lICE 
+make[1]: Leaving directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
+
+
 Determining if the function gps_stream exists passed with the following output:
 Change Dir: /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp
 
@@ -537,6 +552,33 @@ Linking C executable cmTryCompileExec
 make[1]: Leaving directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
 
 
+Determining if the BTPROTO_RFCOMM exist passed with the following output:
+Change Dir: /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o  -o cmTryCompileExec -rdynamic -ldl 
+make[1]: Leaving directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
+
+File /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <bluetooth/bluetooth.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef BTPROTO_RFCOMM
+  cmakeRequireSymbol(0,&BTPROTO_RFCOMM);
+#endif
+  return 0;
+}
+
 Determining if the function socket exists passed with the following output:
 Change Dir: /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp
 
@@ -549,21 +591,6 @@ Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
 Linking C executable cmTryCompileExec
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
 /usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=socket    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -ldl 
-make[1]: Leaving directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: Entering directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
-/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lICE 
 make[1]: Leaving directory `/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles/CMakeTmp'
 
 

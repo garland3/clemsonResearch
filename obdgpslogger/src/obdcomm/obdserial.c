@@ -155,15 +155,19 @@ int openserial(const char *portfilename, long baudrate, long baudrate_target) {
 		fcntl(fd, F_SETFL, 0);
 
 		// Get the current options for the port
-		tcgetattr(fd, &options);
+        tcgetattr(fd, &options);
 
-		options.c_cflag |= (CLOCAL | CREAD);
-		options.c_lflag &= !(ICANON | ECHO | ECHOE | ISIG);
-		options.c_oflag &= !(OPOST);
-		options.c_cc[VMIN] = 0;
-		options.c_cc[VTIME] = 100;
+        
+        options.c_cflag |= (CLOCAL | CREAD); // original
+        options.c_cflag &= ~CRTSCTS; //hardware control off, anthon
+        options.c_lflag &= !(ICANON | ECHO | ECHOE | ISIG); // original
+        
+        //options.c_iflag |= (IXON | IXOFF | IXANY); // software flow control    ,anthon
+        options.c_oflag &= !(OPOST);
+        options.c_cc[VMIN] = 0;
+        options.c_cc[VTIME] = 100;
 
-		tcsetattr(fd, TCSANOW, &options);
+        tcsetattr(fd, TCSANOW, &options);
 
 		long current_baud = 9600;
 		if(0 != modifybaud(fd, baudrate)) {
@@ -175,12 +179,6 @@ int openserial(const char *portfilename, long baudrate, long baudrate_target) {
 
 		// Reset the device. Some software changes settings and then leaves it
 		blindcmd(fd,"ATZ",1);
-
-		// Anthony change
-		printf("Figure out the correct protocal \n");
-		blindcmd(fd,"AT SP 0",1);
-		sleep(3);
-
 
 		// printf("Baudrate upgrader disabled\n");
 		if(0 > upgradebaudrate(fd, baudrate_target, current_baud)) {

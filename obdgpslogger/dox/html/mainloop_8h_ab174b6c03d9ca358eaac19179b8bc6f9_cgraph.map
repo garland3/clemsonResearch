@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$obdsim_8cc.html#a312e77640a7dced86271f8afd3919342" title="Do an elm reset [ATZ or similar]." alt="" coords="171,5,291,35"/>
-<area shape="rect" id="node5" href="$obdsim_8cc.html#ad44d5c5f3cd4edd3fa2428b2b1989817" title="Given a protocol [A]{0&#45;9}, set the protocol in the struct." alt="" coords="173,58,288,89"/>
-<area shape="rect" id="node9" href="$classOBDSimPort.html#a22999b9d50ba1ba4bddf54a52b6d361f" title="Enable or disable echo." alt="" coords="155,111,307,142"/>
-<area shape="rect" id="node7" href="$obdsim_8cc.html#ae06d636c0fff4bc4d72b642fb832011a" title="Given the single char, find the protocol for it." alt="" coords="356,58,471,89"/>
+<area shape="rect" id="node3" href="$obdsim_8cc.html#ad44d5c5f3cd4edd3fa2428b2b1989817" title="Given a protocol [A]{0&#45;9}, set the protocol in the struct." alt="" coords="179,5,296,35"/>
+<area shape="rect" id="node7" href="$classOBDSimPort.html#a22999b9d50ba1ba4bddf54a52b6d361f" title="Enable or disable echo." alt="" coords="161,58,313,89"/>
+<area shape="rect" id="node9" href="$obdsim_8cc.html#a312e77640a7dced86271f8afd3919342" title="Do an elm reset [ATZ or similar]." alt="" coords="175,111,300,142"/>
+<area shape="rect" id="node5" href="$obdsim_8cc.html#ae06d636c0fff4bc4d72b642fb832011a" title="Given the single char, find the protocol for it." alt="" coords="364,5,484,35"/>
 </map>

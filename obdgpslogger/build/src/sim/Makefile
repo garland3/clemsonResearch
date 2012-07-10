@@ -199,20 +199,6 @@ ckobdsim_error/fast:
 .PHONY : ckobdsim_error/fast
 
 # Convenience name for target.
-src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
-.PHONY : src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
-
-# Convenience name for target.
-ckobdsim_gui_fltk: src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
-.PHONY : ckobdsim_gui_fltk
-
-# fast build rule for target.
-ckobdsim_gui_fltk/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build
-.PHONY : ckobdsim_gui_fltk/fast
-
-# Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_logger.dir/rule:
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_logger.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_logger.dir/rule
@@ -281,6 +267,30 @@ obdsim_dltest: src/sim/CMakeFiles/obdsim_dltest.dir/rule
 obdsim_dltest/fast:
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/build
 .PHONY : obdsim_dltest/fast
+
+bluetoothsimport.o: bluetoothsimport.cc.o
+.PHONY : bluetoothsimport.o
+
+# target to build an object file
+bluetoothsimport.cc.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o
+.PHONY : bluetoothsimport.cc.o
+
+bluetoothsimport.i: bluetoothsimport.cc.i
+.PHONY : bluetoothsimport.i
+
+# target to preprocess a source file
+bluetoothsimport.cc.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.i
+.PHONY : bluetoothsimport.cc.i
+
+bluetoothsimport.s: bluetoothsimport.cc.s
+.PHONY : bluetoothsimport.s
+
+# target to generate assembly for a file
+bluetoothsimport.cc.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.s
+.PHONY : bluetoothsimport.cc.s
 
 fdsimport.o: fdsimport.cc.o
 .PHONY : fdsimport.o
@@ -546,30 +556,6 @@ posixsimport.cc.s:
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.s
 .PHONY : posixsimport.cc.s
 
-simguifltk.o: simguifltk.cxx.o
-.PHONY : simguifltk.o
-
-# target to build an object file
-simguifltk.cxx.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.o
-.PHONY : simguifltk.cxx.o
-
-simguifltk.i: simguifltk.cxx.i
-.PHONY : simguifltk.i
-
-# target to preprocess a source file
-simguifltk.cxx.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.i
-.PHONY : simguifltk.cxx.i
-
-simguifltk.s: simguifltk.cxx.s
-.PHONY : simguifltk.s
-
-# target to generate assembly for a file
-simguifltk.cxx.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.s
-.PHONY : simguifltk.cxx.s
-
 simport.o: simport.cc.o
 .PHONY : simport.o
 
@@ -627,7 +613,6 @@ help:
 	@echo "... ckobdsim_cycle"
 	@echo "... ckobdsim_dlopen"
 	@echo "... ckobdsim_error"
-	@echo "... ckobdsim_gui_fltk"
 	@echo "... ckobdsim_logger"
 	@echo "... ckobdsim_random"
 	@echo "... ckobdsim_socket"
@@ -641,6 +626,9 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... bluetoothsimport.o"
+	@echo "... bluetoothsimport.i"
+	@echo "... bluetoothsimport.s"
 	@echo "... fdsimport.o"
 	@echo "... fdsimport.i"
 	@echo "... fdsimport.s"
@@ -674,9 +662,6 @@ help:
 	@echo "... posixsimport.o"
 	@echo "... posixsimport.i"
 	@echo "... posixsimport.s"
-	@echo "... simguifltk.o"
-	@echo "... simguifltk.i"
-	@echo "... simguifltk.s"
 	@echo "... simport.o"
 	@echo "... simport.i"
 	@echo "... simport.s"

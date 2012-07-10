@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classFDSimPort.html#a02d08fe662bbb2c7cf18d3865aada29e" title="Close one connection, but not entire process." alt="" coords="399,5,628,35"/>
-<area shape="rect" id="node5" href="$classOBDSimPort.html#aa3e2b930425d089424c2f619aa514c7c" title="Find out if echo is set." alt="" coords="197,258,349,289"/>
-<area shape="rect" id="node7" href="$classFDSimPort.html#a11e384e5a66f219f192f2090be76483c" title="Whether or not it&#39;s connected." alt="" coords="431,61,596,91"/>
-<area shape="rect" id="node9" href="$classFDSimPort.html#ab05a2320b16d867b0bba648b4c235bfb" title="Wait for a connection." alt="" coords="427,119,600,150"/>
-<area shape="rect" id="node11" href="$classFDSimPort.html#af487275a2bc09e4eabf2bbd5c865786a" title="Write some data to the virtual port." alt="" coords="200,103,347,134"/>
-<area shape="rect" id="node16" href="$classOBDSimPort.html#a7c7a67a2fff740f90511ee4ee36f179a" title="Write some data to the logfile." alt="" coords="437,183,589,214"/>
+<area shape="rect" id="node3" href="$classFDSimPort.html#a11e384e5a66f219f192f2090be76483c" title="Whether or not it&#39;s connected." alt="" coords="437,5,608,35"/>
+<area shape="rect" id="node5" href="$classFDSimPort.html#ab05a2320b16d867b0bba648b4c235bfb" title="Wait for a connection." alt="" coords="435,61,611,91"/>
+<area shape="rect" id="node7" href="$classFDSimPort.html#a02d08fe662bbb2c7cf18d3865aada29e" title="Close one connection, but not entire process." alt="" coords="404,119,641,150"/>
+<area shape="rect" id="node9" href="$classOBDSimPort.html#a7c7a67a2fff740f90511ee4ee36f179a" title="Write some data to the logfile." alt="" coords="445,183,600,214"/>
+<area shape="rect" id="node11" href="$classOBDSimPort.html#aa3e2b930425d089424c2f619aa514c7c" title="Find out if echo is set." alt="" coords="200,258,355,289"/>
+<area shape="rect" id="node13" href="$classFDSimPort.html#af487275a2bc09e4eabf2bbd5c865786a" title="Write some data to the virtual port." alt="" coords="203,103,352,134"/>
 </map>

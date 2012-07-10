@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$structdbus__simvals.html" title="Mappings and most&#45;recently&#45;seen values are stored in this list." alt="" coords="9,105,111,135"/>
-<area shape="rect" id="node5" href="$structobdservicecmd.html" title="structure to hold OBD service commands" alt="" coords="5,6,115,37"/>
+<area shape="rect" id="node2" href="$structdbus__simvals.html" title="Mappings and most&#45;recently&#45;seen values are stored in this list." alt="" coords="11,105,115,135"/>
+<area shape="rect" id="node5" href="$structobdservicecmd.html" title="structure to hold OBD service commands" alt="" coords="5,6,120,37"/>
 </map>

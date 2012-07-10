@@ -63,6 +63,8 @@ sqlite3.h
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c
 gps.h
 -
+stdlib.h
+-
 
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.h
 gps.h

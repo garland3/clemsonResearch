@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$obdservicecommands_8c.html#a6874da84eec4bd3f893272e4ba301c8c" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="104,5,259,35"/>
-<area shape="rect" id="node5" href="$boxwhisker_8c.html#aad6f83147b5881b56d147e6ee8803e47" title="Print help." alt="" coords="147,58,216,89"/>
+<area shape="rect" id="node3" href="$boxwhisker_8c.html#aad6f83147b5881b56d147e6ee8803e47" title="Print help." alt="" coords="151,5,220,35"/>
+<area shape="rect" id="node5" href="$obdservicecommands_8c.html#a6874da84eec4bd3f893272e4ba301c8c" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="104,58,267,89"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$obdconfigfile_8c.html#acf6bac2867b9839c4e4a9650973f76ea" title="Get a list of obdservicecommands." alt="" coords="117,31,235,62"/>
-<area shape="rect" id="node9" href="$obdconfigfile_8c.html#ac06e7dc0f19089b98533161b99ee2d69" title="Free a config created by loadOBDGPSConfig." alt="" coords="123,85,229,115"/>
-<area shape="rect" id="node11" href="$obdconfigfile_8c.html#ae46e57b296907419b80a2dbb769d7bdd" title="Free a list of service commands allocated by obd_configCmds." alt="" coords="105,138,247,169"/>
-<area shape="rect" id="node13" href="$obdconfigfile_8c.html#ade1f6da24581432217e1107b10f4bf6d" title="Load a config, return a struct. Must be free&#39;d using freeOBDGPSConfig." alt="" coords="121,191,231,222"/>
-<area shape="rect" id="node5" href="$obdservicecommands_8c.html#a6874da84eec4bd3f893272e4ba301c8c" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="296,5,451,35"/>
-<area shape="rect" id="node7" href="$obdservicecommands_8c.html#a05b8663c29e16cee47f4f3e26440a6bf" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="308,58,439,89"/>
-<area shape="rect" id="node15" href="$obdconfigfile_8c.html#ac4cc9aa16bd98b637143e8ec79474be3" title="Get &quot;a&quot; valid home dir in which to store a dotfile." alt="" coords="304,165,443,195"/>
-<area shape="rect" id="node17" href="$obdconfigfile_8c.html#a0fce09b8d5c0d6eb6362ff9231a6cfac" title="obd_parseConfig" alt="" coords="315,218,432,249"/>
+<area shape="rect" id="node3" href="$obdconfigfile_8c.html#ade1f6da24581432217e1107b10f4bf6d" title="Load a config, return a struct. Must be free&#39;d using freeOBDGPSConfig." alt="" coords="121,58,239,89"/>
+<area shape="rect" id="node9" href="$obdconfigfile_8c.html#acf6bac2867b9839c4e4a9650973f76ea" title="Get a list of obdservicecommands." alt="" coords="119,111,241,142"/>
+<area shape="rect" id="node15" href="$obdconfigfile_8c.html#ae46e57b296907419b80a2dbb769d7bdd" title="Free a list of service commands allocated by obd_configCmds." alt="" coords="105,165,255,195"/>
+<area shape="rect" id="node17" href="$obdconfigfile_8c.html#ac06e7dc0f19089b98533161b99ee2d69" title="Free a config created by loadOBDGPSConfig." alt="" coords="123,218,237,249"/>
+<area shape="rect" id="node5" href="$obdconfigfile_8c.html#a0fce09b8d5c0d6eb6362ff9231a6cfac" title="obd_parseConfig" alt="" coords="323,5,448,35"/>
+<area shape="rect" id="node7" href="$obdconfigfile_8c.html#ac4cc9aa16bd98b637143e8ec79474be3" title="Get &quot;a&quot; valid home dir in which to store a dotfile." alt="" coords="315,58,456,89"/>
+<area shape="rect" id="node11" href="$obdservicecommands_8c.html#a6874da84eec4bd3f893272e4ba301c8c" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="304,111,467,142"/>
+<area shape="rect" id="node13" href="$obdservicecommands_8c.html#a05b8663c29e16cee47f4f3e26440a6bf" title="Return the obdservicecmd struct for the requested db_column name." alt="" coords="317,165,453,195"/>
 </map>

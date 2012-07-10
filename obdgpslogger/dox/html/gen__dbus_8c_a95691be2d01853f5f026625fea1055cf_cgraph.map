@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$gen__dbus_8c.html#a9c3b422afa4d4914d2a9d861dd8b7a1b" title="Find the dbus_simval for this map_to (PID) value." alt="" coords="209,5,391,35"/>
-<area shape="rect" id="node5" href="$gen__dbus_8c.html#ae7a548b4e14943172fabee42a19d3461" title="Flush the queue of dbus messages waiting for us." alt="" coords="216,58,384,89"/>
+<area shape="rect" id="node3" href="$gen__dbus_8c.html#ae7a548b4e14943172fabee42a19d3461" title="Flush the queue of dbus messages waiting for us." alt="" coords="223,5,396,35"/>
+<area shape="rect" id="node5" href="$gen__dbus_8c.html#a9c3b422afa4d4914d2a9d861dd8b7a1b" title="Find the dbus_simval for this map_to (PID) value." alt="" coords="216,58,403,89"/>
 </map>

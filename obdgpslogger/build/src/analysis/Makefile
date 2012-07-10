@@ -157,20 +157,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/analysis/CMakeFiles/ckobdfft.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/analysis/CMakeFiles/ckobdfft.dir/rule
-.PHONY : src/analysis/CMakeFiles/ckobdfft.dir/rule
-
-# Convenience name for target.
-ckobdfft: src/analysis/CMakeFiles/ckobdfft.dir/rule
-.PHONY : ckobdfft
-
-# fast build rule for target.
-ckobdfft/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/ckobdfft.dir/build.make src/analysis/CMakeFiles/ckobdfft.dir/build
-.PHONY : ckobdfft/fast
-
-# Convenience name for target.
 src/analysis/CMakeFiles/obdboxwhisker.dir/rule:
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/analysis/CMakeFiles/obdboxwhisker.dir/rule
 .PHONY : src/analysis/CMakeFiles/obdboxwhisker.dir/rule
@@ -183,20 +169,6 @@ obdboxwhisker: src/analysis/CMakeFiles/obdboxwhisker.dir/rule
 obdboxwhisker/fast:
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/obdboxwhisker.dir/build.make src/analysis/CMakeFiles/obdboxwhisker.dir/build
 .PHONY : obdboxwhisker/fast
-
-# Convenience name for target.
-src/analysis/CMakeFiles/obdfft.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/analysis/CMakeFiles/obdfft.dir/rule
-.PHONY : src/analysis/CMakeFiles/obdfft.dir/rule
-
-# Convenience name for target.
-obdfft: src/analysis/CMakeFiles/obdfft.dir/rule
-.PHONY : obdfft
-
-# fast build rule for target.
-obdfft/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/build
-.PHONY : obdfft/fast
 
 # Convenience name for target.
 src/analysis/CMakeFiles/obdtripcompare.dir/rule:
@@ -284,54 +256,6 @@ examinetrips.c.s:
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/obdtripcompare.dir/build.make src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.s
 .PHONY : examinetrips.c.s
 
-fftmain.o: fftmain.cpp.o
-.PHONY : fftmain.o
-
-# target to build an object file
-fftmain.cpp.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/fftmain.cpp.o
-.PHONY : fftmain.cpp.o
-
-fftmain.i: fftmain.cpp.i
-.PHONY : fftmain.i
-
-# target to preprocess a source file
-fftmain.cpp.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/fftmain.cpp.i
-.PHONY : fftmain.cpp.i
-
-fftmain.s: fftmain.cpp.s
-.PHONY : fftmain.s
-
-# target to generate assembly for a file
-fftmain.cpp.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/fftmain.cpp.s
-.PHONY : fftmain.cpp.s
-
-fftwindow.o: fftwindow.cxx.o
-.PHONY : fftwindow.o
-
-# target to build an object file
-fftwindow.cxx.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/ckobdfft.dir/build.make src/analysis/CMakeFiles/ckobdfft.dir/fftwindow.cxx.o
-.PHONY : fftwindow.cxx.o
-
-fftwindow.i: fftwindow.cxx.i
-.PHONY : fftwindow.i
-
-# target to preprocess a source file
-fftwindow.cxx.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/ckobdfft.dir/build.make src/analysis/CMakeFiles/ckobdfft.dir/fftwindow.cxx.i
-.PHONY : fftwindow.cxx.i
-
-fftwindow.s: fftwindow.cxx.s
-.PHONY : fftwindow.s
-
-# target to generate assembly for a file
-fftwindow.cxx.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/analysis/CMakeFiles/ckobdfft.dir/build.make src/analysis/CMakeFiles/ckobdfft.dir/fftwindow.cxx.s
-.PHONY : fftwindow.cxx.s
-
 tripcompare.o: tripcompare.c.o
 .PHONY : tripcompare.o
 
@@ -362,14 +286,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... ckobdfft"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... obdboxwhisker"
-	@echo "... obdfft"
 	@echo "... obdtripcompare"
 	@echo "... package"
 	@echo "... package_source"
@@ -383,12 +305,6 @@ help:
 	@echo "... examinetrips.o"
 	@echo "... examinetrips.i"
 	@echo "... examinetrips.s"
-	@echo "... fftmain.o"
-	@echo "... fftmain.i"
-	@echo "... fftmain.s"
-	@echo "... fftwindow.o"
-	@echo "... fftwindow.i"
-	@echo "... fftwindow.s"
 	@echo "... tripcompare.o"
 	@echo "... tripcompare.i"
 	@echo "... tripcompare.s"

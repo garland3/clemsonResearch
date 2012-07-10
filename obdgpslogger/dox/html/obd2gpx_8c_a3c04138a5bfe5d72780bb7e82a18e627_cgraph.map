@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$obd2gpx_8c.html#a15a2545df2651fb6a6ce9391b87db52d" title="Print gpx track tail component." alt="" coords="119,5,207,35"/>
-<area shape="rect" id="node5" href="$obd2gpx_8c.html#af2f76683bf1046d68c95ceb2660ecba0" title="Print gpx track header component." alt="" coords="116,58,209,89"/>
-<area shape="rect" id="node7" href="$obd2gpx_8c.html#a18548003c37a829efd172f97a326c546" title="Print gpx header component." alt="" coords="105,111,220,142"/>
-<area shape="rect" id="node9" href="$obd2gpx_8c.html#a72b45cb7d4e51084cc69f84904aef011" title="Print gpx tail component." alt="" coords="116,165,209,195"/>
-<area shape="rect" id="node11" href="$obd2gpx_8c.html#ad95a84ec1bdc635160412c0a67a3c1cc" title="Print Help for &#45;&#45;help." alt="" coords="117,218,208,249"/>
-<area shape="rect" id="node13" href="$obd2gpx_8c.html#a5dab48acc8b8f918b1393ff2f0ba8788" title="Print the version string." alt="" coords="108,271,217,302"/>
+<area shape="rect" id="node3" href="$obd2gpx_8c.html#ad95a84ec1bdc635160412c0a67a3c1cc" title="Print Help for &#45;&#45;help." alt="" coords="119,5,212,35"/>
+<area shape="rect" id="node5" href="$obd2gpx_8c.html#a5dab48acc8b8f918b1393ff2f0ba8788" title="Print the version string." alt="" coords="109,58,221,89"/>
+<area shape="rect" id="node7" href="$obd2gpx_8c.html#a18548003c37a829efd172f97a326c546" title="Print gpx header component." alt="" coords="104,111,227,142"/>
+<area shape="rect" id="node9" href="$obd2gpx_8c.html#a15a2545df2651fb6a6ce9391b87db52d" title="Print gpx track tail component." alt="" coords="120,165,211,195"/>
+<area shape="rect" id="node11" href="$obd2gpx_8c.html#af2f76683bf1046d68c95ceb2660ecba0" title="Print gpx track header component." alt="" coords="119,218,212,249"/>
+<area shape="rect" id="node13" href="$obd2gpx_8c.html#a72b45cb7d4e51084cc69f84904aef011" title="Print gpx tail component." alt="" coords="117,271,213,302"/>
 </map>

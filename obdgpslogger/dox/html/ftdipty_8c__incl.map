@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node25" href="$obdconfigfile_8h.html" title="Tool&#45;wide configuration." alt="" coords="1040,86,1144,117"/>
-<area shape="rect" id="node32" href="$ftdipty_8h.html" title="ftdipty.h" alt="" coords="947,86,1016,117"/>
-<area shape="rect" id="node27" href="$obdservicecommands_8h.html" title="list of OBD service commands" alt="" coords="833,166,993,197"/>
-<area shape="rect" id="node30" href="$obdconvertfunctions_8h.html" title="Functions to convert from OBD output to actual values Functions declared in this file are named by th..." alt="" coords="839,246,988,277"/>
+<area shape="rect" id="node25" href="$obdconfigfile_8h.html" title="Tool&#45;wide configuration." alt="" coords="1027,86,1133,117"/>
+<area shape="rect" id="node32" href="$ftdipty_8h.html" title="ftdipty.h" alt="" coords="936,86,1003,117"/>
+<area shape="rect" id="node27" href="$obdservicecommands_8h.html" title="list of OBD service commands" alt="" coords="823,166,988,197"/>
+<area shape="rect" id="node30" href="$obdconvertfunctions_8h.html" title="Functions to convert from OBD output to actual values Functions declared in this file are named by th..." alt="" coords="831,246,980,277"/>
 </map>

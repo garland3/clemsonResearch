@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classOBDSimPort.html#aa3e2b930425d089424c2f619aa514c7c" title="Find out if echo is set." alt="" coords="248,5,400,35"/>
-<area shape="rect" id="node5" href="$classWindowsSimPort.html#a921743e422c0209678c94d891706b472" title="Write some data to the virtual port." alt="" coords="233,58,415,89"/>
-<area shape="rect" id="node7" href="$classOBDSimPort.html#a7c7a67a2fff740f90511ee4ee36f179a" title="Write some data to the logfile." alt="" coords="464,85,616,115"/>
+<area shape="rect" id="node3" href="$classOBDSimPort.html#a7c7a67a2fff740f90511ee4ee36f179a" title="Write some data to the logfile." alt="" coords="479,25,633,55"/>
+<area shape="rect" id="node5" href="$classOBDSimPort.html#aa3e2b930425d089424c2f619aa514c7c" title="Find out if echo is set." alt="" coords="257,23,412,54"/>
+<area shape="rect" id="node7" href="$classWindowsSimPort.html#a921743e422c0209678c94d891706b472" title="Write some data to the virtual port." alt="" coords="240,77,429,107"/>
 </map>

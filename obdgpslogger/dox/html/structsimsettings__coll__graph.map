@@ -1,7 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$structobdgen__ecudelays.html" title="This is used for customdelays." alt="" coords="147,203,277,234"/>
-<area shape="rect" id="node4" href="$structobdgen__ecu.html" title="An array of these is created, each for a different ECU." alt="" coords="88,105,179,135"/>
-<area shape="rect" id="node6" href="$structobdsim__generator.html" title="Declare a generator by building one of these structs." alt="" coords="5,6,131,37"/>
-<area shape="rect" id="node8" href="$structfreezeframe.html" title="This is a frozen frame." alt="" coords="155,6,245,37"/>
-<area shape="rect" id="node11" href="$structobdiiprotocol.html" title="Each OBDII Protocol has a number and description." alt="" coords="301,203,395,234"/>
+<area shape="rect" id="node2" href="$structobdgen__ecudelays.html" title="This is used for customdelays." alt="" coords="153,203,292,234"/>
+<area shape="rect" id="node4" href="$structobdgen__ecu.html" title="An array of these is created, each for a different ECU." alt="" coords="91,105,187,135"/>
+<area shape="rect" id="node6" href="$structobdsim__generator.html" title="Declare a generator by building one of these structs." alt="" coords="5,6,136,37"/>
+<area shape="rect" id="node8" href="$structfreezeframe.html" title="This is a frozen frame." alt="" coords="160,6,253,37"/>
+<area shape="rect" id="node11" href="$structobdiiprotocol.html" title="Each OBDII Protocol has a number and description." alt="" coords="316,203,415,234"/>
 </map>

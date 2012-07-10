@@ -196,32 +196,6 @@ obdgpslogger/fast:
 .PHONY : obdgpslogger/fast
 
 #=============================================================================
-# Target rules for targets named ckobdfl
-
-# Build rule for target.
-ckobdfl: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ckobdfl
-.PHONY : ckobdfl
-
-# fast build rule for target.
-ckobdfl/fast:
-	$(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/build
-.PHONY : ckobdfl/fast
-
-#=============================================================================
-# Target rules for targets named obdgui
-
-# Build rule for target.
-obdgui: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 obdgui
-.PHONY : obdgui
-
-# fast build rule for target.
-obdgui/fast:
-	$(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/build
-.PHONY : obdgui/fast
-
-#=============================================================================
 # Target rules for targets named ckobdinfo
 
 # Build rule for target.
@@ -248,19 +222,6 @@ ckobdconfigfile/fast:
 .PHONY : ckobdconfigfile/fast
 
 #=============================================================================
-# Target rules for targets named ckobdfft
-
-# Build rule for target.
-ckobdfft: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ckobdfft
-.PHONY : ckobdfft
-
-# fast build rule for target.
-ckobdfft/fast:
-	$(MAKE) -f src/analysis/CMakeFiles/ckobdfft.dir/build.make src/analysis/CMakeFiles/ckobdfft.dir/build
-.PHONY : ckobdfft/fast
-
-#=============================================================================
 # Target rules for targets named obdboxwhisker
 
 # Build rule for target.
@@ -272,19 +233,6 @@ obdboxwhisker: cmake_check_build_system
 obdboxwhisker/fast:
 	$(MAKE) -f src/analysis/CMakeFiles/obdboxwhisker.dir/build.make src/analysis/CMakeFiles/obdboxwhisker.dir/build
 .PHONY : obdboxwhisker/fast
-
-#=============================================================================
-# Target rules for targets named obdfft
-
-# Build rule for target.
-obdfft: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 obdfft
-.PHONY : obdfft
-
-# fast build rule for target.
-obdfft/fast:
-	$(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/build
-.PHONY : obdfft/fast
 
 #=============================================================================
 # Target rules for targets named obdtripcompare
@@ -376,19 +324,6 @@ ckobdsim_error: cmake_check_build_system
 ckobdsim_error/fast:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/build
 .PHONY : ckobdsim_error/fast
-
-#=============================================================================
-# Target rules for targets named ckobdsim_gui_fltk
-
-# Build rule for target.
-ckobdsim_gui_fltk: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ckobdsim_gui_fltk
-.PHONY : ckobdsim_gui_fltk
-
-# fast build rule for target.
-ckobdsim_gui_fltk/fast:
-	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build
-.PHONY : ckobdsim_gui_fltk/fast
 
 #=============================================================================
 # Target rules for targets named ckobdsim_logger
@@ -511,13 +446,9 @@ help:
 	@echo "... cksqlite"
 	@echo "... ckobdcomm"
 	@echo "... obdgpslogger"
-	@echo "... ckobdfl"
-	@echo "... obdgui"
 	@echo "... ckobdinfo"
 	@echo "... ckobdconfigfile"
-	@echo "... ckobdfft"
 	@echo "... obdboxwhisker"
-	@echo "... obdfft"
 	@echo "... obdtripcompare"
 	@echo "... obd2kml"
 	@echo "... obd2csv"
@@ -525,7 +456,6 @@ help:
 	@echo "... ckobdsim_cycle"
 	@echo "... ckobdsim_dlopen"
 	@echo "... ckobdsim_error"
-	@echo "... ckobdsim_gui_fltk"
 	@echo "... ckobdsim_logger"
 	@echo "... ckobdsim_random"
 	@echo "... ckobdsim_socket"

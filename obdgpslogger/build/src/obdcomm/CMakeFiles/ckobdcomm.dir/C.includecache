@@ -8,12 +8,6 @@
 
 ../src/obdinfo/obdconvertfunctions.h
 
-../src/obdinfo/obdservicecommands.h
-stdlib.h
--
-obdconvertfunctions.h
-../src/obdinfo/obdconvertfunctions.h
-
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.c
 obdserial.h
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
@@ -37,20 +31,4 @@ termios.h
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
 obdconvertfunctions.h
 /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdconvertfunctions.h
-
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.c
-stdio.h
--
-stdlib.h
--
-obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdservicecommands.h
-supportedcommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.h
-obdserial.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
-
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.h
-obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdservicecommands.h
 

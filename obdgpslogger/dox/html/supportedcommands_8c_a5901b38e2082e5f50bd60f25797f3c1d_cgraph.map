@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$supportedcommands_8c.html#ae26c4fd50088e359c33f3aac9d32c7cc" title="Free the values returned from getcapabilities." alt="" coords="187,5,317,35"/>
-<area shape="rect" id="node5" href="$supportedcommands_8c.html#a6e69ace3dfdd03dd3b404e3d2b5dc382" title="Get the capabilities this device claims." alt="" coords="189,58,315,89"/>
-<area shape="rect" id="node7" href="$obdserial_8c.html#a99c1914bae8cd8325c660226570a496f" title="Get the raw bits returned from an OBD command." alt="" coords="581,58,675,89"/>
-<area shape="rect" id="node18" href="$supportedcommands_8c.html#a53375478ad3badcfeab829f6a6067ae7" title="Internal only." alt="" coords="365,83,533,114"/>
-<area shape="rect" id="node9" href="$obdserial_8c.html#ac87307a45da5e1a53610b22d5fe74e6b" title="Write to the log." alt="" coords="875,33,987,63"/>
-<area shape="rect" id="node11" href="$obdserial_8c.html#ab8c30a7b9e8b34022f9ad00296fd6353" title="Parse a line from obd." alt="" coords="728,58,821,89"/>
-<area shape="rect" id="node13" href="$obdserial_8c.html#ab97a7e5a016da1f208142d1a1d4ce287" title="Collect data up to the next prompt." alt="" coords="724,111,825,142"/>
-<area shape="rect" id="node16" href="$windowssimport_8cc.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title="gettimeofday" alt="" coords="883,111,979,142"/>
+<area shape="rect" id="node3" href="$supportedcommands_8c.html#a6e69ace3dfdd03dd3b404e3d2b5dc382" title="Get the capabilities this device claims." alt="" coords="192,55,323,86"/>
+<area shape="rect" id="node19" href="$supportedcommands_8c.html#ae26c4fd50088e359c33f3aac9d32c7cc" title="Free the values returned from getcapabilities." alt="" coords="191,109,324,139"/>
+<area shape="rect" id="node5" href="$obdserial_8c.html#a99c1914bae8cd8325c660226570a496f" title="Get the raw bits returned from an OBD command." alt="" coords="597,57,693,87"/>
+<area shape="rect" id="node16" href="$supportedcommands_8c.html#a53375478ad3badcfeab829f6a6067ae7" title="Internal only." alt="" coords="375,82,548,113"/>
+<area shape="rect" id="node7" href="$obdserial_8c.html#ac87307a45da5e1a53610b22d5fe74e6b" title="Write to the log." alt="" coords="903,5,1020,35"/>
+<area shape="rect" id="node9" href="$obdserial_8c.html#ab97a7e5a016da1f208142d1a1d4ce287" title="Collect data up to the next prompt." alt="" coords="743,57,852,87"/>
+<area shape="rect" id="node14" href="$obdserial_8c.html#ab8c30a7b9e8b34022f9ad00296fd6353" title="Parse a line from obd." alt="" coords="748,110,847,141"/>
+<area shape="rect" id="node11" href="$windowssimport_8cc.html#aaf2d0a99430a6d5253b8c395c30ca7e3" title="gettimeofday" alt="" coords="912,58,1011,89"/>
 </map>

@@ -6,52 +6,12 @@ src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.o
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/analysistables.c
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/analysistables.h
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/examinetrips.h
- /usr/include/./_G_config.h
- /usr/include/./ctype.h
- /usr/include/./endian.h
- /usr/include/./features.h
- /usr/include/./gconv.h
- /usr/include/./getopt.h
- /usr/include/./libio.h
- /usr/include/./stdio.h
- /usr/include/./wchar.h
- /usr/include/./wctype.h
- /usr/include/./xlocale.h
 src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o
  ../libs/sqlite3/sqlite3.h
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/examinetrips.c
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/examinetrips.h
- /usr/include/./_G_config.h
- /usr/include/./alloca.h
- /usr/include/./ctype.h
- /usr/include/./endian.h
- /usr/include/./features.h
- /usr/include/./gconv.h
- /usr/include/./getopt.h
- /usr/include/./libio.h
- /usr/include/./math.h
- /usr/include/./stdio.h
- /usr/include/./stdlib.h
- /usr/include/./wchar.h
- /usr/include/./wctype.h
- /usr/include/./xlocale.h
 src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o
  ../libs/sqlite3/sqlite3.h
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/analysistables.h
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/examinetrips.h
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/tripcompare.c
- /usr/include/./_G_config.h
- /usr/include/./alloca.h
- /usr/include/./ctype.h
- /usr/include/./endian.h
- /usr/include/./features.h
- /usr/include/./gconv.h
- /usr/include/./getopt.h
- /usr/include/./libio.h
- /usr/include/./math.h
- /usr/include/./stdio.h
- /usr/include/./stdlib.h
- /usr/include/./string.h
- /usr/include/./wchar.h
- /usr/include/./wctype.h
- /usr/include/./xlocale.h

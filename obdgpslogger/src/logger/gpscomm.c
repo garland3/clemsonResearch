@@ -22,24 +22,26 @@ along with obdgpslogger.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #ifdef HAVE_GPSD
-#include <stdlib.h>
+
 #include <gps.h>
+#include <stdlib.h>
 
 struct gps_data_t *opengps(char *server, char *port) {
-	
-	#ifdef HAVE_GPSD_V3
- int ret = 0;
- struct gps_data_t *g = malloc(sizeof(struct gps_data_t));
- if (ret = gps_open(server, port, g) == -1)
+	//
+#ifdef HAVE_GPSD_V3
+int ret = 0;
+struct gps_data_t *g = malloc(sizeof(struct gps_data_t));
+if (ret = gps_open(server, port, g) == -1)
  return NULL;
  gps_stream(g, WATCH_ENABLE|WATCH_NEWSTYLE, NULL);
 #else
-
+	//
 	struct gps_data_t *g = gps_open(server,port);
 	if(NULL == g)
 		return NULL;
+//
 
-
+//
 	gps_query(g, "o");
 #endif //HAVE_GPSD_V3
 
@@ -47,13 +49,13 @@ struct gps_data_t *opengps(char *server, char *port) {
 }
 
 void closegps(struct gps_data_t *g) {
-	
-	#ifdef HAVE_GPSD_V3
+	//
+#ifdef HAVE_GPSD_V3
  gps_stream(g, WATCH_DISABLE, NULL);
  free(g);
  g = NULL;
 #endif //HAVE_GPSD_V3
-	
+	//
 	gps_close(g);
 }
 
@@ -72,6 +74,7 @@ int getgpsposition(struct gps_data_t *g, double *lat, double *lon, double *alt, 
 		count = select(g->gps_fd + 1, &fds, NULL, NULL, &timeout);
 		if(count > 0) {
 #ifdef HAVE_GPSD_V3
+			//gps_poll(g);
 			gps_read(g);
 #else
 			gps_query(g, "o");

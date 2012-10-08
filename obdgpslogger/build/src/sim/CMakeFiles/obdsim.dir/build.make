@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
 
@@ -227,13 +230,13 @@ obdsim_EXTERNAL_OBJECTS =
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o
-../bin/obdsim: src/sim/libckobdsim_socket.a
 ../bin/obdsim: src/sim/libckobdsim_cycle.a
 ../bin/obdsim: src/sim/libckobdsim_dlopen.a
+../bin/obdsim: src/sim/libckobdsim_random.a
+../bin/obdsim: src/sim/libckobdsim_socket.a
+../bin/obdsim: src/sim/libckobdsim_error.a
 ../bin/obdsim: src/sim/libckobdsim_logger.a
 ../bin/obdsim: libs/sqlite3/libcksqlite.a
-../bin/obdsim: src/sim/libckobdsim_error.a
-../bin/obdsim: src/sim/libckobdsim_random.a
 ../bin/obdsim: src/obdinfo/libckobdinfo.a
 ../bin/obdsim: src/conf/libckobdconfigfile.a
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/build.make

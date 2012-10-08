@@ -31,6 +31,9 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
 
@@ -46,32 +49,9 @@ include src/logger/CMakeFiles/obdgpslogger.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/logger/CMakeFiles/obdgpslogger.dir/flags.make
 
-src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
-src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o: ../src/logger/gpscomm.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/gpscomm.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdgpslogger.dir/gpscomm.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c > CMakeFiles/obdgpslogger.dir/gpscomm.c.i
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdgpslogger.dir/gpscomm.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c -o CMakeFiles/obdgpslogger.dir/gpscomm.c.s
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires:
-.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires
-	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides.build
-.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o
-
 src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
 src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o: ../src/logger/obddb.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o"
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/obddb.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddb.c
 
@@ -91,6 +71,29 @@ src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o.provides: src/logger/CMakeFiles
 .PHONY : src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o.provides
 
 src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o
+
+src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
+src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o: ../src/logger/gpsdb.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/gpsdb.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.c
+
+src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdgpslogger.dir/gpsdb.c.i"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.c > CMakeFiles/obdgpslogger.dir/gpsdb.c.i
+
+src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdgpslogger.dir/gpsdb.c.s"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.c -o CMakeFiles/obdgpslogger.dir/gpsdb.c.s
+
+src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.requires:
+.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.requires
+
+src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides: src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.requires
+	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides.build
+.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides
+
+src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o
 
 src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
 src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o: ../src/logger/obddbus.c
@@ -115,32 +118,9 @@ src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o.provides: src/logger/CMakeFil
 
 src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o
 
-src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
-src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o: ../src/logger/gpsdb.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/gpsdb.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.c
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdgpslogger.dir/gpsdb.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.c > CMakeFiles/obdgpslogger.dir/gpsdb.c.i
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdgpslogger.dir/gpsdb.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.c -o CMakeFiles/obdgpslogger.dir/gpsdb.c.s
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.requires:
-.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.requires
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides: src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.requires
-	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides.build
-.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides
-
-src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o
-
 src/logger/CMakeFiles/obdgpslogger.dir/database.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
 src/logger/CMakeFiles/obdgpslogger.dir/database.c.o: ../src/logger/database.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/database.c.o"
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/database.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/database.c
 
@@ -160,6 +140,29 @@ src/logger/CMakeFiles/obdgpslogger.dir/database.c.o.provides: src/logger/CMakeFi
 .PHONY : src/logger/CMakeFiles/obdgpslogger.dir/database.c.o.provides
 
 src/logger/CMakeFiles/obdgpslogger.dir/database.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/database.c.o
+
+src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
+src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o: ../src/logger/ecudb.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/ecudb.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.c
+
+src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdgpslogger.dir/ecudb.c.i"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.c > CMakeFiles/obdgpslogger.dir/ecudb.c.i
+
+src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdgpslogger.dir/ecudb.c.s"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.c -o CMakeFiles/obdgpslogger.dir/ecudb.c.s
+
+src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires:
+.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires
+
+src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires
+	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides.build
+.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides
+
+src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o
 
 src/logger/CMakeFiles/obdgpslogger.dir/main.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
 src/logger/CMakeFiles/obdgpslogger.dir/main.c.o: ../src/logger/main.c
@@ -207,51 +210,51 @@ src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.o.provides: src/logger/CMakeFile
 
 src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.o
 
-src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
-src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o: ../src/logger/ecudb.c
+src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o: src/logger/CMakeFiles/obdgpslogger.dir/flags.make
+src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o: ../src/logger/gpscomm.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/ecudb.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdgpslogger.dir/gpscomm.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c
 
-src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdgpslogger.dir/ecudb.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.c > CMakeFiles/obdgpslogger.dir/ecudb.c.i
+src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdgpslogger.dir/gpscomm.c.i"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c > CMakeFiles/obdgpslogger.dir/gpscomm.c.i
 
-src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdgpslogger.dir/ecudb.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.c -o CMakeFiles/obdgpslogger.dir/ecudb.c.s
+src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdgpslogger.dir/gpscomm.c.s"
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c -o CMakeFiles/obdgpslogger.dir/gpscomm.c.s
 
-src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires:
-.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires
+src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires:
+.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires
 
-src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires
-	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides.build
-.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides
+src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires
+	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides.build
+.PHONY : src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides
 
-src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o
+src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.provides.build: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o
 
 # Object files for target obdgpslogger
 obdgpslogger_OBJECTS = \
-"CMakeFiles/obdgpslogger.dir/gpscomm.c.o" \
 "CMakeFiles/obdgpslogger.dir/obddb.c.o" \
-"CMakeFiles/obdgpslogger.dir/obddbus.c.o" \
 "CMakeFiles/obdgpslogger.dir/gpsdb.c.o" \
+"CMakeFiles/obdgpslogger.dir/obddbus.c.o" \
 "CMakeFiles/obdgpslogger.dir/database.c.o" \
+"CMakeFiles/obdgpslogger.dir/ecudb.c.o" \
 "CMakeFiles/obdgpslogger.dir/main.c.o" \
 "CMakeFiles/obdgpslogger.dir/tripdb.c.o" \
-"CMakeFiles/obdgpslogger.dir/ecudb.c.o"
+"CMakeFiles/obdgpslogger.dir/gpscomm.c.o"
 
 # External object files for target obdgpslogger
 obdgpslogger_EXTERNAL_OBJECTS =
 
-../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o
 ../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o
-../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o
 ../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o
+../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o
 ../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/database.c.o
+../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o
 ../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/main.c.o
 ../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.o
-../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o
+../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o
 ../bin/obdgpslogger: libs/sqlite3/libcksqlite.a
 ../bin/obdgpslogger: src/conf/libckobdconfigfile.a
 ../bin/obdgpslogger: src/obdinfo/libckobdinfo.a
@@ -266,14 +269,14 @@ obdgpslogger_EXTERNAL_OBJECTS =
 src/logger/CMakeFiles/obdgpslogger.dir/build: ../bin/obdgpslogger
 .PHONY : src/logger/CMakeFiles/obdgpslogger.dir/build
 
-src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires
 src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o.requires
-src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o.requires
 src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o.requires
+src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o.requires
 src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/database.c.o.requires
+src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires
 src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/main.c.o.requires
 src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.o.requires
-src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o.requires
+src/logger/CMakeFiles/obdgpslogger.dir/requires: src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o.requires
 .PHONY : src/logger/CMakeFiles/obdgpslogger.dir/requires
 
 src/logger/CMakeFiles/obdgpslogger.dir/clean:

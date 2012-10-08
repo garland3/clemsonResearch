@@ -1,2 +1,2 @@
-/usr/bin/ar cr libckobdcomm.a  CMakeFiles/ckobdcomm.dir/supportedcommands.c.o CMakeFiles/ckobdcomm.dir/obdserial.c.o
+/usr/bin/ar cr libckobdcomm.a  CMakeFiles/ckobdcomm.dir/obdserial.c.o CMakeFiles/ckobdcomm.dir/supportedcommands.c.o
 /usr/bin/ranlib libckobdcomm.a

@@ -22,12 +22,12 @@ SET(CMAKE_TARGET_DEFINITIONS
   "HAVE_GPSD_V3"
   "HAVE_GPSD"
   "HAVE_PTSNAME_R"
-  "OBDSIMGEN_SOCKET"
   "OBDSIMGEN_CYCLE"
   "OBDSIMGEN_DLOPEN"
-  "OBDSIMGEN_LOGGER"
-  "OBDSIMGEN_ERROR"
   "OBDSIMGEN_RANDOM"
+  "OBDSIMGEN_SOCKET"
+  "OBDSIMGEN_ERROR"
+  "OBDSIMGEN_LOGGER"
   "HAVE_POSIX_OPENPT"
   "AVE_GETTIMEOFDAY"
   "HAVE_BLUETOOTH"
@@ -36,13 +36,13 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_socket.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_cycle.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_dlopen.dir/DependInfo.cmake"
+  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_random.dir/DependInfo.cmake"
+  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_socket.dir/DependInfo.cmake"
+  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_error.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_logger.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/libs/sqlite3/CMakeFiles/cksqlite.dir/DependInfo.cmake"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_error.dir/DependInfo.cmake"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_random.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo/CMakeFiles/ckobdinfo.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/conf/CMakeFiles/ckobdconfigfile.dir/DependInfo.cmake"
   )

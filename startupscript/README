@@ -9,3 +9,9 @@ Then link to  the
 /etc/rc5.d 
 
 ln -s /etc/defaults/obdgpslogger /etc/rc5.d/S36obdgpslogger
+
+You should actually go to those folders when creating the links. For some reason it only worked when I went to the folder. 
+
+It should create a database in the /home/root folder. 
+
+

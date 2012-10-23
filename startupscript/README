@@ -1,0 +1,11 @@
+Notes on the startup script. 
+
+Put it in the 
+/etc/defaults
+as
+obdgpslogger
+
+Then link to  the 
+/etc/rc5.d 
+
+ln -s /etc/defaults/obdgpslogger /etc/rc5.d/S36obdgpslogger

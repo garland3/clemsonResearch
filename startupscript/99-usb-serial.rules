@@ -1,0 +1,8 @@
+# http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/
+# Put this in /etc/udev/rules.d/ as 99-usb-serial.rules
+
+# for the usb gps. 
+SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", SYMLINK+="usbgps"
+
+# the ftdi, obdii to serial to usb
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A800JRNJ", SYMLINK+="obdi"

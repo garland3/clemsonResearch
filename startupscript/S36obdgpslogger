@@ -10,7 +10,7 @@ case "$1" in
   start)
 	echo -n "Starting $DESC: "
 	#start-stop-daemon --start -x "$DAEMON" -- $OPTS
-	./home/root/2obdgpslogger/obdgpslogger/bin/obdgpslogger -a 2  -s /dev/tty01 -d /home/root/obd.db -m &
+	./home/root/2obdgpslogger/obdgpslogger/bin/obdii.sh  &
 	echo "$NAME."
 	;;
   stop)
@@ -25,7 +25,7 @@ case "$1" in
 	#start-stop-daemon --stop -x "$DAEMON"
 	killall obdgpslogger
 	sleep 1
-	./home/root/2obdgpslogger/obdgpslogger/bin/obdgpslogger -a 2  -s /dev/tty01 -m &
+	./home/root/2obdgpslogger/obdgpslogger/bin/obdii.sh  &
 	
 	#start-stop-daemon --start -x "$DAEMON" -- $OPTS
 	echo "$NAME."

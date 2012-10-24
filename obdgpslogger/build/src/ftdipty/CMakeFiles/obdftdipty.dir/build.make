@@ -80,7 +80,7 @@ obdftdipty_OBJECTS = \
 obdftdipty_EXTERNAL_OBJECTS =
 
 ../bin/obdftdipty: src/ftdipty/CMakeFiles/obdftdipty.dir/ftdipty.c.o
-../bin/obdftdipty: /usr/lib/i386-linux-gnu/./libftdi.so
+../bin/obdftdipty: /usr/lib/x86_64-linux-gnu/./libftdi.so
 ../bin/obdftdipty: src/conf/libckobdconfigfile.a
 ../bin/obdftdipty: src/obdinfo/libckobdinfo.a
 ../bin/obdftdipty: src/ftdipty/CMakeFiles/obdftdipty.dir/build.make

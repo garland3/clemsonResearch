@@ -4,7 +4,6 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/bluetoothsimport.cc" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/fdsimport.cc" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/mainloop.cc" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/obdsim.cc" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o"
@@ -23,6 +22,7 @@ SET(CMAKE_TARGET_DEFINITIONS
   "HAVE_GPSD"
   "HAVE_PTSNAME_R"
   "OBDSIMGEN_CYCLE"
+  "OBDSIMGEN_GUI_FLTK"
   "OBDSIMGEN_DLOPEN"
   "OBDSIMGEN_RANDOM"
   "OBDSIMGEN_SOCKET"
@@ -30,13 +30,13 @@ SET(CMAKE_TARGET_DEFINITIONS
   "OBDSIMGEN_LOGGER"
   "HAVE_POSIX_OPENPT"
   "AVE_GETTIMEOFDAY"
-  "HAVE_BLUETOOTH"
   "HAVE_SOCKET"
   )
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_cycle.dir/DependInfo.cmake"
+  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_dlopen.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_random.dir/DependInfo.cmake"
   "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/ckobdsim_socket.dir/DependInfo.cmake"

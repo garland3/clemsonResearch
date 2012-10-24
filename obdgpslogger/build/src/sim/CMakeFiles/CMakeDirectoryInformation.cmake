@@ -16,6 +16,9 @@ SET(CMAKE_C_INCLUDE_PATH
   "../libs/sqlite3"
   "../src/sim/."
   "../src/sim/../obdinfo"
+  "../src/sim/./generators/gui_fltk"
+  "/usr/lib/fltk"
+  "src/sim"
   "../src/sim/generators/dlopen"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

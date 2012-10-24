@@ -259,7 +259,7 @@ obdgpslogger_EXTERNAL_OBJECTS =
 ../bin/obdgpslogger: src/conf/libckobdconfigfile.a
 ../bin/obdgpslogger: src/obdinfo/libckobdinfo.a
 ../bin/obdgpslogger: src/obdcomm/libckobdcomm.a
-../bin/obdgpslogger: /usr/lib/i386-linux-gnu/libgps.so
+../bin/obdgpslogger: /usr/lib/x86_64-linux-gnu/libgps.so
 ../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/build.make
 ../bin/obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable ../../../bin/obdgpslogger"

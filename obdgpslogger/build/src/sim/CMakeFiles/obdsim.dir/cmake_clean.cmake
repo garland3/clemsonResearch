@@ -4,7 +4,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/obdsim.dir/mainloop.cc.o"
   "CMakeFiles/obdsim.dir/posixsimport.cc.o"
   "CMakeFiles/obdsim.dir/fdsimport.cc.o"
-  "CMakeFiles/obdsim.dir/bluetoothsimport.cc.o"
   "CMakeFiles/obdsim.dir/socketsimport.cc.o"
   "../../../bin/obdsim.pdb"
   "../../../bin/obdsim"

@@ -164,32 +164,9 @@ src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o.provides: src/sim/CMakeFiles/obdsim
 
 src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o.provides.build: src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o
 
-src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
-src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o: ../src/sim/bluetoothsimport.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/bluetoothsimport.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/bluetoothsimport.cc
-
-src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdsim.dir/bluetoothsimport.cc.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/bluetoothsimport.cc > CMakeFiles/obdsim.dir/bluetoothsimport.cc.i
-
-src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdsim.dir/bluetoothsimport.cc.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/bluetoothsimport.cc -o CMakeFiles/obdsim.dir/bluetoothsimport.cc.s
-
-src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.requires:
-.PHONY : src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.requires
-
-src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.provides: src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.requires
-	$(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.provides.build
-.PHONY : src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.provides
-
-src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.provides.build: src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o
-
 src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
 src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o: ../src/sim/socketsimport.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o"
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/socketsimport.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/socketsimport.cc
 
@@ -217,7 +194,6 @@ obdsim_OBJECTS = \
 "CMakeFiles/obdsim.dir/mainloop.cc.o" \
 "CMakeFiles/obdsim.dir/posixsimport.cc.o" \
 "CMakeFiles/obdsim.dir/fdsimport.cc.o" \
-"CMakeFiles/obdsim.dir/bluetoothsimport.cc.o" \
 "CMakeFiles/obdsim.dir/socketsimport.cc.o"
 
 # External object files for target obdsim
@@ -228,9 +204,15 @@ obdsim_EXTERNAL_OBJECTS =
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o
-../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o
 ../bin/obdsim: src/sim/libckobdsim_cycle.a
+../bin/obdsim: src/sim/libckobdsim_gui_fltk.a
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libfltk.a
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libSM.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libICE.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libX11.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libXext.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libm.so
 ../bin/obdsim: src/sim/libckobdsim_dlopen.a
 ../bin/obdsim: src/sim/libckobdsim_random.a
 ../bin/obdsim: src/sim/libckobdsim_socket.a
@@ -239,6 +221,11 @@ obdsim_EXTERNAL_OBJECTS =
 ../bin/obdsim: libs/sqlite3/libcksqlite.a
 ../bin/obdsim: src/obdinfo/libckobdinfo.a
 ../bin/obdsim: src/conf/libckobdconfigfile.a
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libSM.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libICE.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libX11.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libXext.so
+../bin/obdsim: /usr/lib/x86_64-linux-gnu/libm.so
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/build.make
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/obdsim"
@@ -253,7 +240,6 @@ src/sim/CMakeFiles/obdsim.dir/requires: src/sim/CMakeFiles/obdsim.dir/simport.cc
 src/sim/CMakeFiles/obdsim.dir/requires: src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o.requires
 src/sim/CMakeFiles/obdsim.dir/requires: src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o.requires
 src/sim/CMakeFiles/obdsim.dir/requires: src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o.requires
-src/sim/CMakeFiles/obdsim.dir/requires: src/sim/CMakeFiles/obdsim.dir/bluetoothsimport.cc.o.requires
 src/sim/CMakeFiles/obdsim.dir/requires: src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o.requires
 .PHONY : src/sim/CMakeFiles/obdsim.dir/requires
 

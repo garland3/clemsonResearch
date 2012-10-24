@@ -159,20 +159,239 @@ depend:
 	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/gui/CMakeFiles/ckobdfl.dir/rule:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/ckobdfl.dir/rule
+.PHONY : src/gui/CMakeFiles/ckobdfl.dir/rule
+
+# Convenience name for target.
+ckobdfl: src/gui/CMakeFiles/ckobdfl.dir/rule
+.PHONY : ckobdfl
+
+# fast build rule for target.
+ckobdfl/fast:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/build
+.PHONY : ckobdfl/fast
+
+# Convenience name for target.
+src/gui/CMakeFiles/obdgui.dir/rule:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/obdgui.dir/rule
+.PHONY : src/gui/CMakeFiles/obdgui.dir/rule
+
+# Convenience name for target.
+obdgui: src/gui/CMakeFiles/obdgui.dir/rule
+.PHONY : obdgui
+
+# fast build rule for target.
+obdgui/fast:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/build
+.PHONY : obdgui/fast
+
+convertwindow.o: convertwindow.cxx.o
+.PHONY : convertwindow.o
+
+# target to build an object file
+convertwindow.cxx.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.o
+.PHONY : convertwindow.cxx.o
+
+convertwindow.i: convertwindow.cxx.i
+.PHONY : convertwindow.i
+
+# target to preprocess a source file
+convertwindow.cxx.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.i
+.PHONY : convertwindow.cxx.i
+
+convertwindow.s: convertwindow.cxx.s
+.PHONY : convertwindow.s
+
+# target to generate assembly for a file
+convertwindow.cxx.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.s
+.PHONY : convertwindow.cxx.s
+
+gpsdwizard.o: gpsdwizard.cxx.o
+.PHONY : gpsdwizard.o
+
+# target to build an object file
+gpsdwizard.cxx.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.o
+.PHONY : gpsdwizard.cxx.o
+
+gpsdwizard.i: gpsdwizard.cxx.i
+.PHONY : gpsdwizard.i
+
+# target to preprocess a source file
+gpsdwizard.cxx.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.i
+.PHONY : gpsdwizard.cxx.i
+
+gpsdwizard.s: gpsdwizard.cxx.s
+.PHONY : gpsdwizard.s
+
+# target to generate assembly for a file
+gpsdwizard.cxx.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.s
+.PHONY : gpsdwizard.cxx.s
+
+guessdevs.o: guessdevs.cpp.o
+.PHONY : guessdevs.o
+
+# target to build an object file
+guessdevs.cpp.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o
+.PHONY : guessdevs.cpp.o
+
+guessdevs.i: guessdevs.cpp.i
+.PHONY : guessdevs.i
+
+# target to preprocess a source file
+guessdevs.cpp.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.i
+.PHONY : guessdevs.cpp.i
+
+guessdevs.s: guessdevs.cpp.s
+.PHONY : guessdevs.s
+
+# target to generate assembly for a file
+guessdevs.cpp.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.s
+.PHONY : guessdevs.cpp.s
+
+loggerhandler.o: loggerhandler.cpp.o
+.PHONY : loggerhandler.o
+
+# target to build an object file
+loggerhandler.cpp.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o
+.PHONY : loggerhandler.cpp.o
+
+loggerhandler.i: loggerhandler.cpp.i
+.PHONY : loggerhandler.i
+
+# target to preprocess a source file
+loggerhandler.cpp.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.i
+.PHONY : loggerhandler.cpp.i
+
+loggerhandler.s: loggerhandler.cpp.s
+.PHONY : loggerhandler.s
+
+# target to generate assembly for a file
+loggerhandler.cpp.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.s
+.PHONY : loggerhandler.cpp.s
+
+logwindow.o: logwindow.cxx.o
+.PHONY : logwindow.o
+
+# target to build an object file
+logwindow.cxx.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.o
+.PHONY : logwindow.cxx.o
+
+logwindow.i: logwindow.cxx.i
+.PHONY : logwindow.i
+
+# target to preprocess a source file
+logwindow.cxx.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.i
+.PHONY : logwindow.cxx.i
+
+logwindow.s: logwindow.cxx.s
+.PHONY : logwindow.s
+
+# target to generate assembly for a file
+logwindow.cxx.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.s
+.PHONY : logwindow.cxx.s
+
+maindisplay.o: maindisplay.cxx.o
+.PHONY : maindisplay.o
+
+# target to build an object file
+maindisplay.cxx.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.o
+.PHONY : maindisplay.cxx.o
+
+maindisplay.i: maindisplay.cxx.i
+.PHONY : maindisplay.i
+
+# target to preprocess a source file
+maindisplay.cxx.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.i
+.PHONY : maindisplay.cxx.i
+
+maindisplay.s: maindisplay.cxx.s
+.PHONY : maindisplay.s
+
+# target to generate assembly for a file
+maindisplay.cxx.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.s
+.PHONY : maindisplay.cxx.s
+
+obdgui.o: obdgui.cpp.o
+.PHONY : obdgui.o
+
+# target to build an object file
+obdgui.cpp.o:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o
+.PHONY : obdgui.cpp.o
+
+obdgui.i: obdgui.cpp.i
+.PHONY : obdgui.i
+
+# target to preprocess a source file
+obdgui.cpp.i:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.i
+.PHONY : obdgui.cpp.i
+
+obdgui.s: obdgui.cpp.s
+.PHONY : obdgui.s
+
+# target to generate assembly for a file
+obdgui.cpp.s:
+	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.s
+.PHONY : obdgui.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... ckobdfl"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... obdgui"
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... convertwindow.o"
+	@echo "... convertwindow.i"
+	@echo "... convertwindow.s"
+	@echo "... gpsdwizard.o"
+	@echo "... gpsdwizard.i"
+	@echo "... gpsdwizard.s"
+	@echo "... guessdevs.o"
+	@echo "... guessdevs.i"
+	@echo "... guessdevs.s"
+	@echo "... loggerhandler.o"
+	@echo "... loggerhandler.i"
+	@echo "... loggerhandler.s"
+	@echo "... logwindow.o"
+	@echo "... logwindow.i"
+	@echo "... logwindow.s"
+	@echo "... maindisplay.o"
+	@echo "... maindisplay.i"
+	@echo "... maindisplay.s"
+	@echo "... obdgui.o"
+	@echo "... obdgui.i"
+	@echo "... obdgui.s"
 .PHONY : help
 
 

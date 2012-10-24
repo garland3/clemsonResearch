@@ -6,3 +6,18 @@ src/analysis/CMakeFiles/obdboxwhisker.dir/boxwhisker.c.o
  ../src/obdinfo/obdconvertfunctions.h
  ../src/obdinfo/obdservicecommands.h
  /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/boxwhisker.c
+ /usr/include/./_G_config.h
+ /usr/include/./alloca.h
+ /usr/include/./ctype.h
+ /usr/include/./endian.h
+ /usr/include/./features.h
+ /usr/include/./gconv.h
+ /usr/include/./getopt.h
+ /usr/include/./libio.h
+ /usr/include/./math.h
+ /usr/include/./stdio.h
+ /usr/include/./stdlib.h
+ /usr/include/./string.h
+ /usr/include/./wchar.h
+ /usr/include/./wctype.h
+ /usr/include/./xlocale.h

@@ -81,7 +81,7 @@ obd2csv_EXTERNAL_OBJECTS =
 
 ../bin/obd2csv: src/csv/CMakeFiles/obd2csv.dir/obdgpscsv.c.o
 ../bin/obd2csv: libs/sqlite3/libcksqlite.a
-../bin/obd2csv: /usr/lib/i386-linux-gnu/libz.so
+../bin/obd2csv: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/obd2csv: src/csv/CMakeFiles/obd2csv.dir/build.make
 ../bin/obd2csv: src/csv/CMakeFiles/obd2csv.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable ../../../bin/obd2csv"

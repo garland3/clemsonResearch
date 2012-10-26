@@ -2,4 +2,9 @@ This code is being used by Anthony Garland for his Master's thesis
 
 I'm working on vibration analysis of automobiles. I plan to do wavelet analysis on the vibrations to determine the health of the engine. 
 
-The code here is slightly modfied from obdgpslogger to fit my needs. I plan to log obd, gps, tach, and accel data from the automobile while it is running. The obdgpslogger code will call a second program that will log the accel and tach data when the autombile goes into a regime of interest. 
+The main code that I'm using is obdgpslogger. You can get it at. 
+svn co svn://svn.icculus.org/obdgpslogger/trunk obdgpslogger
+
+The version in this repo is a patched version that works on ubuntu. The original code from svn works on the overo gumstick. 
+
+Scripts, data, and other misc. stuff are also here. 

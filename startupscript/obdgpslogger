@@ -11,7 +11,22 @@ case "$1" in
 	echo -n "Starting $DESC: "
 	#start-stop-daemon --start -x "$DAEMON" -- $OPTS
 	stty -F /dev/obdii -crtscts -clocal ispeed 9600 ospeed 9600
-	./home/root/2obdgpslogger/obdgpslogger/bin/obdgpslogger -s /dev/obdii -a 2 -d /home/root/obd.db &
+
+DB_PATH=/home/root/data/
+mkdir -p $DB_PATH
+DB=obd
+COUNT=0
+FULL_NAME="$DB_PATH$DB$COUNT.db"
+	echo "Finding a name for the DB"
+	while [ -e "$FULL_NAME" ]
+	do
+		echo "db $FULL_NAME exists"
+		COUNT=$(($COUNT+1))
+		FULL_NAME="$DB_PATH$DB$COUNT.db"
+	done
+
+	echo "Using DB name $FULL_NAME"
+	./home/root/2obdgpslogger/obdgpslogger/bin/obdgpslogger -s /dev/obdii -a 2 -d "$FULL_NAME" &
 	echo "$NAME."
 	;;
   stop)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Folder>
-<name>kml/xrds_10_24_2012_obdii_gps.kml</name>
+<name>Output from <a href="http://icculus.org/obdgpslogger/">OBD GPS Logger</a></name>
 <description>OBD GPS Logger [http://icculus.org/obdgpslogger] was used to log a car journey and export this kml file</description>
 <Folder>
 <name>Speed and Position [Just GPS]</name>

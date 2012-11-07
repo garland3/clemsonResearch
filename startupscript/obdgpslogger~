@@ -1,0 +1,56 @@
+#!/bin/sh
+
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/home/root/2obdgpslogger/obdgpslogger/bin/obdgpslogger
+NAME=obdgpslogger
+DESC="obdgpslogger"
+OPTS="-a 2  -s /dev/tty01 -m"
+
+case "$1" in
+  start)
+	echo -n "Starting $DESC: "
+	#start-stop-daemon --start -x "$DAEMON" -- $OPTS
+	stty -F /dev/obdii -crtscts -clocal ispeed 9600 ospeed 9600
+
+DB_PATH=/home/root/data/
+mkdir -p $DB_PATH
+DB=obd
+COUNT=0
+FULL_NAME="$DB_PATH$DB$COUNT.db"
+	echo "Finding a name for the DB"
+	while [ -e "$FULL_NAME" ]
+	do
+		echo "db $FULL_NAME exists"
+		COUNT=$(($COUNT+1))
+		FULL_NAME="$DB_PATH$DB$COUNT.db"
+	done
+
+	echo "Using DB name $FULL_NAME"
+	./home/root/2obdgpslogger/obdgpslogger/bin/obdgpslogger -s /dev/obdii -a 2 -d "$FULL_NAME" &
+	echo "$NAME."
+	;;
+  stop)
+	echo -n "Stopping $DESC: "
+	#start-stop-daemon --stop -x "$DAEMON"
+	killall obdgpslogger
+	echo "$NAME."
+	;;
+  restart|force-reload)
+	echo -n "Restarting $DESC: "
+	
+	#start-stop-daemon --stop -x "$DAEMON"
+	killall obdgpslogger
+	sleep 1
+	./home/root/2obdgpslogger/obdgpslogger/bin/obdgpslogger -a 2  -s /dev/tty01 -m &
+	
+	#start-stop-daemon --start -x "$DAEMON" -- $OPTS
+	echo "$NAME."
+	;;
+  *)
+	#N=/etc/init.d/$NAME
+	#echo "Usage: $N {start|stop|restart|force-reload}" >&2
+	#exit 1
+	;;
+esac
+
+exit 0

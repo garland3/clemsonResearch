@@ -14,7 +14,7 @@ stdlib.h
 obdconvertfunctions.h
 ../src/obdinfo/obdconvertfunctions.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdconfigfile.c
+/home/anthony/clemsonResearch/obdgpslogger/src/conf/obdconfigfile.c
 stdlib.h
 -
 string.h
@@ -22,15 +22,15 @@ string.h
 stdio.h
 -
 obdconfig.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdconfig.h
+/home/anthony/clemsonResearch/obdgpslogger/src/conf/obdconfig.h
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/conf/obdservicecommands.h
 obdconfigfile.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdconfigfile.h
+/home/anthony/clemsonResearch/obdgpslogger/src/conf/obdconfigfile.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdconfigfile.h
+/home/anthony/clemsonResearch/obdgpslogger/src/conf/obdconfigfile.h
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/conf/obdservicecommands.h
 
 obdconfig.h
 

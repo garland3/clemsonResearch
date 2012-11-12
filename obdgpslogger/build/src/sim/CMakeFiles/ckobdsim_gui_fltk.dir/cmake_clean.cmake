@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.o"
   "simguifltk.cxx"
   "simguifltk.h"
+  "CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.o"
   "libckobdsim_gui_fltk.pdb"
   "libckobdsim_gui_fltk.a"
 )

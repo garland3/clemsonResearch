@@ -4,6 +4,6 @@
 src/conf/CMakeFiles/ckobdconfigfile.dir/obdconfigfile.c.o
  ../src/obdinfo/obdconvertfunctions.h
  ../src/obdinfo/obdservicecommands.h
- /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdconfigfile.c
- /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/conf/obdconfigfile.h
+ /home/anthony/clemsonResearch/obdgpslogger/src/conf/obdconfigfile.c
+ /home/anthony/clemsonResearch/obdgpslogger/src/conf/obdconfigfile.h
  obdconfig.h

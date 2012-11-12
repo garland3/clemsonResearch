@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/libs/sqlite3/sqlite3.c
+/home/anthony/clemsonResearch/obdgpslogger/libs/sqlite3/sqlite3.c
 config.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/libs/sqlite3/config.h
+/home/anthony/clemsonResearch/obdgpslogger/libs/sqlite3/config.h
 stdint.h
 -
 inttypes.h
@@ -76,7 +76,7 @@ winbase.h
 sys/cygwin.h
 -
 sqlite3rtree.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/libs/sqlite3/sqlite3rtree.h
+/home/anthony/clemsonResearch/obdgpslogger/libs/sqlite3/sqlite3rtree.h
 unicode/utypes.h
 -
 unicode/uregex.h

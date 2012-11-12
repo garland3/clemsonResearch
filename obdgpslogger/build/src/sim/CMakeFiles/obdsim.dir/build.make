@@ -31,14 +31,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
+CMAKE_SOURCE_DIR = /home/anthony/clemsonResearch/obdgpslogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger/build
+CMAKE_BINARY_DIR = /home/anthony/clemsonResearch/obdgpslogger/build
 
 # Include any dependencies generated for this target.
 include src/sim/CMakeFiles/obdsim.dir/depend.make
@@ -51,17 +54,17 @@ include src/sim/CMakeFiles/obdsim.dir/flags.make
 
 src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
 src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o: ../src/sim/obdsim.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/obdsim.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/obdsim.cc
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/obdsim.cc.o -c /home/anthony/clemsonResearch/obdgpslogger/src/sim/obdsim.cc
 
 src/sim/CMakeFiles/obdsim.dir/obdsim.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdsim.dir/obdsim.cc.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/obdsim.cc > CMakeFiles/obdsim.dir/obdsim.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/sim/obdsim.cc > CMakeFiles/obdsim.dir/obdsim.cc.i
 
 src/sim/CMakeFiles/obdsim.dir/obdsim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdsim.dir/obdsim.cc.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/obdsim.cc -o CMakeFiles/obdsim.dir/obdsim.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/sim/obdsim.cc -o CMakeFiles/obdsim.dir/obdsim.cc.s
 
 src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o.requires:
 .PHONY : src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o.requires
@@ -74,17 +77,17 @@ src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o.provides.build: src/sim/CMakeFiles/obd
 
 src/sim/CMakeFiles/obdsim.dir/simport.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
 src/sim/CMakeFiles/obdsim.dir/simport.cc.o: ../src/sim/simport.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/simport.cc.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/simport.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/simport.cc
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/simport.cc.o -c /home/anthony/clemsonResearch/obdgpslogger/src/sim/simport.cc
 
 src/sim/CMakeFiles/obdsim.dir/simport.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdsim.dir/simport.cc.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/simport.cc > CMakeFiles/obdsim.dir/simport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/sim/simport.cc > CMakeFiles/obdsim.dir/simport.cc.i
 
 src/sim/CMakeFiles/obdsim.dir/simport.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdsim.dir/simport.cc.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/simport.cc -o CMakeFiles/obdsim.dir/simport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/sim/simport.cc -o CMakeFiles/obdsim.dir/simport.cc.s
 
 src/sim/CMakeFiles/obdsim.dir/simport.cc.o.requires:
 .PHONY : src/sim/CMakeFiles/obdsim.dir/simport.cc.o.requires
@@ -97,17 +100,17 @@ src/sim/CMakeFiles/obdsim.dir/simport.cc.o.provides.build: src/sim/CMakeFiles/ob
 
 src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
 src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o: ../src/sim/mainloop.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/mainloop.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/mainloop.cc
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/mainloop.cc.o -c /home/anthony/clemsonResearch/obdgpslogger/src/sim/mainloop.cc
 
 src/sim/CMakeFiles/obdsim.dir/mainloop.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdsim.dir/mainloop.cc.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/mainloop.cc > CMakeFiles/obdsim.dir/mainloop.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/sim/mainloop.cc > CMakeFiles/obdsim.dir/mainloop.cc.i
 
 src/sim/CMakeFiles/obdsim.dir/mainloop.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdsim.dir/mainloop.cc.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/mainloop.cc -o CMakeFiles/obdsim.dir/mainloop.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/sim/mainloop.cc -o CMakeFiles/obdsim.dir/mainloop.cc.s
 
 src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o.requires:
 .PHONY : src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o.requires
@@ -120,17 +123,17 @@ src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o.provides.build: src/sim/CMakeFiles/o
 
 src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
 src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o: ../src/sim/posixsimport.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/posixsimport.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/posixsimport.cc
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/posixsimport.cc.o -c /home/anthony/clemsonResearch/obdgpslogger/src/sim/posixsimport.cc
 
 src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdsim.dir/posixsimport.cc.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/posixsimport.cc > CMakeFiles/obdsim.dir/posixsimport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/sim/posixsimport.cc > CMakeFiles/obdsim.dir/posixsimport.cc.i
 
 src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdsim.dir/posixsimport.cc.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/posixsimport.cc -o CMakeFiles/obdsim.dir/posixsimport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/sim/posixsimport.cc -o CMakeFiles/obdsim.dir/posixsimport.cc.s
 
 src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o.requires:
 .PHONY : src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o.requires
@@ -143,17 +146,17 @@ src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o.provides.build: src/sim/CMakeFil
 
 src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
 src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o: ../src/sim/fdsimport.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/fdsimport.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/fdsimport.cc
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/fdsimport.cc.o -c /home/anthony/clemsonResearch/obdgpslogger/src/sim/fdsimport.cc
 
 src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdsim.dir/fdsimport.cc.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/fdsimport.cc > CMakeFiles/obdsim.dir/fdsimport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/sim/fdsimport.cc > CMakeFiles/obdsim.dir/fdsimport.cc.i
 
 src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdsim.dir/fdsimport.cc.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/fdsimport.cc -o CMakeFiles/obdsim.dir/fdsimport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/sim/fdsimport.cc -o CMakeFiles/obdsim.dir/fdsimport.cc.s
 
 src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o.requires:
 .PHONY : src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o.requires
@@ -166,17 +169,17 @@ src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o.provides.build: src/sim/CMakeFiles/
 
 src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o: src/sim/CMakeFiles/obdsim.dir/flags.make
 src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o: ../src/sim/socketsimport.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/socketsimport.cc.o -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/socketsimport.cc
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/obdsim.dir/socketsimport.cc.o -c /home/anthony/clemsonResearch/obdgpslogger/src/sim/socketsimport.cc
 
 src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obdsim.dir/socketsimport.cc.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/socketsimport.cc > CMakeFiles/obdsim.dir/socketsimport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/sim/socketsimport.cc > CMakeFiles/obdsim.dir/socketsimport.cc.i
 
 src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obdsim.dir/socketsimport.cc.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim/socketsimport.cc -o CMakeFiles/obdsim.dir/socketsimport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/sim/socketsimport.cc -o CMakeFiles/obdsim.dir/socketsimport.cc.s
 
 src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o.requires:
 .PHONY : src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o.requires
@@ -205,6 +208,7 @@ obdsim_EXTERNAL_OBJECTS =
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o
+../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/build.make
 ../bin/obdsim: src/sim/libckobdsim_cycle.a
 ../bin/obdsim: src/sim/libckobdsim_gui_fltk.a
 ../bin/obdsim: /usr/lib/x86_64-linux-gnu/libfltk.a
@@ -226,10 +230,9 @@ obdsim_EXTERNAL_OBJECTS =
 ../bin/obdsim: /usr/lib/x86_64-linux-gnu/libX11.so
 ../bin/obdsim: /usr/lib/x86_64-linux-gnu/libXext.so
 ../bin/obdsim: /usr/lib/x86_64-linux-gnu/libm.so
-../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/build.make
 ../bin/obdsim: src/sim/CMakeFiles/obdsim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../../bin/obdsim"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/obdsim.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/obdsim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/sim/CMakeFiles/obdsim.dir/build: ../bin/obdsim
@@ -244,10 +247,10 @@ src/sim/CMakeFiles/obdsim.dir/requires: src/sim/CMakeFiles/obdsim.dir/socketsimp
 .PHONY : src/sim/CMakeFiles/obdsim.dir/requires
 
 src/sim/CMakeFiles/obdsim.dir/clean:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim && $(CMAKE_COMMAND) -P CMakeFiles/obdsim.dir/cmake_clean.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/sim && $(CMAKE_COMMAND) -P CMakeFiles/obdsim.dir/cmake_clean.cmake
 .PHONY : src/sim/CMakeFiles/obdsim.dir/clean
 
 src/sim/CMakeFiles/obdsim.dir/depend:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anthony/ClemsonVibrationResearch/obdgpslogger /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/sim /home/anthony/ClemsonVibrationResearch/obdgpslogger/build /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/obdsim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anthony/clemsonResearch/obdgpslogger /home/anthony/clemsonResearch/obdgpslogger/src/sim /home/anthony/clemsonResearch/obdgpslogger/build /home/anthony/clemsonResearch/obdgpslogger/build/src/sim /home/anthony/clemsonResearch/obdgpslogger/build/src/sim/CMakeFiles/obdsim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/sim/CMakeFiles/obdsim.dir/depend
 

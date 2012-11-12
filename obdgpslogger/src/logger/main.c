@@ -345,7 +345,9 @@ int main(int argc, char** argv) {
 	int rc;
 
 	// Open the database and create the obd table
-	if(NULL == (db = opendb(databasename))) {
+	char buffer[200];
+	sprintf(buffer, "file:%s?psow=0", databasename);
+	if(NULL == (db = opendb(buffer))) {
 		closeserial(obd_serial_port);
 		exit(1);
 	}

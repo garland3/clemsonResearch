@@ -4,9 +4,9 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/guessdevs.cpp" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/loggerhandler.cpp" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/gui/obdgui.cpp" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o"
+  "/home/anthony/clemsonResearch/obdgpslogger/src/gui/guessdevs.cpp" "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o"
+  "/home/anthony/clemsonResearch/obdgpslogger/src/gui/loggerhandler.cpp" "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o"
+  "/home/anthony/clemsonResearch/obdgpslogger/src/gui/obdgui.cpp" "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,7 +22,22 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/DependInfo.cmake"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo/CMakeFiles/ckobdinfo.dir/DependInfo.cmake"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/conf/CMakeFiles/ckobdconfigfile.dir/DependInfo.cmake"
+  "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/DependInfo.cmake"
+  "/home/anthony/clemsonResearch/obdgpslogger/build/src/obdinfo/CMakeFiles/ckobdinfo.dir/DependInfo.cmake"
+  "/home/anthony/clemsonResearch/obdgpslogger/build/src/conf/CMakeFiles/ckobdconfigfile.dir/DependInfo.cmake"
   )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "."
+  "../src/obdinfo"
+  "../src/conf"
+  "../libs/sqlite3"
+  "../src/gui/."
+  "../src/gui/../obdinfo"
+  "/usr/lib/fltk"
+  "src/gui"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

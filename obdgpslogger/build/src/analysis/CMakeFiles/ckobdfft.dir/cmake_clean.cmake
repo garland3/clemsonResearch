@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/ckobdfft.dir/fftwindow.cxx.o"
   "fftwindow.cxx"
   "fftwindow.h"
+  "CMakeFiles/ckobdfft.dir/fftwindow.cxx.o"
   "libckobdfft.pdb"
   "libckobdfft.a"
 )

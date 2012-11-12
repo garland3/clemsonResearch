@@ -1,4 +1,4 @@
-# Install script for directory: /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm
+# Install script for directory: /home/anthony/clemsonResearch/obdgpslogger/src/obdcomm
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

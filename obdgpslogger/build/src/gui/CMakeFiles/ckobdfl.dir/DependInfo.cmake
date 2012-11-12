@@ -4,10 +4,10 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/convertwindow.cxx" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.o"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/gpsdwizard.cxx" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.o"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/logwindow.cxx" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.o"
-  "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/maindisplay.cxx" "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.o"
+  "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/convertwindow.cxx" "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.o"
+  "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/gpsdwizard.cxx" "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.o"
+  "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/logwindow.cxx" "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.o"
+  "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/maindisplay.cxx" "/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,3 +24,18 @@ SET(CMAKE_TARGET_DEFINITIONS
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
   )
+
+# The include file search paths:
+SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "."
+  "../src/obdinfo"
+  "../src/conf"
+  "../libs/sqlite3"
+  "../src/gui/."
+  "../src/gui/../obdinfo"
+  "/usr/lib/fltk"
+  "src/gui"
+  )
+SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
+SET(CMAKE_ASM_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

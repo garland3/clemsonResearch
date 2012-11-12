@@ -35,14 +35,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
+CMAKE_SOURCE_DIR = /home/anthony/clemsonResearch/obdgpslogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger/build
+CMAKE_BINARY_DIR = /home/anthony/clemsonResearch/obdgpslogger/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +114,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CPackSourceConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/clemsonResearch/obdgpslogger/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +133,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/repair/CMakeFiles/progress.marks
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles /home/anthony/clemsonResearch/obdgpslogger/build/src/repair/CMakeFiles/progress.marks
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/clean
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +149,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/repair/CMakeFiles/ckobdrepair.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/CMakeFiles/ckobdrepair.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/CMakeFiles/ckobdrepair.dir/rule
 .PHONY : src/repair/CMakeFiles/ckobdrepair.dir/rule
 
 # Convenience name for target.
@@ -170,12 +173,12 @@ ckobdrepair: src/repair/CMakeFiles/ckobdrepair.dir/rule
 
 # fast build rule for target.
 ckobdrepair/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/build
 .PHONY : ckobdrepair/fast
 
 # Convenience name for target.
 src/repair/CMakeFiles/obdlogrepair.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/CMakeFiles/obdlogrepair.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/repair/CMakeFiles/obdlogrepair.dir/rule
 .PHONY : src/repair/CMakeFiles/obdlogrepair.dir/rule
 
 # Convenience name for target.
@@ -184,7 +187,7 @@ obdlogrepair: src/repair/CMakeFiles/obdlogrepair.dir/rule
 
 # fast build rule for target.
 obdlogrepair/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/build
 .PHONY : obdlogrepair/fast
 
 obdrepair.o: obdrepair.c.o
@@ -192,7 +195,7 @@ obdrepair.o: obdrepair.c.o
 
 # target to build an object file
 obdrepair.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/obdrepair.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/obdrepair.c.o
 .PHONY : obdrepair.c.o
 
 obdrepair.i: obdrepair.c.i
@@ -200,7 +203,7 @@ obdrepair.i: obdrepair.c.i
 
 # target to preprocess a source file
 obdrepair.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/obdrepair.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/obdrepair.c.i
 .PHONY : obdrepair.c.i
 
 obdrepair.s: obdrepair.c.s
@@ -208,7 +211,7 @@ obdrepair.s: obdrepair.c.s
 
 # target to generate assembly for a file
 obdrepair.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/obdrepair.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/obdrepair.c.s
 .PHONY : obdrepair.c.s
 
 obdrepairmain.o: obdrepairmain.c.o
@@ -216,7 +219,7 @@ obdrepairmain.o: obdrepairmain.c.o
 
 # target to build an object file
 obdrepairmain.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/obdrepairmain.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/obdrepairmain.c.o
 .PHONY : obdrepairmain.c.o
 
 obdrepairmain.i: obdrepairmain.c.i
@@ -224,7 +227,7 @@ obdrepairmain.i: obdrepairmain.c.i
 
 # target to preprocess a source file
 obdrepairmain.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/obdrepairmain.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/obdrepairmain.c.i
 .PHONY : obdrepairmain.c.i
 
 obdrepairmain.s: obdrepairmain.c.s
@@ -232,7 +235,7 @@ obdrepairmain.s: obdrepairmain.c.s
 
 # target to generate assembly for a file
 obdrepairmain.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/obdrepairmain.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/obdrepairmain.c.s
 .PHONY : obdrepairmain.c.s
 
 # Help Target
@@ -268,6 +271,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

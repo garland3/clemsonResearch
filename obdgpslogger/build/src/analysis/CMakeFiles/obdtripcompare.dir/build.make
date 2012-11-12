@@ -31,14 +31,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
+CMAKE_SOURCE_DIR = /home/anthony/clemsonResearch/obdgpslogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger/build
+CMAKE_BINARY_DIR = /home/anthony/clemsonResearch/obdgpslogger/build
 
 # Include any dependencies generated for this target.
 include src/analysis/CMakeFiles/obdtripcompare.dir/depend.make
@@ -51,17 +54,17 @@ include src/analysis/CMakeFiles/obdtripcompare.dir/flags.make
 
 src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o: src/analysis/CMakeFiles/obdtripcompare.dir/flags.make
 src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o: ../src/analysis/tripcompare.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdtripcompare.dir/tripcompare.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/tripcompare.c
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdtripcompare.dir/tripcompare.c.o   -c /home/anthony/clemsonResearch/obdgpslogger/src/analysis/tripcompare.c
 
 src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdtripcompare.dir/tripcompare.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/tripcompare.c > CMakeFiles/obdtripcompare.dir/tripcompare.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/analysis/tripcompare.c > CMakeFiles/obdtripcompare.dir/tripcompare.c.i
 
 src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdtripcompare.dir/tripcompare.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/tripcompare.c -o CMakeFiles/obdtripcompare.dir/tripcompare.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/analysis/tripcompare.c -o CMakeFiles/obdtripcompare.dir/tripcompare.c.s
 
 src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o.requires:
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o.requires
@@ -74,17 +77,17 @@ src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o.provides.build: src/a
 
 src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o: src/analysis/CMakeFiles/obdtripcompare.dir/flags.make
 src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o: ../src/analysis/examinetrips.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdtripcompare.dir/examinetrips.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/examinetrips.c
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdtripcompare.dir/examinetrips.c.o   -c /home/anthony/clemsonResearch/obdgpslogger/src/analysis/examinetrips.c
 
 src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdtripcompare.dir/examinetrips.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/examinetrips.c > CMakeFiles/obdtripcompare.dir/examinetrips.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/analysis/examinetrips.c > CMakeFiles/obdtripcompare.dir/examinetrips.c.i
 
 src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdtripcompare.dir/examinetrips.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/examinetrips.c -o CMakeFiles/obdtripcompare.dir/examinetrips.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/analysis/examinetrips.c -o CMakeFiles/obdtripcompare.dir/examinetrips.c.s
 
 src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o.requires:
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o.requires
@@ -97,17 +100,17 @@ src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o.provides.build: src/
 
 src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.o: src/analysis/CMakeFiles/obdtripcompare.dir/flags.make
 src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.o: ../src/analysis/analysistables.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.o"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdtripcompare.dir/analysistables.c.o   -c /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/analysistables.c
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/obdtripcompare.dir/analysistables.c.o   -c /home/anthony/clemsonResearch/obdgpslogger/src/analysis/analysistables.c
 
 src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/obdtripcompare.dir/analysistables.c.i"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/analysistables.c > CMakeFiles/obdtripcompare.dir/analysistables.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/anthony/clemsonResearch/obdgpslogger/src/analysis/analysistables.c > CMakeFiles/obdtripcompare.dir/analysistables.c.i
 
 src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/obdtripcompare.dir/analysistables.c.s"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis/analysistables.c -o CMakeFiles/obdtripcompare.dir/analysistables.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/anthony/clemsonResearch/obdgpslogger/src/analysis/analysistables.c -o CMakeFiles/obdtripcompare.dir/analysistables.c.s
 
 src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.o.requires:
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.o.requires
@@ -130,11 +133,11 @@ obdtripcompare_EXTERNAL_OBJECTS =
 ../bin/obdtripcompare: src/analysis/CMakeFiles/obdtripcompare.dir/tripcompare.c.o
 ../bin/obdtripcompare: src/analysis/CMakeFiles/obdtripcompare.dir/examinetrips.c.o
 ../bin/obdtripcompare: src/analysis/CMakeFiles/obdtripcompare.dir/analysistables.c.o
-../bin/obdtripcompare: libs/sqlite3/libcksqlite.a
 ../bin/obdtripcompare: src/analysis/CMakeFiles/obdtripcompare.dir/build.make
+../bin/obdtripcompare: libs/sqlite3/libcksqlite.a
 ../bin/obdtripcompare: src/analysis/CMakeFiles/obdtripcompare.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable ../../../bin/obdtripcompare"
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/obdtripcompare.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/obdtripcompare.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/analysis/CMakeFiles/obdtripcompare.dir/build: ../bin/obdtripcompare
@@ -146,10 +149,10 @@ src/analysis/CMakeFiles/obdtripcompare.dir/requires: src/analysis/CMakeFiles/obd
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/requires
 
 src/analysis/CMakeFiles/obdtripcompare.dir/clean:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis && $(CMAKE_COMMAND) -P CMakeFiles/obdtripcompare.dir/cmake_clean.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis && $(CMAKE_COMMAND) -P CMakeFiles/obdtripcompare.dir/cmake_clean.cmake
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/clean
 
 src/analysis/CMakeFiles/obdtripcompare.dir/depend:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anthony/ClemsonVibrationResearch/obdgpslogger /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/analysis /home/anthony/ClemsonVibrationResearch/obdgpslogger/build /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis/CMakeFiles/obdtripcompare.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anthony/clemsonResearch/obdgpslogger /home/anthony/clemsonResearch/obdgpslogger/src/analysis /home/anthony/clemsonResearch/obdgpslogger/build /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis /home/anthony/clemsonResearch/obdgpslogger/build/src/analysis/CMakeFiles/obdtripcompare.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/depend
 

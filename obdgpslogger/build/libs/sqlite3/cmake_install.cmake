@@ -1,4 +1,4 @@
-# Install script for directory: /home/anthony/ClemsonVibrationResearch/obdgpslogger/libs/sqlite3
+# Install script for directory: /home/anthony/clemsonResearch/obdgpslogger/libs/sqlite3
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -35,14 +35,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
+CMAKE_SOURCE_DIR = /home/anthony/clemsonResearch/obdgpslogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger/build
+CMAKE_BINARY_DIR = /home/anthony/clemsonResearch/obdgpslogger/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +114,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CPackSourceConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/clemsonResearch/obdgpslogger/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +133,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger/CMakeFiles/progress.marks
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles /home/anthony/clemsonResearch/obdgpslogger/build/src/logger/CMakeFiles/progress.marks
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/clean
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +149,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/logger/CMakeFiles/obdgpslogger.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/CMakeFiles/obdgpslogger.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/logger/CMakeFiles/obdgpslogger.dir/rule
 .PHONY : src/logger/CMakeFiles/obdgpslogger.dir/rule
 
 # Convenience name for target.
@@ -170,7 +173,7 @@ obdgpslogger: src/logger/CMakeFiles/obdgpslogger.dir/rule
 
 # fast build rule for target.
 obdgpslogger/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/build
 .PHONY : obdgpslogger/fast
 
 database.o: database.c.o
@@ -178,7 +181,7 @@ database.o: database.c.o
 
 # target to build an object file
 database.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/database.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/database.c.o
 .PHONY : database.c.o
 
 database.i: database.c.i
@@ -186,7 +189,7 @@ database.i: database.c.i
 
 # target to preprocess a source file
 database.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/database.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/database.c.i
 .PHONY : database.c.i
 
 database.s: database.c.s
@@ -194,7 +197,7 @@ database.s: database.c.s
 
 # target to generate assembly for a file
 database.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/database.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/database.c.s
 .PHONY : database.c.s
 
 ecudb.o: ecudb.c.o
@@ -202,7 +205,7 @@ ecudb.o: ecudb.c.o
 
 # target to build an object file
 ecudb.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.o
 .PHONY : ecudb.c.o
 
 ecudb.i: ecudb.c.i
@@ -210,7 +213,7 @@ ecudb.i: ecudb.c.i
 
 # target to preprocess a source file
 ecudb.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.i
 .PHONY : ecudb.c.i
 
 ecudb.s: ecudb.c.s
@@ -218,7 +221,7 @@ ecudb.s: ecudb.c.s
 
 # target to generate assembly for a file
 ecudb.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/ecudb.c.s
 .PHONY : ecudb.c.s
 
 gpscomm.o: gpscomm.c.o
@@ -226,7 +229,7 @@ gpscomm.o: gpscomm.c.o
 
 # target to build an object file
 gpscomm.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.o
 .PHONY : gpscomm.c.o
 
 gpscomm.i: gpscomm.c.i
@@ -234,7 +237,7 @@ gpscomm.i: gpscomm.c.i
 
 # target to preprocess a source file
 gpscomm.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.i
 .PHONY : gpscomm.c.i
 
 gpscomm.s: gpscomm.c.s
@@ -242,7 +245,7 @@ gpscomm.s: gpscomm.c.s
 
 # target to generate assembly for a file
 gpscomm.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpscomm.c.s
 .PHONY : gpscomm.c.s
 
 gpsdb.o: gpsdb.c.o
@@ -250,7 +253,7 @@ gpsdb.o: gpsdb.c.o
 
 # target to build an object file
 gpsdb.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.o
 .PHONY : gpsdb.c.o
 
 gpsdb.i: gpsdb.c.i
@@ -258,7 +261,7 @@ gpsdb.i: gpsdb.c.i
 
 # target to preprocess a source file
 gpsdb.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.i
 .PHONY : gpsdb.c.i
 
 gpsdb.s: gpsdb.c.s
@@ -266,7 +269,7 @@ gpsdb.s: gpsdb.c.s
 
 # target to generate assembly for a file
 gpsdb.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/gpsdb.c.s
 .PHONY : gpsdb.c.s
 
 main.o: main.c.o
@@ -274,7 +277,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/main.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -282,7 +285,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/main.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -290,7 +293,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/main.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/main.c.s
 .PHONY : main.c.s
 
 obddb.o: obddb.c.o
@@ -298,7 +301,7 @@ obddb.o: obddb.c.o
 
 # target to build an object file
 obddb.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.o
 .PHONY : obddb.c.o
 
 obddb.i: obddb.c.i
@@ -306,7 +309,7 @@ obddb.i: obddb.c.i
 
 # target to preprocess a source file
 obddb.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.i
 .PHONY : obddb.c.i
 
 obddb.s: obddb.c.s
@@ -314,7 +317,7 @@ obddb.s: obddb.c.s
 
 # target to generate assembly for a file
 obddb.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddb.c.s
 .PHONY : obddb.c.s
 
 obddbus.o: obddbus.c.o
@@ -322,7 +325,7 @@ obddbus.o: obddbus.c.o
 
 # target to build an object file
 obddbus.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.o
 .PHONY : obddbus.c.o
 
 obddbus.i: obddbus.c.i
@@ -330,7 +333,7 @@ obddbus.i: obddbus.c.i
 
 # target to preprocess a source file
 obddbus.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.i
 .PHONY : obddbus.c.i
 
 obddbus.s: obddbus.c.s
@@ -338,7 +341,7 @@ obddbus.s: obddbus.c.s
 
 # target to generate assembly for a file
 obddbus.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/obddbus.c.s
 .PHONY : obddbus.c.s
 
 tripdb.o: tripdb.c.o
@@ -346,7 +349,7 @@ tripdb.o: tripdb.c.o
 
 # target to build an object file
 tripdb.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.o
 .PHONY : tripdb.c.o
 
 tripdb.i: tripdb.c.i
@@ -354,7 +357,7 @@ tripdb.i: tripdb.c.i
 
 # target to preprocess a source file
 tripdb.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.i
 .PHONY : tripdb.c.i
 
 tripdb.s: tripdb.c.s
@@ -362,7 +365,7 @@ tripdb.s: tripdb.c.s
 
 # target to generate assembly for a file
 tripdb.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/tripdb.c.s
 .PHONY : tripdb.c.s
 
 # Help Target
@@ -415,6 +418,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.c
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/dtccodes.c
 string.h
 -
 stdio.h
 -
 dtccodes.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/dtccodes.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/dtccodes.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/dtccodes.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.c
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdrevconvertfunctions.c
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/obdrevconvertfunctions.c
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdservicecommands.c
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/obdservicecommands.c
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/obdservicecommands.h
 string.h
 -
 stdio.h
@@ -32,9 +32,9 @@ stdio.h
 stdlib.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/obdservicecommands.h
 stdlib.h
 -
 obdconvertfunctions.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdinfo/obdconvertfunctions.h
 

@@ -35,14 +35,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
+CMAKE_SOURCE_DIR = /home/anthony/clemsonResearch/obdgpslogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger/build
+CMAKE_BINARY_DIR = /home/anthony/clemsonResearch/obdgpslogger/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +114,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CPackSourceConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/clemsonResearch/obdgpslogger/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +133,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/CMakeFiles/progress.marks
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles /home/anthony/clemsonResearch/obdgpslogger/build/src/gui/CMakeFiles/progress.marks
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/clean
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +149,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/gui/CMakeFiles/ckobdfl.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/ckobdfl.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/ckobdfl.dir/rule
 .PHONY : src/gui/CMakeFiles/ckobdfl.dir/rule
 
 # Convenience name for target.
@@ -170,12 +173,12 @@ ckobdfl: src/gui/CMakeFiles/ckobdfl.dir/rule
 
 # fast build rule for target.
 ckobdfl/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/build
 .PHONY : ckobdfl/fast
 
 # Convenience name for target.
 src/gui/CMakeFiles/obdgui.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/obdgui.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/obdgui.dir/rule
 .PHONY : src/gui/CMakeFiles/obdgui.dir/rule
 
 # Convenience name for target.
@@ -184,7 +187,7 @@ obdgui: src/gui/CMakeFiles/obdgui.dir/rule
 
 # fast build rule for target.
 obdgui/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/build
 .PHONY : obdgui/fast
 
 convertwindow.o: convertwindow.cxx.o
@@ -192,7 +195,7 @@ convertwindow.o: convertwindow.cxx.o
 
 # target to build an object file
 convertwindow.cxx.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.o
 .PHONY : convertwindow.cxx.o
 
 convertwindow.i: convertwindow.cxx.i
@@ -200,7 +203,7 @@ convertwindow.i: convertwindow.cxx.i
 
 # target to preprocess a source file
 convertwindow.cxx.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.i
 .PHONY : convertwindow.cxx.i
 
 convertwindow.s: convertwindow.cxx.s
@@ -208,7 +211,7 @@ convertwindow.s: convertwindow.cxx.s
 
 # target to generate assembly for a file
 convertwindow.cxx.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/convertwindow.cxx.s
 .PHONY : convertwindow.cxx.s
 
 gpsdwizard.o: gpsdwizard.cxx.o
@@ -216,7 +219,7 @@ gpsdwizard.o: gpsdwizard.cxx.o
 
 # target to build an object file
 gpsdwizard.cxx.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.o
 .PHONY : gpsdwizard.cxx.o
 
 gpsdwizard.i: gpsdwizard.cxx.i
@@ -224,7 +227,7 @@ gpsdwizard.i: gpsdwizard.cxx.i
 
 # target to preprocess a source file
 gpsdwizard.cxx.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.i
 .PHONY : gpsdwizard.cxx.i
 
 gpsdwizard.s: gpsdwizard.cxx.s
@@ -232,7 +235,7 @@ gpsdwizard.s: gpsdwizard.cxx.s
 
 # target to generate assembly for a file
 gpsdwizard.cxx.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.s
 .PHONY : gpsdwizard.cxx.s
 
 guessdevs.o: guessdevs.cpp.o
@@ -240,7 +243,7 @@ guessdevs.o: guessdevs.cpp.o
 
 # target to build an object file
 guessdevs.cpp.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.o
 .PHONY : guessdevs.cpp.o
 
 guessdevs.i: guessdevs.cpp.i
@@ -248,7 +251,7 @@ guessdevs.i: guessdevs.cpp.i
 
 # target to preprocess a source file
 guessdevs.cpp.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.i
 .PHONY : guessdevs.cpp.i
 
 guessdevs.s: guessdevs.cpp.s
@@ -256,7 +259,7 @@ guessdevs.s: guessdevs.cpp.s
 
 # target to generate assembly for a file
 guessdevs.cpp.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/guessdevs.cpp.s
 .PHONY : guessdevs.cpp.s
 
 loggerhandler.o: loggerhandler.cpp.o
@@ -264,7 +267,7 @@ loggerhandler.o: loggerhandler.cpp.o
 
 # target to build an object file
 loggerhandler.cpp.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.o
 .PHONY : loggerhandler.cpp.o
 
 loggerhandler.i: loggerhandler.cpp.i
@@ -272,7 +275,7 @@ loggerhandler.i: loggerhandler.cpp.i
 
 # target to preprocess a source file
 loggerhandler.cpp.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.i
 .PHONY : loggerhandler.cpp.i
 
 loggerhandler.s: loggerhandler.cpp.s
@@ -280,7 +283,7 @@ loggerhandler.s: loggerhandler.cpp.s
 
 # target to generate assembly for a file
 loggerhandler.cpp.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/loggerhandler.cpp.s
 .PHONY : loggerhandler.cpp.s
 
 logwindow.o: logwindow.cxx.o
@@ -288,7 +291,7 @@ logwindow.o: logwindow.cxx.o
 
 # target to build an object file
 logwindow.cxx.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.o
 .PHONY : logwindow.cxx.o
 
 logwindow.i: logwindow.cxx.i
@@ -296,7 +299,7 @@ logwindow.i: logwindow.cxx.i
 
 # target to preprocess a source file
 logwindow.cxx.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.i
 .PHONY : logwindow.cxx.i
 
 logwindow.s: logwindow.cxx.s
@@ -304,7 +307,7 @@ logwindow.s: logwindow.cxx.s
 
 # target to generate assembly for a file
 logwindow.cxx.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/logwindow.cxx.s
 .PHONY : logwindow.cxx.s
 
 maindisplay.o: maindisplay.cxx.o
@@ -312,7 +315,7 @@ maindisplay.o: maindisplay.cxx.o
 
 # target to build an object file
 maindisplay.cxx.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.o
 .PHONY : maindisplay.cxx.o
 
 maindisplay.i: maindisplay.cxx.i
@@ -320,7 +323,7 @@ maindisplay.i: maindisplay.cxx.i
 
 # target to preprocess a source file
 maindisplay.cxx.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.i
 .PHONY : maindisplay.cxx.i
 
 maindisplay.s: maindisplay.cxx.s
@@ -328,7 +331,7 @@ maindisplay.s: maindisplay.cxx.s
 
 # target to generate assembly for a file
 maindisplay.cxx.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/maindisplay.cxx.s
 .PHONY : maindisplay.cxx.s
 
 obdgui.o: obdgui.cpp.o
@@ -336,7 +339,7 @@ obdgui.o: obdgui.cpp.o
 
 # target to build an object file
 obdgui.cpp.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.o
 .PHONY : obdgui.cpp.o
 
 obdgui.i: obdgui.cpp.i
@@ -344,7 +347,7 @@ obdgui.i: obdgui.cpp.i
 
 # target to preprocess a source file
 obdgui.cpp.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.i
 .PHONY : obdgui.cpp.i
 
 obdgui.s: obdgui.cpp.s
@@ -352,7 +355,7 @@ obdgui.s: obdgui.cpp.s
 
 # target to generate assembly for a file
 obdgui.cpp.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/obdgui.cpp.s
 .PHONY : obdgui.cpp.s
 
 # Help Target
@@ -403,6 +406,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

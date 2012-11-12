@@ -43,14 +43,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
+CMAKE_SOURCE_DIR = /home/anthony/clemsonResearch/obdgpslogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger/build
+CMAKE_BINARY_DIR = /home/anthony/clemsonResearch/obdgpslogger/build
 
 #=============================================================================
 # Directory level rules for directory libs/sqlite3
@@ -74,7 +77,7 @@ libs/sqlite3/preinstall:
 libs/sqlite3/CMakeFiles/cksqlite.dir/all:
 	$(MAKE) -f libs/sqlite3/CMakeFiles/cksqlite.dir/build.make libs/sqlite3/CMakeFiles/cksqlite.dir/depend
 	$(MAKE) -f libs/sqlite3/CMakeFiles/cksqlite.dir/build.make libs/sqlite3/CMakeFiles/cksqlite.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  33
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  33
 	@echo "Built target cksqlite"
 .PHONY : libs/sqlite3/CMakeFiles/cksqlite.dir/all
 
@@ -84,9 +87,9 @@ all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
 
 # Build rule for subdir invocation for target.
 libs/sqlite3/CMakeFiles/cksqlite.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 libs/sqlite3/CMakeFiles/cksqlite.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : libs/sqlite3/CMakeFiles/cksqlite.dir/rule
 
 # Convenience name for target.
@@ -124,7 +127,7 @@ src/obdcomm/preinstall:
 src/obdcomm/CMakeFiles/ckobdcomm.dir/all:
 	$(MAKE) -f src/obdcomm/CMakeFiles/ckobdcomm.dir/build.make src/obdcomm/CMakeFiles/ckobdcomm.dir/depend
 	$(MAKE) -f src/obdcomm/CMakeFiles/ckobdcomm.dir/build.make src/obdcomm/CMakeFiles/ckobdcomm.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  1 2
 	@echo "Built target ckobdcomm"
 .PHONY : src/obdcomm/CMakeFiles/ckobdcomm.dir/all
 
@@ -134,9 +137,9 @@ all: src/obdcomm/CMakeFiles/ckobdcomm.dir/all
 
 # Build rule for subdir invocation for target.
 src/obdcomm/CMakeFiles/ckobdcomm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/obdcomm/CMakeFiles/ckobdcomm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/obdcomm/CMakeFiles/ckobdcomm.dir/rule
 
 # Convenience name for target.
@@ -177,7 +180,7 @@ src/logger/CMakeFiles/obdgpslogger.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir
 src/logger/CMakeFiles/obdgpslogger.dir/all: src/obdcomm/CMakeFiles/ckobdcomm.dir/all
 	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/depend
 	$(MAKE) -f src/logger/CMakeFiles/obdgpslogger.dir/build.make src/logger/CMakeFiles/obdgpslogger.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  43 44 45 46 47 48 49 50
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  43 44 45 46 47 48 49 50
 	@echo "Built target obdgpslogger"
 .PHONY : src/logger/CMakeFiles/obdgpslogger.dir/all
 
@@ -187,9 +190,9 @@ all: src/logger/CMakeFiles/obdgpslogger.dir/all
 
 # Build rule for subdir invocation for target.
 src/logger/CMakeFiles/obdgpslogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 src/logger/CMakeFiles/obdgpslogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/logger/CMakeFiles/obdgpslogger.dir/rule
 
 # Convenience name for target.
@@ -229,7 +232,7 @@ src/gui/preinstall:
 src/gui/CMakeFiles/ckobdfl.dir/all:
 	$(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/depend
 	$(MAKE) -f src/gui/CMakeFiles/ckobdfl.dir/build.make src/gui/CMakeFiles/ckobdfl.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  7 8 9 10 11 12 13 14 15 16 17 18
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  7 8 9 10 11 12 13 14 15 16 17 18
 	@echo "Built target ckobdfl"
 .PHONY : src/gui/CMakeFiles/ckobdfl.dir/all
 
@@ -239,9 +242,9 @@ all: src/gui/CMakeFiles/ckobdfl.dir/all
 
 # Build rule for subdir invocation for target.
 src/gui/CMakeFiles/ckobdfl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/ckobdfl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/gui/CMakeFiles/ckobdfl.dir/rule
 
 # Convenience name for target.
@@ -261,12 +264,12 @@ clean: src/gui/CMakeFiles/ckobdfl.dir/clean
 # Target rules for target src/gui/CMakeFiles/obdgui.dir
 
 # All Build rule for target.
-src/gui/CMakeFiles/obdgui.dir/all: src/gui/CMakeFiles/ckobdfl.dir/all
 src/gui/CMakeFiles/obdgui.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
 src/gui/CMakeFiles/obdgui.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
+src/gui/CMakeFiles/obdgui.dir/all: src/gui/CMakeFiles/ckobdfl.dir/all
 	$(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/depend
 	$(MAKE) -f src/gui/CMakeFiles/obdgui.dir/build.make src/gui/CMakeFiles/obdgui.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  51 52 53
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  51 52 53
 	@echo "Built target obdgui"
 .PHONY : src/gui/CMakeFiles/obdgui.dir/all
 
@@ -276,9 +279,9 @@ all: src/gui/CMakeFiles/obdgui.dir/all
 
 # Build rule for subdir invocation for target.
 src/gui/CMakeFiles/obdgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/obdgui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/gui/CMakeFiles/obdgui.dir/rule
 
 # Convenience name for target.
@@ -316,7 +319,7 @@ src/obdinfo/preinstall:
 src/obdinfo/CMakeFiles/ckobdinfo.dir/all:
 	$(MAKE) -f src/obdinfo/CMakeFiles/ckobdinfo.dir/build.make src/obdinfo/CMakeFiles/ckobdinfo.dir/depend
 	$(MAKE) -f src/obdinfo/CMakeFiles/ckobdinfo.dir/build.make src/obdinfo/CMakeFiles/ckobdinfo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  19 20 21 22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  19 20 21 22
 	@echo "Built target ckobdinfo"
 .PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 
@@ -326,9 +329,9 @@ all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 
 # Build rule for subdir invocation for target.
 src/obdinfo/CMakeFiles/ckobdinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/obdinfo/CMakeFiles/ckobdinfo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/obdinfo/CMakeFiles/ckobdinfo.dir/rule
 
 # Convenience name for target.
@@ -366,7 +369,7 @@ src/conf/preinstall:
 src/conf/CMakeFiles/ckobdconfigfile.dir/all:
 	$(MAKE) -f src/conf/CMakeFiles/ckobdconfigfile.dir/build.make src/conf/CMakeFiles/ckobdconfigfile.dir/depend
 	$(MAKE) -f src/conf/CMakeFiles/ckobdconfigfile.dir/build.make src/conf/CMakeFiles/ckobdconfigfile.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  3
 	@echo "Built target ckobdconfigfile"
 .PHONY : src/conf/CMakeFiles/ckobdconfigfile.dir/all
 
@@ -376,9 +379,9 @@ all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
 
 # Build rule for subdir invocation for target.
 src/conf/CMakeFiles/ckobdconfigfile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/conf/CMakeFiles/ckobdconfigfile.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/conf/CMakeFiles/ckobdconfigfile.dir/rule
 
 # Convenience name for target.
@@ -422,7 +425,7 @@ src/analysis/preinstall:
 src/analysis/CMakeFiles/ckobdfft.dir/all:
 	$(MAKE) -f src/analysis/CMakeFiles/ckobdfft.dir/build.make src/analysis/CMakeFiles/ckobdfft.dir/depend
 	$(MAKE) -f src/analysis/CMakeFiles/ckobdfft.dir/build.make src/analysis/CMakeFiles/ckobdfft.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  4 5 6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  4 5 6
 	@echo "Built target ckobdfft"
 .PHONY : src/analysis/CMakeFiles/ckobdfft.dir/all
 
@@ -432,9 +435,9 @@ all: src/analysis/CMakeFiles/ckobdfft.dir/all
 
 # Build rule for subdir invocation for target.
 src/analysis/CMakeFiles/ckobdfft.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/analysis/CMakeFiles/ckobdfft.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/analysis/CMakeFiles/ckobdfft.dir/rule
 
 # Convenience name for target.
@@ -458,7 +461,7 @@ src/analysis/CMakeFiles/obdboxwhisker.dir/all: libs/sqlite3/CMakeFiles/cksqlite.
 src/analysis/CMakeFiles/obdboxwhisker.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 	$(MAKE) -f src/analysis/CMakeFiles/obdboxwhisker.dir/build.make src/analysis/CMakeFiles/obdboxwhisker.dir/depend
 	$(MAKE) -f src/analysis/CMakeFiles/obdboxwhisker.dir/build.make src/analysis/CMakeFiles/obdboxwhisker.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  40
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  40
 	@echo "Built target obdboxwhisker"
 .PHONY : src/analysis/CMakeFiles/obdboxwhisker.dir/all
 
@@ -468,9 +471,9 @@ all: src/analysis/CMakeFiles/obdboxwhisker.dir/all
 
 # Build rule for subdir invocation for target.
 src/analysis/CMakeFiles/obdboxwhisker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 src/analysis/CMakeFiles/obdboxwhisker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/analysis/CMakeFiles/obdboxwhisker.dir/rule
 
 # Convenience name for target.
@@ -495,7 +498,7 @@ src/analysis/CMakeFiles/obdfft.dir/all: src/analysis/CMakeFiles/ckobdfft.dir/all
 src/analysis/CMakeFiles/obdfft.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 	$(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/depend
 	$(MAKE) -f src/analysis/CMakeFiles/obdfft.dir/build.make src/analysis/CMakeFiles/obdfft.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  41
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  41
 	@echo "Built target obdfft"
 .PHONY : src/analysis/CMakeFiles/obdfft.dir/all
 
@@ -505,9 +508,9 @@ all: src/analysis/CMakeFiles/obdfft.dir/all
 
 # Build rule for subdir invocation for target.
 src/analysis/CMakeFiles/obdfft.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/analysis/CMakeFiles/obdfft.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/analysis/CMakeFiles/obdfft.dir/rule
 
 # Convenience name for target.
@@ -530,7 +533,7 @@ clean: src/analysis/CMakeFiles/obdfft.dir/clean
 src/analysis/CMakeFiles/obdtripcompare.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
 	$(MAKE) -f src/analysis/CMakeFiles/obdtripcompare.dir/build.make src/analysis/CMakeFiles/obdtripcompare.dir/depend
 	$(MAKE) -f src/analysis/CMakeFiles/obdtripcompare.dir/build.make src/analysis/CMakeFiles/obdtripcompare.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  62 63 64
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  62 63 64
 	@echo "Built target obdtripcompare"
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/all
 
@@ -540,9 +543,9 @@ all: src/analysis/CMakeFiles/obdtripcompare.dir/all
 
 # Build rule for subdir invocation for target.
 src/analysis/CMakeFiles/obdtripcompare.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/analysis/CMakeFiles/obdtripcompare.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/analysis/CMakeFiles/obdtripcompare.dir/rule
 
 # Convenience name for target.
@@ -580,7 +583,7 @@ src/kml/preinstall:
 src/kml/CMakeFiles/obd2kml.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
 	$(MAKE) -f src/kml/CMakeFiles/obd2kml.dir/build.make src/kml/CMakeFiles/obd2kml.dir/depend
 	$(MAKE) -f src/kml/CMakeFiles/obd2kml.dir/build.make src/kml/CMakeFiles/obd2kml.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  36 37 38 39
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  36 37 38 39
 	@echo "Built target obd2kml"
 .PHONY : src/kml/CMakeFiles/obd2kml.dir/all
 
@@ -590,9 +593,9 @@ all: src/kml/CMakeFiles/obd2kml.dir/all
 
 # Build rule for subdir invocation for target.
 src/kml/CMakeFiles/obd2kml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 src/kml/CMakeFiles/obd2kml.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/kml/CMakeFiles/obd2kml.dir/rule
 
 # Convenience name for target.
@@ -630,7 +633,7 @@ src/csv/preinstall:
 src/csv/CMakeFiles/obd2csv.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
 	$(MAKE) -f src/csv/CMakeFiles/obd2csv.dir/build.make src/csv/CMakeFiles/obd2csv.dir/depend
 	$(MAKE) -f src/csv/CMakeFiles/obd2csv.dir/build.make src/csv/CMakeFiles/obd2csv.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  34
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  34
 	@echo "Built target obd2csv"
 .PHONY : src/csv/CMakeFiles/obd2csv.dir/all
 
@@ -640,9 +643,9 @@ all: src/csv/CMakeFiles/obd2csv.dir/all
 
 # Build rule for subdir invocation for target.
 src/csv/CMakeFiles/obd2csv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/csv/CMakeFiles/obd2csv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/csv/CMakeFiles/obd2csv.dir/rule
 
 # Convenience name for target.
@@ -680,7 +683,7 @@ src/gpx/preinstall:
 src/gpx/CMakeFiles/obd2gpx.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
 	$(MAKE) -f src/gpx/CMakeFiles/obd2gpx.dir/build.make src/gpx/CMakeFiles/obd2gpx.dir/depend
 	$(MAKE) -f src/gpx/CMakeFiles/obd2gpx.dir/build.make src/gpx/CMakeFiles/obd2gpx.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  35
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  35
 	@echo "Built target obd2gpx"
 .PHONY : src/gpx/CMakeFiles/obd2gpx.dir/all
 
@@ -690,9 +693,9 @@ all: src/gpx/CMakeFiles/obd2gpx.dir/all
 
 # Build rule for subdir invocation for target.
 src/gpx/CMakeFiles/obd2gpx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/gpx/CMakeFiles/obd2gpx.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/gpx/CMakeFiles/obd2gpx.dir/rule
 
 # Convenience name for target.
@@ -746,7 +749,7 @@ src/sim/preinstall:
 src/sim/CMakeFiles/ckobdsim_cycle.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  24
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  24
 	@echo "Built target ckobdsim_cycle"
 .PHONY : src/sim/CMakeFiles/ckobdsim_cycle.dir/all
 
@@ -756,9 +759,9 @@ all: src/sim/CMakeFiles/ckobdsim_cycle.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/ckobdsim_cycle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_cycle.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/ckobdsim_cycle.dir/rule
 
 # Convenience name for target.
@@ -781,7 +784,7 @@ clean: src/sim/CMakeFiles/ckobdsim_cycle.dir/clean
 src/sim/CMakeFiles/ckobdsim_dlopen.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  25
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  25
 	@echo "Built target ckobdsim_dlopen"
 .PHONY : src/sim/CMakeFiles/ckobdsim_dlopen.dir/all
 
@@ -791,9 +794,9 @@ all: src/sim/CMakeFiles/ckobdsim_dlopen.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/ckobdsim_dlopen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_dlopen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/ckobdsim_dlopen.dir/rule
 
 # Convenience name for target.
@@ -816,7 +819,7 @@ clean: src/sim/CMakeFiles/ckobdsim_dlopen.dir/clean
 src/sim/CMakeFiles/ckobdsim_error.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  26
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  26
 	@echo "Built target ckobdsim_error"
 .PHONY : src/sim/CMakeFiles/ckobdsim_error.dir/all
 
@@ -826,9 +829,9 @@ all: src/sim/CMakeFiles/ckobdsim_error.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/ckobdsim_error.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_error.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/ckobdsim_error.dir/rule
 
 # Convenience name for target.
@@ -851,7 +854,7 @@ clean: src/sim/CMakeFiles/ckobdsim_error.dir/clean
 src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  27 28 29
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  27 28 29
 	@echo "Built target ckobdsim_gui_fltk"
 .PHONY : src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/all
 
@@ -861,9 +864,9 @@ all: src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
 
 # Convenience name for target.
@@ -886,7 +889,7 @@ clean: src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/clean
 src/sim/CMakeFiles/ckobdsim_logger.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  30
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  30
 	@echo "Built target ckobdsim_logger"
 .PHONY : src/sim/CMakeFiles/ckobdsim_logger.dir/all
 
@@ -896,9 +899,9 @@ all: src/sim/CMakeFiles/ckobdsim_logger.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/ckobdsim_logger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_logger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/ckobdsim_logger.dir/rule
 
 # Convenience name for target.
@@ -921,7 +924,7 @@ clean: src/sim/CMakeFiles/ckobdsim_logger.dir/clean
 src/sim/CMakeFiles/ckobdsim_random.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  31
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  31
 	@echo "Built target ckobdsim_random"
 .PHONY : src/sim/CMakeFiles/ckobdsim_random.dir/all
 
@@ -931,9 +934,9 @@ all: src/sim/CMakeFiles/ckobdsim_random.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/ckobdsim_random.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_random.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/ckobdsim_random.dir/rule
 
 # Convenience name for target.
@@ -956,7 +959,7 @@ clean: src/sim/CMakeFiles/ckobdsim_random.dir/clean
 src/sim/CMakeFiles/ckobdsim_socket.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  32
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  32
 	@echo "Built target ckobdsim_socket"
 .PHONY : src/sim/CMakeFiles/ckobdsim_socket.dir/all
 
@@ -966,9 +969,9 @@ all: src/sim/CMakeFiles/ckobdsim_socket.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/ckobdsim_socket.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_socket.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/ckobdsim_socket.dir/rule
 
 # Convenience name for target.
@@ -988,19 +991,19 @@ clean: src/sim/CMakeFiles/ckobdsim_socket.dir/clean
 # Target rules for target src/sim/CMakeFiles/obdsim.dir
 
 # All Build rule for target.
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_socket.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_dlopen.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_error.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_logger.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_socket.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_random.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/conf/CMakeFiles/ckobdconfigfile.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_cycle.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_random.dir/all
 src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_error.dir/all
-src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_logger.dir/all
+src/sim/CMakeFiles/obdsim.dir/all: src/sim/CMakeFiles/ckobdsim_dlopen.dir/all
 	$(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  55 56 57 58 59 60
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  55 56 57 58 59 60
 	@echo "Built target obdsim"
 .PHONY : src/sim/CMakeFiles/obdsim.dir/all
 
@@ -1010,9 +1013,9 @@ all: src/sim/CMakeFiles/obdsim.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/obdsim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 21
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/obdsim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/obdsim.dir/rule
 
 # Convenience name for target.
@@ -1035,7 +1038,7 @@ clean: src/sim/CMakeFiles/obdsim.dir/clean
 src/sim/CMakeFiles/obdsim_dltest.dir/all:
 	$(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/depend
 	$(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  61
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  61
 	@echo "Built target obdsim_dltest"
 .PHONY : src/sim/CMakeFiles/obdsim_dltest.dir/all
 
@@ -1045,9 +1048,9 @@ all: src/sim/CMakeFiles/obdsim_dltest.dir/all
 
 # Build rule for subdir invocation for target.
 src/sim/CMakeFiles/obdsim_dltest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/obdsim_dltest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/sim/CMakeFiles/obdsim_dltest.dir/rule
 
 # Convenience name for target.
@@ -1087,7 +1090,7 @@ src/repair/preinstall:
 src/repair/CMakeFiles/ckobdrepair.dir/all:
 	$(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/depend
 	$(MAKE) -f src/repair/CMakeFiles/ckobdrepair.dir/build.make src/repair/CMakeFiles/ckobdrepair.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  23
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  23
 	@echo "Built target ckobdrepair"
 .PHONY : src/repair/CMakeFiles/ckobdrepair.dir/all
 
@@ -1097,9 +1100,9 @@ all: src/repair/CMakeFiles/ckobdrepair.dir/all
 
 # Build rule for subdir invocation for target.
 src/repair/CMakeFiles/ckobdrepair.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/repair/CMakeFiles/ckobdrepair.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/repair/CMakeFiles/ckobdrepair.dir/rule
 
 # Convenience name for target.
@@ -1123,7 +1126,7 @@ src/repair/CMakeFiles/obdlogrepair.dir/all: libs/sqlite3/CMakeFiles/cksqlite.dir
 src/repair/CMakeFiles/obdlogrepair.dir/all: src/repair/CMakeFiles/ckobdrepair.dir/all
 	$(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/depend
 	$(MAKE) -f src/repair/CMakeFiles/obdlogrepair.dir/build.make src/repair/CMakeFiles/obdlogrepair.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  54
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  54
 	@echo "Built target obdlogrepair"
 .PHONY : src/repair/CMakeFiles/obdlogrepair.dir/all
 
@@ -1133,9 +1136,9 @@ all: src/repair/CMakeFiles/obdlogrepair.dir/all
 
 # Build rule for subdir invocation for target.
 src/repair/CMakeFiles/obdlogrepair.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/repair/CMakeFiles/obdlogrepair.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/repair/CMakeFiles/obdlogrepair.dir/rule
 
 # Convenience name for target.
@@ -1174,7 +1177,7 @@ src/ftdipty/CMakeFiles/obdftdipty.dir/all: src/conf/CMakeFiles/ckobdconfigfile.d
 src/ftdipty/CMakeFiles/obdftdipty.dir/all: src/obdinfo/CMakeFiles/ckobdinfo.dir/all
 	$(MAKE) -f src/ftdipty/CMakeFiles/obdftdipty.dir/build.make src/ftdipty/CMakeFiles/obdftdipty.dir/depend
 	$(MAKE) -f src/ftdipty/CMakeFiles/obdftdipty.dir/build.make src/ftdipty/CMakeFiles/obdftdipty.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles  42
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles  42
 	@echo "Built target obdftdipty"
 .PHONY : src/ftdipty/CMakeFiles/obdftdipty.dir/all
 
@@ -1184,9 +1187,9 @@ all: src/ftdipty/CMakeFiles/obdftdipty.dir/all
 
 # Build rule for subdir invocation for target.
 src/ftdipty/CMakeFiles/obdftdipty.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 src/ftdipty/CMakeFiles/obdftdipty.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : src/ftdipty/CMakeFiles/obdftdipty.dir/rule
 
 # Convenience name for target.

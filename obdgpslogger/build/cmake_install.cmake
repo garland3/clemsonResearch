@@ -1,4 +1,4 @@
-# Install script for directory: /home/anthony/ClemsonVibrationResearch/obdgpslogger
+# Install script for directory: /home/anthony/clemsonResearch/obdgpslogger
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,19 +34,19 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/libs/sqlite3/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdcomm/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/logger/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gui/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/obdinfo/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/conf/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/analysis/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/kml/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/csv/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/gpx/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/repair/cmake_install.cmake")
-  INCLUDE("/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/ftdipty/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/libs/sqlite3/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/obdcomm/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/logger/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/gui/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/obdinfo/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/conf/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/analysis/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/kml/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/csv/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/gpx/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/sim/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/repair/cmake_install.cmake")
+  INCLUDE("/home/anthony/clemsonResearch/obdgpslogger/build/src/ftdipty/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -56,7 +56,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/anthony/clemsonResearch/obdgpslogger/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/anthony/ClemsonVibrationResearch/obdgpslogger/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/anthony/clemsonResearch/obdgpslogger/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

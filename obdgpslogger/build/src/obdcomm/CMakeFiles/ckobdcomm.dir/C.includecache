@@ -14,9 +14,9 @@ stdlib.h
 obdconvertfunctions.h
 ../src/obdinfo/obdconvertfunctions.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.c
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdserial.c
 obdserial.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdserial.h
 stdio.h
 -
 string.h
@@ -34,23 +34,23 @@ sys/time.h
 termios.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdserial.h
 obdconvertfunctions.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdconvertfunctions.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdconvertfunctions.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.c
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/supportedcommands.c
 stdio.h
 -
 stdlib.h
 -
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdservicecommands.h
 supportedcommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/supportedcommands.h
 obdserial.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdserial.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/supportedcommands.h
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdservicecommands.h
 

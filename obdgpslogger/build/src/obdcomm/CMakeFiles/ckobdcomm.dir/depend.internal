@@ -3,11 +3,11 @@
 
 src/obdcomm/CMakeFiles/ckobdcomm.dir/obdserial.c.o
  ../src/obdinfo/obdconvertfunctions.h
- /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.c
- /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
+ /home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdserial.c
+ /home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdserial.h
 src/obdcomm/CMakeFiles/ckobdcomm.dir/supportedcommands.c.o
  ../src/obdinfo/obdconvertfunctions.h
  ../src/obdinfo/obdservicecommands.h
- /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/obdserial.h
- /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.c
- /home/anthony/ClemsonVibrationResearch/obdgpslogger/src/obdcomm/supportedcommands.h
+ /home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/obdserial.h
+ /home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/supportedcommands.c
+ /home/anthony/clemsonResearch/obdgpslogger/src/obdcomm/supportedcommands.h

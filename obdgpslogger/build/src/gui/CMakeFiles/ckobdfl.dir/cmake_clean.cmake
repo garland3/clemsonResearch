@@ -1,8 +1,4 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/ckobdfl.dir/maindisplay.cxx.o"
-  "CMakeFiles/ckobdfl.dir/logwindow.cxx.o"
-  "CMakeFiles/ckobdfl.dir/convertwindow.cxx.o"
-  "CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.o"
   "maindisplay.cxx"
   "maindisplay.h"
   "logwindow.cxx"
@@ -11,6 +7,10 @@ FILE(REMOVE_RECURSE
   "convertwindow.h"
   "gpsdwizard.cxx"
   "gpsdwizard.h"
+  "CMakeFiles/ckobdfl.dir/maindisplay.cxx.o"
+  "CMakeFiles/ckobdfl.dir/logwindow.cxx.o"
+  "CMakeFiles/ckobdfl.dir/convertwindow.cxx.o"
+  "CMakeFiles/ckobdfl.dir/gpsdwizard.cxx.o"
   "libckobdfl.pdb"
   "libckobdfl.a"
 )

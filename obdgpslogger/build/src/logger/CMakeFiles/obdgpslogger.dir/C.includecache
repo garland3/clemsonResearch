@@ -30,11 +30,11 @@ stdlib.h
 obdconvertfunctions.h
 ../src/obdinfo/obdconvertfunctions.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/database.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/database.c
 database.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/database.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/database.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 stdio.h
 -
 stdlib.h
@@ -42,77 +42,77 @@ stdlib.h
 string.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/database.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/database.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/ecudb.c
 ecudb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/ecudb.h
 stdio.h
 -
 string.h
 -
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/ecudb.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gpscomm.c
 gps.h
 -
 stdlib.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gpscomm.h
 gps.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gpsdb.c
 gpsdb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gpsdb.h
 stdio.h
 -
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gpsdb.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/main.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/main.c
 obdconfig.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obdconfig.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obdconfig.h
 main.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/main.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/main.h
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obdservicecommands.h
 database.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/database.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/database.h
 obddb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddb.h
 gpsdb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpsdb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gpsdb.h
 ecudb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/ecudb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/ecudb.h
 tripdb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/tripdb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/tripdb.h
 obdserial.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obdserial.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obdserial.h
 gpscomm.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gpscomm.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gpscomm.h
 supportedcommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/supportedcommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/supportedcommands.h
 obdconfigfile.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obdconfigfile.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obdconfigfile.h
 gps.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/gps.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/gps.h
 obddbus.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddbus.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddbus.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 stdio.h
 -
 string.h
@@ -134,21 +134,21 @@ sys/stat.h
 signal.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/main.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/main.h
 getopt.h
 -
 stdlib.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddb.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddb.c
 obddb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddb.h
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obdservicecommands.h
 supportedcommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/supportedcommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/supportedcommands.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 stdio.h
 -
 stdlib.h
@@ -156,35 +156,35 @@ stdlib.h
 string.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddb.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddbus.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddbus.c
 stdio.h
 -
 dbus/dbus.h
 -
 obdservicecommands.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obdservicecommands.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obdservicecommands.h
 obddbus.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddbus.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddbus.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/obddbus.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/obddbus.h
 dbus/dbus.h
 -
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/tripdb.c
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/tripdb.c
 tripdb.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/tripdb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/tripdb.h
 stdio.h
 -
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/tripdb.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/tripdb.h
 sqlite3.h
-/home/anthony/ClemsonVibrationResearch/obdgpslogger/src/logger/sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/logger/sqlite3.h
 
 obdconfig.h
 

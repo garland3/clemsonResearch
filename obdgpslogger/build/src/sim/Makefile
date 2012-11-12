@@ -35,14 +35,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger
+CMAKE_SOURCE_DIR = /home/anthony/clemsonResearch/obdgpslogger
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anthony/ClemsonVibrationResearch/obdgpslogger/build
+CMAKE_BINARY_DIR = /home/anthony/clemsonResearch/obdgpslogger/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -101,7 +104,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -111,7 +114,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CPackSourceConfig.cmake
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/anthony/clemsonResearch/obdgpslogger/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -130,14 +133,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/src/sim/CMakeFiles/progress.marks
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/ClemsonVibrationResearch/obdgpslogger/build/CMakeFiles 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles /home/anthony/clemsonResearch/obdgpslogger/build/src/sim/CMakeFiles/progress.marks
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anthony/clemsonResearch/obdgpslogger/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/clean
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/clean
 .PHONY : clean
 
 # The main clean target
@@ -146,22 +149,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/preinstall
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_cycle.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_cycle.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_cycle.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_cycle.dir/rule
 
 # Convenience name for target.
@@ -170,12 +173,12 @@ ckobdsim_cycle: src/sim/CMakeFiles/ckobdsim_cycle.dir/rule
 
 # fast build rule for target.
 ckobdsim_cycle/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/build
 .PHONY : ckobdsim_cycle/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_dlopen.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_dlopen.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_dlopen.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_dlopen.dir/rule
 
 # Convenience name for target.
@@ -184,12 +187,12 @@ ckobdsim_dlopen: src/sim/CMakeFiles/ckobdsim_dlopen.dir/rule
 
 # fast build rule for target.
 ckobdsim_dlopen/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/build
 .PHONY : ckobdsim_dlopen/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_error.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_error.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_error.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_error.dir/rule
 
 # Convenience name for target.
@@ -198,12 +201,12 @@ ckobdsim_error: src/sim/CMakeFiles/ckobdsim_error.dir/rule
 
 # fast build rule for target.
 ckobdsim_error/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/build
 .PHONY : ckobdsim_error/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
 
 # Convenience name for target.
@@ -212,12 +215,12 @@ ckobdsim_gui_fltk: src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/rule
 
 # fast build rule for target.
 ckobdsim_gui_fltk/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build
 .PHONY : ckobdsim_gui_fltk/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_logger.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_logger.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_logger.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_logger.dir/rule
 
 # Convenience name for target.
@@ -226,12 +229,12 @@ ckobdsim_logger: src/sim/CMakeFiles/ckobdsim_logger.dir/rule
 
 # fast build rule for target.
 ckobdsim_logger/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/build
 .PHONY : ckobdsim_logger/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_random.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_random.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_random.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_random.dir/rule
 
 # Convenience name for target.
@@ -240,12 +243,12 @@ ckobdsim_random: src/sim/CMakeFiles/ckobdsim_random.dir/rule
 
 # fast build rule for target.
 ckobdsim_random/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/build
 .PHONY : ckobdsim_random/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/ckobdsim_socket.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_socket.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/ckobdsim_socket.dir/rule
 .PHONY : src/sim/CMakeFiles/ckobdsim_socket.dir/rule
 
 # Convenience name for target.
@@ -254,12 +257,12 @@ ckobdsim_socket: src/sim/CMakeFiles/ckobdsim_socket.dir/rule
 
 # fast build rule for target.
 ckobdsim_socket/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/build
 .PHONY : ckobdsim_socket/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/obdsim.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/obdsim.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/obdsim.dir/rule
 .PHONY : src/sim/CMakeFiles/obdsim.dir/rule
 
 # Convenience name for target.
@@ -268,12 +271,12 @@ obdsim: src/sim/CMakeFiles/obdsim.dir/rule
 
 # fast build rule for target.
 obdsim/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/build
 .PHONY : obdsim/fast
 
 # Convenience name for target.
 src/sim/CMakeFiles/obdsim_dltest.dir/rule:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/obdsim_dltest.dir/rule
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f CMakeFiles/Makefile2 src/sim/CMakeFiles/obdsim_dltest.dir/rule
 .PHONY : src/sim/CMakeFiles/obdsim_dltest.dir/rule
 
 # Convenience name for target.
@@ -282,7 +285,7 @@ obdsim_dltest: src/sim/CMakeFiles/obdsim_dltest.dir/rule
 
 # fast build rule for target.
 obdsim_dltest/fast:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/build
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/build
 .PHONY : obdsim_dltest/fast
 
 fdsimport.o: fdsimport.cc.o
@@ -290,7 +293,7 @@ fdsimport.o: fdsimport.cc.o
 
 # target to build an object file
 fdsimport.cc.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.o
 .PHONY : fdsimport.cc.o
 
 fdsimport.i: fdsimport.cc.i
@@ -298,7 +301,7 @@ fdsimport.i: fdsimport.cc.i
 
 # target to preprocess a source file
 fdsimport.cc.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.i
 .PHONY : fdsimport.cc.i
 
 fdsimport.s: fdsimport.cc.s
@@ -306,7 +309,7 @@ fdsimport.s: fdsimport.cc.s
 
 # target to generate assembly for a file
 fdsimport.cc.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/fdsimport.cc.s
 .PHONY : fdsimport.cc.s
 
 generators/cycle/gen_cycle.o: generators/cycle/gen_cycle.c.o
@@ -314,7 +317,7 @@ generators/cycle/gen_cycle.o: generators/cycle/gen_cycle.c.o
 
 # target to build an object file
 generators/cycle/gen_cycle.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/generators/cycle/gen_cycle.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/generators/cycle/gen_cycle.c.o
 .PHONY : generators/cycle/gen_cycle.c.o
 
 generators/cycle/gen_cycle.i: generators/cycle/gen_cycle.c.i
@@ -322,7 +325,7 @@ generators/cycle/gen_cycle.i: generators/cycle/gen_cycle.c.i
 
 # target to preprocess a source file
 generators/cycle/gen_cycle.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/generators/cycle/gen_cycle.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/generators/cycle/gen_cycle.c.i
 .PHONY : generators/cycle/gen_cycle.c.i
 
 generators/cycle/gen_cycle.s: generators/cycle/gen_cycle.c.s
@@ -330,7 +333,7 @@ generators/cycle/gen_cycle.s: generators/cycle/gen_cycle.c.s
 
 # target to generate assembly for a file
 generators/cycle/gen_cycle.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/generators/cycle/gen_cycle.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_cycle.dir/build.make src/sim/CMakeFiles/ckobdsim_cycle.dir/generators/cycle/gen_cycle.c.s
 .PHONY : generators/cycle/gen_cycle.c.s
 
 generators/dlopen/gen_dlopen.o: generators/dlopen/gen_dlopen.c.o
@@ -338,7 +341,7 @@ generators/dlopen/gen_dlopen.o: generators/dlopen/gen_dlopen.c.o
 
 # target to build an object file
 generators/dlopen/gen_dlopen.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/generators/dlopen/gen_dlopen.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/generators/dlopen/gen_dlopen.c.o
 .PHONY : generators/dlopen/gen_dlopen.c.o
 
 generators/dlopen/gen_dlopen.i: generators/dlopen/gen_dlopen.c.i
@@ -346,7 +349,7 @@ generators/dlopen/gen_dlopen.i: generators/dlopen/gen_dlopen.c.i
 
 # target to preprocess a source file
 generators/dlopen/gen_dlopen.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/generators/dlopen/gen_dlopen.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/generators/dlopen/gen_dlopen.c.i
 .PHONY : generators/dlopen/gen_dlopen.c.i
 
 generators/dlopen/gen_dlopen.s: generators/dlopen/gen_dlopen.c.s
@@ -354,7 +357,7 @@ generators/dlopen/gen_dlopen.s: generators/dlopen/gen_dlopen.c.s
 
 # target to generate assembly for a file
 generators/dlopen/gen_dlopen.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/generators/dlopen/gen_dlopen.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_dlopen.dir/build.make src/sim/CMakeFiles/ckobdsim_dlopen.dir/generators/dlopen/gen_dlopen.c.s
 .PHONY : generators/dlopen/gen_dlopen.c.s
 
 generators/dlopen/test/test_dlopen.o: generators/dlopen/test/test_dlopen.c.o
@@ -362,7 +365,7 @@ generators/dlopen/test/test_dlopen.o: generators/dlopen/test/test_dlopen.c.o
 
 # target to build an object file
 generators/dlopen/test/test_dlopen.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/generators/dlopen/test/test_dlopen.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/generators/dlopen/test/test_dlopen.c.o
 .PHONY : generators/dlopen/test/test_dlopen.c.o
 
 generators/dlopen/test/test_dlopen.i: generators/dlopen/test/test_dlopen.c.i
@@ -370,7 +373,7 @@ generators/dlopen/test/test_dlopen.i: generators/dlopen/test/test_dlopen.c.i
 
 # target to preprocess a source file
 generators/dlopen/test/test_dlopen.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/generators/dlopen/test/test_dlopen.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/generators/dlopen/test/test_dlopen.c.i
 .PHONY : generators/dlopen/test/test_dlopen.c.i
 
 generators/dlopen/test/test_dlopen.s: generators/dlopen/test/test_dlopen.c.s
@@ -378,7 +381,7 @@ generators/dlopen/test/test_dlopen.s: generators/dlopen/test/test_dlopen.c.s
 
 # target to generate assembly for a file
 generators/dlopen/test/test_dlopen.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/generators/dlopen/test/test_dlopen.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim_dltest.dir/build.make src/sim/CMakeFiles/obdsim_dltest.dir/generators/dlopen/test/test_dlopen.c.s
 .PHONY : generators/dlopen/test/test_dlopen.c.s
 
 generators/error/gen_error.o: generators/error/gen_error.c.o
@@ -386,7 +389,7 @@ generators/error/gen_error.o: generators/error/gen_error.c.o
 
 # target to build an object file
 generators/error/gen_error.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/generators/error/gen_error.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/generators/error/gen_error.c.o
 .PHONY : generators/error/gen_error.c.o
 
 generators/error/gen_error.i: generators/error/gen_error.c.i
@@ -394,7 +397,7 @@ generators/error/gen_error.i: generators/error/gen_error.c.i
 
 # target to preprocess a source file
 generators/error/gen_error.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/generators/error/gen_error.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/generators/error/gen_error.c.i
 .PHONY : generators/error/gen_error.c.i
 
 generators/error/gen_error.s: generators/error/gen_error.c.s
@@ -402,7 +405,7 @@ generators/error/gen_error.s: generators/error/gen_error.c.s
 
 # target to generate assembly for a file
 generators/error/gen_error.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/generators/error/gen_error.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_error.dir/build.make src/sim/CMakeFiles/ckobdsim_error.dir/generators/error/gen_error.c.s
 .PHONY : generators/error/gen_error.c.s
 
 generators/logger/gen_logger.o: generators/logger/gen_logger.c.o
@@ -410,7 +413,7 @@ generators/logger/gen_logger.o: generators/logger/gen_logger.c.o
 
 # target to build an object file
 generators/logger/gen_logger.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/generators/logger/gen_logger.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/generators/logger/gen_logger.c.o
 .PHONY : generators/logger/gen_logger.c.o
 
 generators/logger/gen_logger.i: generators/logger/gen_logger.c.i
@@ -418,7 +421,7 @@ generators/logger/gen_logger.i: generators/logger/gen_logger.c.i
 
 # target to preprocess a source file
 generators/logger/gen_logger.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/generators/logger/gen_logger.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/generators/logger/gen_logger.c.i
 .PHONY : generators/logger/gen_logger.c.i
 
 generators/logger/gen_logger.s: generators/logger/gen_logger.c.s
@@ -426,7 +429,7 @@ generators/logger/gen_logger.s: generators/logger/gen_logger.c.s
 
 # target to generate assembly for a file
 generators/logger/gen_logger.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/generators/logger/gen_logger.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_logger.dir/build.make src/sim/CMakeFiles/ckobdsim_logger.dir/generators/logger/gen_logger.c.s
 .PHONY : generators/logger/gen_logger.c.s
 
 generators/random/gen_random.o: generators/random/gen_random.c.o
@@ -434,7 +437,7 @@ generators/random/gen_random.o: generators/random/gen_random.c.o
 
 # target to build an object file
 generators/random/gen_random.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/generators/random/gen_random.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/generators/random/gen_random.c.o
 .PHONY : generators/random/gen_random.c.o
 
 generators/random/gen_random.i: generators/random/gen_random.c.i
@@ -442,7 +445,7 @@ generators/random/gen_random.i: generators/random/gen_random.c.i
 
 # target to preprocess a source file
 generators/random/gen_random.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/generators/random/gen_random.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/generators/random/gen_random.c.i
 .PHONY : generators/random/gen_random.c.i
 
 generators/random/gen_random.s: generators/random/gen_random.c.s
@@ -450,7 +453,7 @@ generators/random/gen_random.s: generators/random/gen_random.c.s
 
 # target to generate assembly for a file
 generators/random/gen_random.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/generators/random/gen_random.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_random.dir/build.make src/sim/CMakeFiles/ckobdsim_random.dir/generators/random/gen_random.c.s
 .PHONY : generators/random/gen_random.c.s
 
 generators/socket/gen_socket.o: generators/socket/gen_socket.c.o
@@ -458,7 +461,7 @@ generators/socket/gen_socket.o: generators/socket/gen_socket.c.o
 
 # target to build an object file
 generators/socket/gen_socket.c.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/generators/socket/gen_socket.c.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/generators/socket/gen_socket.c.o
 .PHONY : generators/socket/gen_socket.c.o
 
 generators/socket/gen_socket.i: generators/socket/gen_socket.c.i
@@ -466,7 +469,7 @@ generators/socket/gen_socket.i: generators/socket/gen_socket.c.i
 
 # target to preprocess a source file
 generators/socket/gen_socket.c.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/generators/socket/gen_socket.c.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/generators/socket/gen_socket.c.i
 .PHONY : generators/socket/gen_socket.c.i
 
 generators/socket/gen_socket.s: generators/socket/gen_socket.c.s
@@ -474,7 +477,7 @@ generators/socket/gen_socket.s: generators/socket/gen_socket.c.s
 
 # target to generate assembly for a file
 generators/socket/gen_socket.c.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/generators/socket/gen_socket.c.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_socket.dir/build.make src/sim/CMakeFiles/ckobdsim_socket.dir/generators/socket/gen_socket.c.s
 .PHONY : generators/socket/gen_socket.c.s
 
 mainloop.o: mainloop.cc.o
@@ -482,7 +485,7 @@ mainloop.o: mainloop.cc.o
 
 # target to build an object file
 mainloop.cc.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/mainloop.cc.o
 .PHONY : mainloop.cc.o
 
 mainloop.i: mainloop.cc.i
@@ -490,7 +493,7 @@ mainloop.i: mainloop.cc.i
 
 # target to preprocess a source file
 mainloop.cc.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/mainloop.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/mainloop.cc.i
 .PHONY : mainloop.cc.i
 
 mainloop.s: mainloop.cc.s
@@ -498,7 +501,7 @@ mainloop.s: mainloop.cc.s
 
 # target to generate assembly for a file
 mainloop.cc.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/mainloop.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/mainloop.cc.s
 .PHONY : mainloop.cc.s
 
 obdsim.o: obdsim.cc.o
@@ -506,7 +509,7 @@ obdsim.o: obdsim.cc.o
 
 # target to build an object file
 obdsim.cc.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/obdsim.cc.o
 .PHONY : obdsim.cc.o
 
 obdsim.i: obdsim.cc.i
@@ -514,7 +517,7 @@ obdsim.i: obdsim.cc.i
 
 # target to preprocess a source file
 obdsim.cc.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/obdsim.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/obdsim.cc.i
 .PHONY : obdsim.cc.i
 
 obdsim.s: obdsim.cc.s
@@ -522,7 +525,7 @@ obdsim.s: obdsim.cc.s
 
 # target to generate assembly for a file
 obdsim.cc.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/obdsim.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/obdsim.cc.s
 .PHONY : obdsim.cc.s
 
 posixsimport.o: posixsimport.cc.o
@@ -530,7 +533,7 @@ posixsimport.o: posixsimport.cc.o
 
 # target to build an object file
 posixsimport.cc.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.o
 .PHONY : posixsimport.cc.o
 
 posixsimport.i: posixsimport.cc.i
@@ -538,7 +541,7 @@ posixsimport.i: posixsimport.cc.i
 
 # target to preprocess a source file
 posixsimport.cc.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.i
 .PHONY : posixsimport.cc.i
 
 posixsimport.s: posixsimport.cc.s
@@ -546,7 +549,7 @@ posixsimport.s: posixsimport.cc.s
 
 # target to generate assembly for a file
 posixsimport.cc.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/posixsimport.cc.s
 .PHONY : posixsimport.cc.s
 
 simguifltk.o: simguifltk.cxx.o
@@ -554,7 +557,7 @@ simguifltk.o: simguifltk.cxx.o
 
 # target to build an object file
 simguifltk.cxx.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.o
 .PHONY : simguifltk.cxx.o
 
 simguifltk.i: simguifltk.cxx.i
@@ -562,7 +565,7 @@ simguifltk.i: simguifltk.cxx.i
 
 # target to preprocess a source file
 simguifltk.cxx.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.i
 .PHONY : simguifltk.cxx.i
 
 simguifltk.s: simguifltk.cxx.s
@@ -570,7 +573,7 @@ simguifltk.s: simguifltk.cxx.s
 
 # target to generate assembly for a file
 simguifltk.cxx.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/build.make src/sim/CMakeFiles/ckobdsim_gui_fltk.dir/simguifltk.cxx.s
 .PHONY : simguifltk.cxx.s
 
 simport.o: simport.cc.o
@@ -578,7 +581,7 @@ simport.o: simport.cc.o
 
 # target to build an object file
 simport.cc.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/simport.cc.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/simport.cc.o
 .PHONY : simport.cc.o
 
 simport.i: simport.cc.i
@@ -586,7 +589,7 @@ simport.i: simport.cc.i
 
 # target to preprocess a source file
 simport.cc.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/simport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/simport.cc.i
 .PHONY : simport.cc.i
 
 simport.s: simport.cc.s
@@ -594,7 +597,7 @@ simport.s: simport.cc.s
 
 # target to generate assembly for a file
 simport.cc.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/simport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/simport.cc.s
 .PHONY : simport.cc.s
 
 socketsimport.o: socketsimport.cc.o
@@ -602,7 +605,7 @@ socketsimport.o: socketsimport.cc.o
 
 # target to build an object file
 socketsimport.cc.o:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.o
 .PHONY : socketsimport.cc.o
 
 socketsimport.i: socketsimport.cc.i
@@ -610,7 +613,7 @@ socketsimport.i: socketsimport.cc.i
 
 # target to preprocess a source file
 socketsimport.cc.i:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.i
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.i
 .PHONY : socketsimport.cc.i
 
 socketsimport.s: socketsimport.cc.s
@@ -618,7 +621,7 @@ socketsimport.s: socketsimport.cc.s
 
 # target to generate assembly for a file
 socketsimport.cc.s:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.s
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(MAKE) -f src/sim/CMakeFiles/obdsim.dir/build.make src/sim/CMakeFiles/obdsim.dir/socketsimport.cc.s
 .PHONY : socketsimport.cc.s
 
 # Help Target
@@ -697,6 +700,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anthony/ClemsonVibrationResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anthony/clemsonResearch/obdgpslogger/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

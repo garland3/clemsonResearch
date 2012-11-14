@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/sim/generators/dlopen/simdl_datasource.h
+
+/home/anthony/clemsonResearch/obdgpslogger/src/sim/generators/dlopen/test/test_dlopen.c
+stdio.h
+-
+simdl_datasource.h
+/home/anthony/clemsonResearch/obdgpslogger/src/sim/generators/dlopen/test/simdl_datasource.h
+

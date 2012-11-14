@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libs/sqlite3/sqlite3.h
+stdarg.h
+-
+
+/home/anthony/clemsonResearch/obdgpslogger/src/csv/obdgpscsv.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+zlib.h
+/home/anthony/clemsonResearch/obdgpslogger/src/csv/zlib.h
+obdconfig.h
+/home/anthony/clemsonResearch/obdgpslogger/src/csv/obdconfig.h
+obdgpscsv.h
+/home/anthony/clemsonResearch/obdgpslogger/src/csv/obdgpscsv.h
+sqlite3.h
+/home/anthony/clemsonResearch/obdgpslogger/src/csv/sqlite3.h
+
+/home/anthony/clemsonResearch/obdgpslogger/src/csv/obdgpscsv.h
+getopt.h
+-
+
+obdconfig.h
+

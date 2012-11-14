@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder>
+<name>Output from <a href="http://icculus.org/obdgpslogger/">OBD GPS Logger</a></name>
+<description>OBD GPS Logger [http://icculus.org/obdgpslogger] was used to log a car journey and export this kml file</description>
+<Folder>
+<name>Speed and Position [Just GPS]</name>
+<description>Height == speed</description>
+</Folder>
+<Folder>
+<name>RPM and Position</name>
+<description>Height indicates engine revs</description>
+</Folder>
+<Folder>
+<name>MPG [via MAP], Speed and Position</name>
+<description>Height indicates speed, color indicates mpg [green == better]</description>
+</Folder>
+<Folder>
+<name>MPG [via MAF], Speed and Position</name>
+<description>Height indicates speed, color indicates mpg [green == better]</description>
+</Folder>
+<Folder>
+<name>Gear and Position</name>
+<description>Height indicates ratio between rpm and speed. While you're in gear, a line should be flat</description>
+</Folder>
+<Folder>
+<name>Speed and Position (OBDII)</name>
+<description>Height indicates speed</description>
+</Folder>
+<Folder>
+<name>RPM, Speed and Position</name>
+<description>Height indicates speed, color indicates RPM</description>
+</Folder>
+</Folder>
+</kml>
+

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/sim/./datasource.h
+
+/home/anthony/clemsonResearch/obdgpslogger/src/sim/generators/error/gen_error.c
+stdlib.h
+-
+stdio.h
+-
+datasource.h
+/home/anthony/clemsonResearch/obdgpslogger/src/sim/generators/error/datasource.h
+
